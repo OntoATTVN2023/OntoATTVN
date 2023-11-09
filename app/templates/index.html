@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SPARQL Query</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>SPARQL Query</h1>
+    <form method="post">
+        <label for="capec">Enter CVE ID:</label>
+        <input type="text" name="cveId" id="cveId" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if results is iterable %}
+    <h2>CVE Information</h2>
+    <p>CVE ID: {{ cve_id }}</p>
+    <p>CVE Description: {{ cve_description }}</p>
+    <h2>Query Results</h2>
+    <table>
+        <tr>
+            <th>Stage</th>
+            <th>Tactic</th>
+            <th>Technique</th>
+            <th>Sub-Technique</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</body>
+</html>
