@@ -106,7 +106,13 @@ https://templatemo.com/tm-590-topic-listing
                                 </div>
                             </form>
                         </div>
-            
+                        {% if results is none and msg %}
+                        <div class="col-lg-16 col-12 mx-auto mt-5">
+                            <div class="custom-block bg-white shadow-lg p-4">
+                                <h5 class="text-danger text-center">{{ msg }}</h5>
+                            </div>
+                        </div>
+                        {% endif %}           
                         {% if results is iterable %}
                         <div class="col-lg-16 col-12 mx-auto mt-5">
                             <div class="custom-block bg-white shadow-lg p-4">
@@ -117,8 +123,13 @@ https://templatemo.com/tm-590-topic-listing
                                 <ul class="mb-3 list-inline">
                                     {% for key, value in cwe.items() %}
                                     <li class="text-black fs-6">
-                                        <i class="bi bi-check2-circle text-success"></i>
-                                        {{ key }}: {{ value }}
+                                        {% if key == 'Undefined' %}
+                                            <i class="bi bi-check2-circle text-success"></i>
+                                            {{ key }}
+                                        {% else %}
+                                            <i class="bi bi-check2-circle text-success"></i>
+                                            {{ key }}: {{ value }}
+                                        {% endif %}
                                     </li>
                                     {% endfor %}
                                 </ul>
@@ -154,13 +165,18 @@ https://templatemo.com/tm-590-topic-listing
                                         {% endfor %}
                                     </tbody>
                                 </table>
+
+                                {% if dataGraph.items()|length > 0 %}
+                                    <canvas id="radarChart" class="mt-5"></canvas>
+                                {% endif %}
+                            
                             </div>
                         </div>                                                                                                                          
                         {% endif %}
                     </div>
                 </div>
-            </section>                     
-
+            </section>                  
+    
 
             <section class="explore-section section-padding" id="section_2">
                 <div class="container">
@@ -747,15 +763,53 @@ https://templatemo.com/tm-590-topic-listing
 
                 </div>
             </div>
+            <div id="dataGraph" data-geocode='{{ dataGraph|tojson }}'></div>
         </footer>
 
 
         <!-- JAVASCRIPT FILES -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="../static/js/jquery.min.js"></script>
         <script src="../static/js/bootstrap.bundle.min.js"></script>
         <script src="../static/js/jquery.sticky.js"></script>
         <script src="../static/js/click-scroll.js"></script>
         <script src="../static/js/custom.js"></script>
 
+        <script>
+            var dataGraph = JSON.parse(document.getElementById("dataGraph").dataset.geocode);
+
+            const data = {
+                labels: Object.keys(dataGraph),
+                datasets: [{
+                    label: 'Tactic',
+                    data: Object.values(dataGraph),
+                    fill: true,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    pointBackgroundColor: 'rgb(255, 99, 132)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(255, 99, 132)'
+                }]
+            };
+        
+            const config = {
+                type: 'radar',
+                data: data,
+                options: {
+                    elements: {
+                        line: {
+                            borderWidth: 3
+                        }
+                    },
+                    scale: {
+                        radius: 0.1,
+                    },
+                },
+            };
+        
+            const ctx = document.getElementById('radarChart').getContext('2d');
+            new Chart(ctx, config);
+        </script>
     </body>
 </html>

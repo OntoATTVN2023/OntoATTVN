@@ -72,11 +72,11 @@ def fetch_capec_ids(cwe_numbers):
 @app.route('/index', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        cve_id = request.form['cveId'].upper().strip()
+        cve_id = request.form['cveId'].strip()
 
-        cve_description, cwe = get_cve_info(cve_id)
+        cve_description, cwe = get_cve_info(cve_id.upper())
         if not cve_description and not cwe:
-            return render_template('index.html', results=None)
+            return render_template('index.html', results=None, msg = f'No results found for \"{cve_id}\"', dataGraph = {})
 
         cwe_ids = list(cwe.keys())
         initial_capec_ids = get_capec_id(cwe_ids)
@@ -120,40 +120,43 @@ def index():
         ])
 
         filtered_capec_ids = initial_capec_ids & list_to_filter
+
+        if not cwe:
+            cwe = {'Undefined':''}
+        if not initial_capec_ids:
+            initial_capec_ids = ['Undefined']
         if not filtered_capec_ids:
-            return render_template('index.html', results={}, cve_id=cve_id, cve_description=cve_description,
-                               cwe=cwe, initial_capec_ids=initial_capec_ids, filtered_capec_ids=filtered_capec_ids)
+            filtered_capec_ids = ['Undefined']
+            return render_template('index.html', results={'Undefined':['Undefined']}, cve_id=cve_id.upper(), cve_description=cve_description,
+                               cwe=cwe, initial_capec_ids=initial_capec_ids, filtered_capec_ids=filtered_capec_ids, dataGraph={})
         g = Graph()
         g.parse("C:/FU studying/s9/IAP491/Code/Ontology.owl", format="xml")
 
         capecs = "|".join(filtered_capec_ids)
         sparql_query = '''
             PREFIX my: <http://test.org/Ontology.owl#>
-            SELECT DISTINCT ?Stage ?Tactic ?Tech ?SubTech ?Capec
+            SELECT DISTINCT ?Tactic ?Tech ?SubTech
             WHERE {
-                {
-                    FILTER REGEX(?Capec, "''' + capecs + '''") .
-                    ?SubTechID rdf:type my:Sub_Techniques.
-                    ?SubTechID my:mapTo ?Capec.
-                    ?SubTechID my:hasName ?SubTech.
-                    ?SubTechID my:isContained ?TechID.
-                    ?TechID my:hasName ?Tech.
-                    ?SubTechID my:isPartOf ?TacticID.
-                    ?TacticID my:hasName ?Tactic.
-                    ?TacticID my:isUsed ?StageID.
-                    ?StageID my:hasName ?Stage.
-                } UNION {
-                    FILTER REGEX(?Capec, "''' + capecs + '''")
-                    ?TechID rdf:type my:Techniques.
-                    ?TechID my:mapTo ?Capec.
-                    ?TechID my:hasName ?Tech.
-                    ?TechID my:isPartOf ?TacticID.
-                    ?TacticID my:hasName ?Tactic.
-                    ?TacticID my:isUsed ?StageID.
-                    ?StageID my:hasName ?Stage.
-                }
+            {
+                filter REGEX(?Capec, "''' + capecs + '''").
+                ?SubTechID rdf:type my:Sub_Techniques.
+                ?SubTechID my:hasName ?SubTech.
+                ?SubTechID my:mapTo ?Capec.
+                ?SubTechID my:isContained ?TechID.
+                ?TechID my:hasName ?Tech.
+                ?TechID my:isPartOf ?TacticID.
+                ?TacticID my:hasName ?Tactic.
             }
-            ORDER BY ?Capec'''
+            union
+            {
+                filter REGEX(?Capec, "''' + capecs + '''").
+                ?TechID rdf:type my:Techniques.
+                ?TechID my:mapTo ?Capec.
+                ?TechID my:hasName ?Tech.
+                ?TechID my:isPartOf ?TacticID.
+                ?TacticID my:hasName ?Tactic.
+            }
+            }'''
         query = prepareQuery(sparql_query)
 
         result = g.query(query)
@@ -173,11 +176,23 @@ def index():
 
         result_dict = dict(result_data)
 
-        return render_template('index.html', results=result_dict, cve_id=cve_id, cve_description=cve_description,
-                               cwe=cwe, initial_capec_ids=initial_capec_ids, filtered_capec_ids=filtered_capec_ids)
+        tactics = ['Reconnaissance', 'Resource Development', 'Initial Access', 'Execution', 'Persistence', 'Privilege Escalation', 'Defense Evasion',
+                    'Credential Access', 'Discovery', 'Lateral Movement', 'Collection', 'Command and Control', 'Exfiltration', 'Impact']
+        
+        dataGraph = dict()
+        for key, value in result_dict.items():
+            dataGraph[key] = len(value)
+
+        for tactic in tactics:
+            if tactic not in dataGraph.keys():
+                dataGraph[tactic] = 0
+
+
+        return render_template('index.html', results=result_dict, cve_id=cve_id.upper(), cve_description=cve_description,
+                               cwe=cwe, initial_capec_ids=initial_capec_ids, filtered_capec_ids=filtered_capec_ids, dataGraph=dataGraph)
 
     else:
-        return render_template('index.html', results=None)
+        return render_template('index.html', results=None, dataGraph={})
 
 
 if __name__ == '__main__':
