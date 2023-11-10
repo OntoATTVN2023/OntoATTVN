@@ -36,7 +36,7 @@ https://templatemo.com/tm-590-topic-listing
 
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index">
                         <i class="bi-back"></i>
                         <span>ATTVN</span>
                     </a>
@@ -101,15 +101,15 @@ https://templatemo.com/tm-590-topic-listing
                             <form method="post" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-text bi-search" id="basic-addon1"></span>
-                                    <input name="cveId" type="search" class="form-control" id="cveId" placeholder="CVE ID..." aria-label="Search">
+                                    <input name="cveId" type="search" class="form-control" id="cveId" placeholder="Input a CVE ID..." aria-label="Search">
                                     <button type="submit" class="form-control">Search</button>
                                 </div>
                             </form>
                         </div>
             
+                        {% if results is iterable %}
                         <div class="col-lg-16 col-12 mx-auto mt-5">
                             <div class="custom-block bg-white shadow-lg p-4">
-                                {% if results is iterable %}
                                 <h3 class="mb-3">{{ cve_id }}</h3>
                                 <h6 class="mb-1">Description</h6>
                                 <p class="mb-3 text-black fs-6">{{ cve_description }}</p>
@@ -153,10 +153,10 @@ https://templatemo.com/tm-590-topic-listing
                                             </tr>
                                         {% endfor %}
                                     </tbody>
-                                </table>                                                                                                                          
-                                {% endif %}
+                                </table>
                             </div>
-                        </div>
+                        </div>                                                                                                                          
+                        {% endif %}
                     </div>
                 </div>
             </section>                     
