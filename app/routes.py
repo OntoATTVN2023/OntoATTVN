@@ -130,12 +130,12 @@ def index():
             return render_template('index.html', results={'Undefined':['Undefined']}, cve_id=cve_id.upper(), cve_description=cve_description,
                                cwe=cwe, initial_capec_ids=initial_capec_ids, filtered_capec_ids=filtered_capec_ids, dataGraph={})
         g = Graph()
-        g.parse("C:/FU studying/s9/IAP491/Code/Ontology.owl", format="xml")
+        g.parse("/home/thuanhhhe150665/Desktop/CVEATTCK-main/Ontology.owl", format="xml")
 
         capecs = "|".join(filtered_capec_ids)
         sparql_query = '''
             PREFIX my: <http://test.org/Ontology.owl#>
-            SELECT DISTINCT ?Tactic ?Tech ?SubTech
+            SELECT DISTINCT ?TacticID ?Tactic ?TechID ?Tech ?SubTechID ?SubTech
             WHERE {
             {
                 filter REGEX(?Capec, "''' + capecs + '''").
@@ -166,22 +166,24 @@ def index():
             tactic = str(row["Tactic"])
             tech = str(row["Tech"])
             subtech = str(row["SubTech"])
+            tacticId = str(row["TacticID"]).replace("http://test.org/Ontology.owl#", "")
+            techId = str(row["TechID"]).replace("http://test.org/Ontology.owl#", "")
+            subtechId = str(row["SubTechID"]).replace("http://test.org/Ontology.owl#", "").replace("_",".")
             
             if subtech == 'None':
-                value = tech
+                value = f"{techId}: {tech}"
             else:
-                value = f"{tech}:{subtech}"
-            
+                value = f"{subtechId}: {tech}: {subtech}"
+            tactic=f"{tacticId}: {tactic}"
             result_data[tactic].append(value)
 
         result_dict = dict(result_data)
-
         tactics = ['Reconnaissance', 'Resource Development', 'Initial Access', 'Execution', 'Persistence', 'Privilege Escalation', 'Defense Evasion',
                     'Credential Access', 'Discovery', 'Lateral Movement', 'Collection', 'Command and Control', 'Exfiltration', 'Impact']
         
         dataGraph = dict()
         for key, value in result_dict.items():
-            dataGraph[key] = len(value)
+            dataGraph[key.split(": ")[1]] = len(value)
 
         for tactic in tactics:
             if tactic not in dataGraph.keys():
