@@ -1,791 +1,820 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>ATTVN</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <!-- CSS FILES -->        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>ATTVN</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
-                        
-        <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-        <link href="../static/css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <link href="../static/css/templatemo-topic-listing.css" rel="stylesheet">      
-<!--
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
 
-TemplateMo 590 topic listing
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
 
-https://templatemo.com/tm-590-topic-listing
+    <link href="../static/css/bootstrap-icons.css" rel="stylesheet">
 
--->
-    </head>
-    
-    <body id="top">
+    <link href="../static/css/templatemo-topic-listing.css" rel="stylesheet">
 
-        <main>
+</head>
 
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="index">
-                        <i class="bi-back"></i>
-                        <span>ATTVN</span>
-                    </a>
+<body id="top">
 
-                    <div class="d-lg-none ms-auto me-4">
-                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
-                    </div>
-    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_1">Home</a>
-                            </li>
+    <main>
 
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_2">Browse Topics</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_3">How it works</a>
-                            </li>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index">
+                    <i class="bi-back"></i>
+                    <span>ATTVN</span>
+                </a>
 
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">FAQs</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Contact</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="topics-listing.html">Ontology model</a></li>
-
-                                    <li><a class="dropdown-item" href="contact.html">Contact Form</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <!-- <div class="d-none d-lg-block">
-                            <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
-                        </div> -->
-                    </div>
-                </div>
-            </nav>
-            
-
-            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
-                <div class="container">
-                    <div class="row">
-            
-                        <div class="col-lg-8 col-12 mx-auto">
-                            <h2 class="text-white text-center">Mapping CVEs to MITRE ATT&CK</h2>
-                            <h6 class="text-center">platform for creatives around the world</h6>
-            
-                            <form method="post" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
-                                <div class="input-group input-group-lg">
-                                    <span class="input-group-text bi-search" id="basic-addon1"></span>
-                                    <input name="cveId" type="search" class="form-control" id="cveId" placeholder="Input a CVE ID..." aria-label="Search">
-                                    <button type="submit" class="form-control">Search</button>
-                                </div>
-                            </form>
-                        </div>
-                        {% if results is none and msg %}
-                        <div class="col-lg-16 col-12 mx-auto mt-5">
-                            <div class="custom-block bg-white shadow-lg p-4">
-                                <h5 class="text-danger text-center">{{ msg }}</h5>
-                            </div>
-                        </div>
-                        {% endif %}           
-                        {% if results is iterable %}
-                        <div class="col-lg-16 col-12 mx-auto mt-5">
-                            <div class="custom-block bg-white shadow-lg p-4">
-                                <h3 class="mb-3"><a href="https://www.cvedetails.com/cve/{{ cve_id  }}" target="_blank">{{ cve_id }}</a></h3>
-                                <h6 class="mb-1">Description</h6>
-                                <p class="mb-3 text-black fs-6">{{ cve_description }}</p>
-                                <h6 class="mb-2">CWE</h6>
-                                <ul class="mb-3 list-inline">
-                                    {% for key, value in cwe.items() %}
-                                    <li class="text-black fs-6">
-                                        {% if key == 'Undefined' %}
-                                            <i class="bi bi-check2-circle text-success"></i>
-                                            {{ key }}
-                                        {% else %}
-                                            <i class="bi bi-check2-circle text-success"></i>
-                                            {{ key }}: {{ value }}
-                                        {% endif %}
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                                
-                                <h6 class="mb-2">CAPEC ID</h6>
-                                <ul class="mb-3 list-inline">
-                                    <li class="text-black fs-6 mb-1">
-                                        <i class="bi bi-check2-circle text-success"></i>
-                                        <strong>Initial CAPEC ID: </strong>{{ initial_capec_ids | join(', ') }}
-                                    </li>
-                                    <li class="text-black fs-6">
-                                        <i class="bi bi-check2-circle text-success"></i>
-                                        <strong>Linked CAPEC ID: </strong>{{ filtered_capec_ids | join(', ') }}
-                                    </li> 
-                                </ul>                                                                               
-                                <h6 class="mb-2">Tactics & Techniques</h6>
-                                <table class="table table-striped table-bordered table-teal">
-                                    <thead class="table-light">
-        				<tr>
-					    <th style="border-right: 2px solid #fff; text-align: center; vertical-align: middle; 
-					    border-bottom: 0;  background: #2de298">Tactic</th>
-					    <th style="border-right: 2px solid #fff;  text-align: center; vertical-align: middle; 
-					    border-bottom: 0; background: #2de298">Technique</th>
-					</tr>
-				    </thead>
-                                    <tbody>
-                                        {% for tactic, tech_list in results.items() %}
-                                            <tr>
-                                                {% set tacticParts = tactic.split(": ") %}
-        					{% set tacticId = tacticParts[0] %}
-                                                <td class="table-light">
-                                                <a href="https://attack.mitre.org/tactics/{{ tacticId }}" target="_blank" styles="border-top: 3px solid #fff;"2px solid #fff;  
-                                                 vertical-align: middle; border-bottom: 0">{{ tactic }}</a></td>
-                                                </td>
-                                                <td class="table-light">
-						    {% set tech_string = tech_list | join('\n') %}
-						    {% set techParts = tech_string.split(": ")%}
-        					    {% set techId = techParts[0].replace(".","/")  %}
-						    <a href="https://attack.mitre.org/techniques/{{ techId }}" target="_blank" styles="border-top: 3px solid #fff;"2px solid #fff;  
-                                                vertical-align: middle; 
-                                                border-bottom: 0">{{ tech_string|replace("\n", "<br>")|safe }}</a>
-						</td>
-                                            </tr>
-                                        {% endfor %}
-                                    </tbody>
-                                </table>
-
-                                {% if dataGraph.items()|length > 0 %}
-                                    <canvas id="radarChart" class="mt-5 mx-auto" style="width: 50%;"></canvas>
-
-                                {% endif %}
-                            
-                            </div>
-                        </div>                                                                                                                          
-                        {% endif %}
-                    </div>
-                </div>
-            </section>                  
-    
-
-            <section class="explore-section section-padding" id="section_2">
-                <div class="container">
-
-                        <div class="col-12 text-center">
-                            <h2 class="mb-4">Browse Topics</h1>
-                        </div>
-
-                    </div>
+                <div class="d-lg-none ms-auto me-4">
+                    <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
                 </div>
 
-                <div class="container-fluid">
-                    <div class="row">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-tab-pane" type="button" role="tab" aria-controls="design-tab-pane" aria-selected="true">CVE</button>
-                            </li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing-tab-pane" type="button" role="tab" aria-controls="marketing-tab-pane" aria-selected="false">CWE</button>
-                            </li>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>
 
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="finance-tab" data-bs-toggle="tab" data-bs-target="#finance-tab-pane" type="button" role="tab" aria-controls="finance-tab-pane" aria-selected="false">CAPEC</button>
-                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">Browse Topics</a>
+                        </li>
 
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music-tab-pane" type="button" role="tab" aria-controls="music-tab-pane" aria-selected="false">ATT&CK</button>
-                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">How it works</a>
+                        </li>
 
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education-tab-pane" type="button" role="tab" aria-controls="education-tab-pane" aria-selected="false">Ontology</button>
-                            </li>
-                        </ul>
-                    </div>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">FAQs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="">Ontology model</a></li>
+
+                                <li><a class="dropdown-item" href="">Contact Form</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
                 </div>
+            </div>
+        </nav>
 
-                <div class="container">
-                    <div class="row">
 
-                        <div class="col-12">
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h6 class="mb-2">Web Design</h6>
-
-                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">14</span>
-                                                    </div>
-
-                                                    <img src="../static/images/topics/undraw_Remote_design_team_re_urdx.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h6 class="mb-2">Graphic</h6>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">75</span>
-                                                    </div>
-
-                                                    <img src="../static/images/topics/undraw_Redesign_feedback_re_jvm0.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h6 class="mb-2">Logo Design</h6>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-design rounded-pill ms-auto">100</span>
-                                                    </div>
-
-                                                    <img src="../static/images/topics/colleagues-working-cozy-office-medium-shot.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel" aria-labelledby="marketing-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                                <div class="custom-block bg-white shadow-lg">
-                                                    <a href="topics-detail.html">
-                                                        <div class="d-flex">
-                                                            <div>
-                                                                <h6 class="mb-2">Advertising</h6>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                            </div>
-
-                                                            <span class="badge bg-advertising rounded-pill ms-auto">30</span>
-                                                        </div>
-
-                                                        <img src="../static/images/topics/undraw_online_ad_re_ol62.png" class="custom-block-image img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                                <div class="custom-block bg-white shadow-lg">
-                                                    <a href="topics-detail.html">
-                                                        <div class="d-flex">
-                                                            <div>
-                                                                <h6 class="mb-2">Video Content</h6>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                            </div>
-
-                                                            <span class="badge bg-advertising rounded-pill ms-auto">65</span>
-                                                        </div>
-
-                                                        <img src="../static/images/topics/undraw_Group_video_re_btu7.png" class="custom-block-image img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4 col-md-6 col-12">
-                                                <div class="custom-block bg-white shadow-lg">
-                                                    <a href="topics-detail.html">
-                                                        <div class="d-flex">
-                                                            <div>
-                                                                <h6 class="mb-2">Viral Tweet</h6>
-
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                            </div>
-
-                                                            <span class="badge bg-advertising rounded-pill ms-auto">50</span>
-                                                        </div>
-
-                                                        <img src="../static/images/topics/undraw_viral_tweet_gndb.png" class="custom-block-image img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                  </div>
-
-                                <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel" aria-labelledby="finance-tab" tabindex="0">   <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h6 class="mb-2">Investment</h6>
-
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-finance rounded-pill ms-auto">30</span>
-                                                    </div>
-
-                                                    <img src="../static/images/topics/undraw_Finance_re_gnv2.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <div class="custom-block custom-block-overlay">
-                                                <div class="d-flex flex-column h-100">
-                                                    <img src="../static/images/businesswoman-using-tablet-analysis-graph-company-finance-strategy-statistics-success-concept-planning-future-office-room.jpg" class="custom-block-image img-fluid" alt="">
-
-                                                    <div class="custom-block-overlay-text d-flex">
-                                                        <div>
-                                                            <h6 class="text-white mb-2">Finance</h6>
-
-                                                            <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint animi necessitatibus aperiam repudiandae nam omnis</p>
-
-                                                            <a href="topics-detail.html" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
-                                                        </div>
-
-                                                        <span class="badge bg-finance rounded-pill ms-auto">25</span>
-                                                    </div>
-
-                                                    <div class="social-share d-flex">
-                                                        <p class="text-white me-4">Share:</p>
-
-                                                        <ul class="social-icon">
-                                                            <li class="social-icon-item">
-                                                                <a href="#" class="social-icon-link bi-twitter"></a>
-                                                            </li>
-
-                                                            <li class="social-icon-item">
-                                                                <a href="#" class="social-icon-link bi-facebook"></a>
-                                                            </li>
-
-                                                            <li class="social-icon-item">
-                                                                <a href="#" class="social-icon-link bi-pinterest"></a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <a href="#" class="custom-icon bi-bookmark ms-auto"></a>
-                                                    </div>
-
-                                                    <div class="section-overlay"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h6 class="mb-2">Composing Song</h6>
-
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-music rounded-pill ms-auto">45</span>
-                                                    </div>
-
-                                                    <img src="../static/images/topics/undraw_Compose_music_re_wpiw.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h6 class="mb-2">Online Music</h6>
-
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-music rounded-pill ms-auto">45</span>
-                                                    </div>
-
-                                                    <img src="../static/images/topics/undraw_happy_music_g6wc.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h6 class="mb-2">Podcast</h6>
-
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-music rounded-pill ms-auto">20</span>
-                                                    </div>
-
-                                                    <img src="../static/images/topics/undraw_Podcast_audience_re_4i5q.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="education-tab-pane" role="tabpanel" aria-labelledby="education-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h6 class="mb-2">Graduation</h6>
-
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-education rounded-pill ms-auto">80</span>
-                                                    </div>
-
-                                                    <img src="../static/images/topics/undraw_Graduation_re_gthn.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
-                                                    <div class="d-flex">
-                                                        <div>
-                                                            <h6 class="mb-2">Educator</h6>
-
-                                                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                        </div>
-
-                                                        <span class="badge bg-education rounded-pill ms-auto">75</span>
-                                                    </div>
-
-                                                    <img src="../static/images/topics/undraw_Educator_re_ju47.png" class="custom-block-image img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="timeline-section section-padding" id="section_3">
-                <div class="section-overlay"></div>
-
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-12 text-center">
-                            <h2 class="text-white mb-4">How does it work?</h1>
-                        </div>
-
-                        <div class="col-lg-10 col-12 mx-auto">
-                            <div class="timeline-container">
-                                <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
-                                    <div class="list-progress">
-                                        <div class="inner"></div>
-                                    </div>
-
-                                    <li>
-                                        <h4 class="text-white mb-3">Search your CVE ID</h4>
-
-                                        <p class="text-white">Find the latest CVEs within the National Vulnerability Database via our search box.</p>
-
-                                        <div class="icon-holder">
-                                          <i class="bi-search"></i>
-                                        </div>
-                                    </li>
-                                    
-                                    <li>
-                                        <h4 class="text-white mb-3">Map to Ontology</h4>
-
-                                        <p class="text-white">After choosing your CVE ID, our application will inspect and assign the vulnerability to its appropriate category within ATT&CK matrices through an analysis chain of CWE, CAPEC. </p>
-
-                                        <div class="icon-holder">
-                                          <i class="bi-bookmark"></i>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <h4 class="text-white mb-3">Show the output</h4>
-
-                                        <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi vero quisquam, rem assumenda similique voluptas distinctio, iste est hic eveniet debitis ut ducimus beatae id? Quam culpa deleniti officiis autem?</p>
-
-                                        <div class="icon-holder">
-                                          <i class="bi-book"></i>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-12 text-center mt-5">
-                            <p class="text-white">
-                                Want to learn more?
-                                <a href="https://github.com/ATTVN2023/CVEATTCK" target="_blank">Github</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="faq-section section-padding" id="section_4">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <h2 class="mb-4">Frequently Asked Questions</h2>
-                        </div>
-
-                        <div class="clearfix"></div>
-
-                        <div class="col-lg-5 col-12">
-                            <img src="../static/images/faq_graphic.jpg" class="img-fluid" alt="FAQs">
-                        </div>
-
-                        <div class="col-lg-6 col-12 m-auto">
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        What is ATTVN?
-                                        </button>
-                                    </h2>
-
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            ATTVN is a group of 5 students who developed this software as a part of our final capstone project. The name of the group is created using our first names’ initials. It also is the name of we chose for this application.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Is this free?
-                                    </button>
-                                    </h2>
-
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            This application is open-sourced, which means anyone can access and contribute to the source code. 
-                                            
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="contact-section section-padding section-bg" id="section_5">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-12 col-12 text-center">
-                            <h2 class="mb-5">Get in touch</h2>
-                        </div>
-
-                        <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                            <iframe class="google-map" src="https://maps.app.goo.gl/u1usxchUwKikXtgm7" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
-                            <h4 class="mb-3">FPT University</h4>
-
-                            <p>Khu Công Nghệ Cao Hòa Lạc, Km29 Đại lộ Thăng Long, Thạch Hoà, Thạch Thất, Hà Nội, Việt Nam</p>
-
-                            <hr>
-
-                            <p class="d-flex align-items-center mb-1">
-                                <span class="me-2">Phone</span>
-
-                                <a href="tel: 1234-5678" class="site-footer-link">
-                                    1234-5678
-                                </a>
-                            </p>
-
-                            <p class="d-flex align-items-center">
-                                <span class="me-2">Email</span>
-
-                                <a href="attvn2023@gmail.com" class="site-footer-link">
-                                    attvn2023@gmail.com
-                                </a>
-                            </p>
-                        </div>
-
-                        
-
-                    </div>
-                </div>
-            </section>
-        </main>
-
-<footer class="site-footer section-padding">
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-3 col-12 mb-4 pb-2">
-                        <a class="navbar-brand mb-2" href="index.html">
-                            <i class="bi-back"></i>
-                            <span>ATTVN</span>
-                        </a>
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <h2 class="text-white text-center">Mapping CVEs to MITRE ATT&CK</h2>
+                        <h6 class="text-center">platform for creatives around the world</h6>
+
+                        <form method="post" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bi-search" id="basic-addon1"></span>
+                                <input name="cveId" type="search" class="form-control" id="cveId"
+                                    placeholder="Input a CVE ID..." aria-label="Search">
+                                <button type="submit" class="form-control">Search</button>
+                            </div>
+                        </form>
                     </div>
-
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <h6 class="site-footer-title mb-3">Resources</h6>
-
-                        <ul class="site-footer-links">
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Home</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">How it works</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">FAQs</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Contact</a>
-                            </li>
-                        </ul>
+                    {% if results is none and msg %}
+                    <div class="col-lg-16 col-12 mx-auto mt-5">
+                        <div class="custom-block bg-white shadow-lg p-4">
+                            <h5 class="text-danger text-center">{{ msg }}</h5>
+                        </div>
                     </div>
+                    {% endif %}
+                    {% if results is iterable %}
+                    <div class="col-lg-16 col-12 mx-auto mt-5">
+                        <div class="custom-block bg-white shadow-lg p-4">
+                            <h3 class="mb-3"><a href="https://www.cvedetails.com/cve/{{ cve_id  }}" target="_blank">{{
+                                    cve_id }}</a></h3>
+                            <h6 class="mb-1">Description</h6>
+                            <p class="mb-3 text-black fs-6">{{ cve_description }}</p>
+                            <h6 class="mb-2">CWE</h6>
+                            <ul class="mb-3 list-inline">
+                                {% for key, value in cwe.items() %}
+                                <li class="text-black fs-6">
+                                    {% if key == 'Undefined' %}
+                                    <i class="bi bi-check2-circle"></i>
+                                    {{ key }}
+                                    {% else %}
+                                    <i class="bi bi-check2-circle"></i>
+                                    {{ key }}: {{ value }}
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
 
-                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
-                        <h6 class="site-footer-title mb-3">Information</h6>
 
-                        <p class="text-white d-flex mb-1">
-                            <a href="tel: 1234-5678" class="site-footer-link">
-                                1234-5678
-                            </a>
-                        </p>
+                            <h6 class="mb-2">Tactics & Techniques</h6>
+                            <table class="table table-striped table-bordered table-teal">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
+                                                    border-bottom: 3px solid #fff; background: #2de298">Tactic</th>
+                                        <th style="text-align: center; vertical-align: middle; 
+                                                    border-bottom: 3px solid #fff; background: #2de298">Technique</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for tactic, tech_list in results.items() %}
+                                    <tr>
+                                        {% set tacticParts = tactic.split(": ") %}
+                                        {% set tacticId = tacticParts[0] %}
+                                        <td class="table-light" style="border-right: 3px solid #fff; border-bottom: 0;">
+                                            <a href="https://attack.mitre.org/tactics/{{ tacticId }}" target="_blank">
+                                                {{ tactic }}
+                                            </a>
+                                        </td>
+                                        <td class="table-light" style="border-right: 3px solid #fff; border-bottom: 0;">
+                                            {% for tech_item in tech_list %}
+                                            {% set techParts = tech_item.split(": ") %}
+                                            {% set techId = techParts[0].replace(".", "/") %}
+                                            <a href="https://attack.mitre.org/techniques/{{ techId }}" target="_blank"
+                                                style="display: block; margin-bottom: 5px;">
+                                                {{ tech_item }}
+                                            </a>
+                                            {% endfor %}
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
 
-                        <p class="text-white d-flex">
-                            <a href="attvn2023@gmail.com" class="site-footer-link">
-                                attvn2023@gmail.comm
-                            </a>
-                        </p>
+                            {% if dataGraph.items()|length > 0 %}
+                            <canvas id="radarChart" class="mt-5 mx-auto" style="width: 50%;"></canvas>
+                            {% endif %}
+
+                        </div>
                     </div>
+                    {% endif %}
+                </div>
+            </div>
+        </section>
 
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
-                       
 
-                        <p class="copyright-text mt-lg-5 mt-4">Copyright © 2048 Topic Listing Center. All rights reserved.
-                        <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a> Distribution <a href="https://themewagon.com">ThemeWagon</a></p>
-                        
+        <section class="explore-section section-padding" id="section_2">
+            <div class="container">
+
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">Browse Topics</h1>
+                </div>
+
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="design-tab" data-bs-toggle="tab"
+                                data-bs-target="#design-tab-pane" type="button" role="tab"
+                                aria-controls="design-tab-pane" aria-selected="true">CVE</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="marketing-tab" data-bs-toggle="tab"
+                                data-bs-target="#marketing-tab-pane" type="button" role="tab"
+                                aria-controls="marketing-tab-pane" aria-selected="false">CWE</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="finance-tab" data-bs-toggle="tab"
+                                data-bs-target="#finance-tab-pane" type="button" role="tab"
+                                aria-controls="finance-tab-pane" aria-selected="false">CAPEC</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="music-tab" data-bs-toggle="tab"
+                                data-bs-target="#music-tab-pane" type="button" role="tab" aria-controls="music-tab-pane"
+                                aria-selected="false">ATT&CK</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="education-tab" data-bs-toggle="tab"
+                                data-bs-target="#education-tab-pane" type="button" role="tab"
+                                aria-controls="education-tab-pane" aria-selected="false">Ontology</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel"
+                                aria-labelledby="design-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h6 class="mb-2">Definition</h6>
+
+                                                    <p class="mb-0">CVE, or Common Vulnerabilities and Exposures, is a
+                                                        dictionary of
+                                                        common names for publicly known information security
+                                                        vulnerabilities.</p>
+                                                </div>
+
+                                                <span class="badge bg-design rounded-pill ms-auto">1</span>
+                                            </div>
+
+                                            <img src="../static/images/topics/cve1.png"
+                                                class="custom-block-image img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h6 class="mb-2">Function</h6>
+
+                                                    <p class="mb-0">CVE
+                                                        Identifiers (CVE ID) are unique, common identifiers used for
+                                                        assigning
+                                                        vulnerabilities in a variety of both commercial and open-source
+                                                        software, such
+                                                        as including operating systems, web servers, databases, and
+                                                        applications.</p>
+                                                </div>
+
+                                                <span class="badge bg-design rounded-pill ms-auto">2</span>
+                                            </div>
+
+                                            <img src="../static/images/topics/undraw_Redesign_feedback_re_jvm0.png"
+                                                class="custom-block-image img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h6 class="mb-2">Organization</h6>
+
+                                                    <p class="mb-0 text-justify">They
+                                                        are assigned by the CVE Program, which is managed by the MITRE
+                                                        Corporation since 1999.</p>
+                                                </div>
+
+                                                <span class="badge bg-design rounded-pill ms-auto">3</span>
+                                            </div>
+
+                                            <img src="../static/images/topics/colleagues-working-cozy-office-medium-shot.png"
+                                                class="custom-block-image img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel"
+                                aria-labelledby="marketing-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h6 class="mb-2">Definition</h6>
+
+                                                    <p class="mb-0">CWE, or Common Weakness Enumeration, is a
+                                                        community-developed list of
+                                                        common software and hardware weakness types that have security
+                                                        ramifications.</p>
+                                                </div>
+
+                                                <span class="badge bg-advertising rounded-pill ms-auto">1</span>
+                                            </div>
+
+                                            <img src="../static/images/topics/undraw_online_ad_re_ol62.png"
+                                                class="custom-block-image img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h6 class="mb-2">Classify</h6>
+
+                                                    <p class="mb-0">CWE is a hierarchical taxonomy, with each weakness
+                                                        being assigned a
+                                                        unique identifier and a set of descriptive attributes. The CWE
+                                                        taxonomy is
+                                                        divided into three categories:
+                                                    </p>
+                                                    <ul>
+                                                        <li>Hardware Design</li>
+                                                        <li>Software Development</li>
+                                                        <li>Research Concepts</li>
+                                                    </ul>
+                                                </div>
+
+                                                <span class="badge bg-advertising rounded-pill ms-auto">2</span>
+                                            </div>
+
+                                            <img src="../static/images/topics/cwe1.png"
+                                                class="custom-block-image img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel"
+                                aria-labelledby="finance-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h6 class="mb-2">Definition</h6>
+
+                                                    <p class="mb-0">CAPEC, or Common Attack Pattern Enumeration and
+                                                        Classification, as
+                                                        the name suggests, is a catalogue of common attack patterns
+                                                        frequently used by
+                                                        threat actors to exploit vulnerabilities in software and other
+                                                        cyber-enabled
+                                                        capabilities.</p>
+                                                </div>
+
+                                                <span class="badge bg-finance rounded-pill ms-auto">1</span>
+                                            </div>
+
+                                            <img src="../static/images/topics/capec1.png"
+                                                class="custom-block-image img-fluid" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="custom-block custom-block-overlay">
+                                            <div class="d-flex flex-column h-100">
+                                                <div class="custom-block-overlay-text d-flex">
+                                                    <div>
+                                                        <h6 class="mb-2 text-white"><b>Classify</b></h6>
+
+                                                        <p class="text-white mb-0">Like CWE, CAPEC is arranged in a
+                                                            similar hierarchical taxonomy: attack
+                                                            patterns are ordered into categories and sub-categories,
+                                                            with each pattern being
+                                                            assigned a unique identifier and a set of descriptive
+                                                            attributes. The CAPEC
+                                                            taxonomy is organized into two main categories:
+                                                        </p>
+                                                        <ul>
+                                                            <li class="text-white">Mechanisms of Attack</li>
+                                                            <li class="text-white">Domains of Attack</li>
+                                                        </ul>
+
+                                                    </div>
+
+                                                    <span class="badge bg-finance rounded-pill ms-auto">2</span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="section-overlay"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <div class="d-flex">
+                                            <div>
+                                                <h6 class="mb-2">Definition</h6>
+
+                                                <p class="mb-0">MITRE ATT&amp;CK, stands for Adversarial Tactics,
+                                                    Techniques, and
+                                                    Common Knowledge is a globally-accessible knowledge base of
+                                                    adversary
+                                                    tactics and techniques based on real-world observations.</p>
+                                            </div>
+
+                                            <span class="badge bg-music rounded-pill ms-auto">1</span>
+                                        </div>
+
+                                        <img src="../static/images/topics/attck1.png"
+                                            class="custom-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <div class="d-flex">
+                                            <div>
+                                                <h6 class="mb-2">Benefit</h6>
+
+                                                <p class="mb-0">The process MITRE used to create ATT&amp;CK, and the
+                                                    philosophy that was
+                                                    developed and used for curating new content, are critical aspects of
+                                                    the work
+                                                    and are very useful for other efforts that strive to create similar
+                                                    adversary
+                                                    models and information repositories.</p>
+                                            </div>
+
+                                            <span class="badge bg-music rounded-pill ms-auto">2</span>
+                                        </div>
+
+                                        <img src="../static/images/topics/attck2.png"
+                                            class="custom-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <div class="d-flex">
+                                            <div>
+                                                <h6 class="mb-2">Objectives</h6>
+
+                                                <p class="mb-0">The MITRE ATT&amp;CK matrix contains a set of techniques
+                                                    used by
+                                                    adversaries to accomplish a specific objective. Those objectives are
+                                                    categorized
+                                                    as &quot;tactics&quot; in the ATT&amp;CK Matrix. The objectives are
+                                                    presented linearly from
+                                                    the point of reconnaissance to the final goal of exfiltration or
+                                                    &quot;impact&quot;.</p>
+                                            </div>
+
+                                            <span class="badge bg-music rounded-pill ms-auto">3</span>
+                                        </div>
+
+                                        <img src="../static/images/topics/attck3.png"
+                                            class="custom-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="education-tab-pane" role="tabpanel"
+                            aria-labelledby="education-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
+                                    <div class="custom-block bg-white shadow-lg">
+                                        <div class="d-flex">
+                                            <div>
+                                                <p class="mb-0">In the field of cyber security, ontology can be used to
+                                                    contextualize
+                                                    weaknesses and attack patterns using entity-relationship framework.
+                                                    The result
+                                                    after which can be utilised to create an intuitive knowledge pool,
+                                                    offering a
+                                                    systematic view of vulnerabilities, attacks, and other
+                                                    security-related aspects.</p>
+                                            </div>
+
+                                            <span class="badge bg-education rounded-pill ms-auto">1</span>
+                                        </div>
+
+                                        <img src="../static/images/topics/undraw_Graduation_re_gthn.png"
+                                            class="custom-block-image img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
             </div>
-            <div id="dataGraph" data-geocode='{{ dataGraph|tojson }}'></div>
-        </footer>
+            </div>
+        </section>
 
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="../static/js/jquery.min.js"></script>
-        <script src="../static/js/bootstrap.bundle.min.js"></script>
-        <script src="../static/js/jquery.sticky.js"></script>
-        <script src="../static/js/click-scroll.js"></script>
-        <script src="../static/js/custom.js"></script>
+        <section class="timeline-section section-padding" id="section_3">
+            <div class="section-overlay"></div>
 
-        <script>
-            var dataGraphElement = document.getElementById("dataGraph");
-	    var dataGraph = JSON.parse(dataGraphElement.dataset.geocode);
-	    
-	    var sortedDataArray = Object.entries(dataGraph).sort((a, b) => b[1] - a[1]);
+            <div class="container">
+                <div class="row">
 
-	    var sortedDataGraph = Object.fromEntries(sortedDataArray);
+                    <div class="col-12 text-center">
+                        <h2 class="text-white mb-4">How does it work?</h1>
+                    </div>
 
-	    console.log(sortedDataGraph);
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <div class="timeline-container">
+                            <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+                                <div class="list-progress">
+                                    <div class="inner"></div>
+                                </div>
 
-            const data = {
-                labels: Object.keys(sortedDataGraph),
-                datasets: [{
-                    label: 'Tactic',
-                    data: Object.values(sortedDataGraph),
-                    fill: true,
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    borderColor: 'rgb(255, 99, 132)',
-                    pointBackgroundColor: 'rgb(255, 99, 132)',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: 'rgb(255, 99, 132)'
-                }]
-            };
-        
-            const config = {
-                type: 'radar',
-                data: data,
-                options: {
-                    elements: {
-                        line: {
-                            borderWidth: 3
-                        }
-                    },
-                    scale: {
-                        radius: 0.1,
-                    },
+                                <li>
+                                    <h4 class="text-white mb-3">Search your CVE ID</h4>
+
+                                    <p class="text-white">Find the latest CVEs within the National Vulnerability
+                                        Database via our search box.</p>
+
+                                    <div class="icon-holder">
+                                        <i class="bi-search"></i>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="text-white mb-3">Map to Ontology</h4>
+
+                                    <p class="text-white">After choosing your CVE ID, our application will inspect and
+                                        assign the vulnerability to its appropriate category within ATT&CK matrices
+                                        through an analysis chain of CWE, CAPEC. </p>
+
+                                    <div class="icon-holder">
+                                        <i class="bi bi-gear-wide-connected"></i>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="text-white mb-3">Show the output</h4>
+
+                                    <p class="text-white">The result of our analysis will be displayed with a list of
+                                        CWE associated
+                                        with the CVE, consisting of Technique, Sub-Technique, Tactics used, and a
+                                        graph displaying what Stage this CVE most likely to be used.</p>
+
+                                    <div class="icon-holder">
+                                        <i class="bi bi-window-fullscreen"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center mt-5">
+                        <p class="text-white">
+                            Want to learn more?
+                            <a href="https://github.com/ATTVN2023/CVEATTCK" target="_blank"
+                                class="site-footer-link">Github</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faq-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="mb-4">Frequently Asked Questions</h2>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-lg-5 col-12">
+                        <img src="../static/images/faq_graphic.jpg" class="img-fluid" alt="FAQs">
+                    </div>
+
+                    <div class="col-lg-6 col-12 m-auto">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is ATTVN?
+                                    </button>
+                                </h2>
+
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        ATTVN is a group of 5 students who developed this software as a part of our
+                                        final capstone project.
+                                        ATTVN provides an online lookup platform and helps convert from a CVE
+                                        vulnerability to the techniques,
+                                        tactics and strategies of cyber attackers according to the MITRE ATT&CK
+                                        framework to help users easily
+                                        grasp the stages of an attack through a specified vulnerability.
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Is this free?
+                                    </button>
+                                </h2>
+
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        This application is open-sourced, which means anyone can access and contribute
+                                        to the source code.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact-section section-padding section-bg" id="section_5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 text-center">
+                        <h2 class="mb-5">Get in touch</h2>
+                    </div>
+
+                    <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14899.038322822236!2d105.53572534999999!3d21.002272299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abc60e7d3f19%3A0x2be9d7d0b5abcbf4!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBGUFQ!5e0!3m2!1svi!2s!4v1699952015301!5m2!1svi!2s"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
+                        <h4 class="mb-3">FPT University</h4>
+
+                        <p>Khu Cong Nghe Cao Hoa Lac, Km29 Dai lo Thang Long, Thach Hoa, Thach That, Ha Noi, Viet Nam
+                        </p>
+
+                        <hr>
+
+                        <p class="text-white d-flex">
+                            <span class="me-2 text-black">Email:
+                                <a href="mailto:attvn2023@gmail.com" class="site-footer-link">
+                                    attvn2023@gmail.com
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 mx-auto">
+                        <h4 class="mb-3">Supervisor</h4>
+
+                        <p>Mr. Hoang Manh Duc</p>
+
+                        <hr>
+
+                        <p class="d-flex align-items-center mb-1">
+                            <span class="mb-3 text-black"><b>Team Member</b></span>
+
+                        <p> Do Xuan Thien <br>
+                            Bui Van An <br>
+                            Nguyen Duc Viet <br>
+                            Pham Huy Nhat <br>
+                            Hoang Huy Thuan <br>
+                        </p>
+                        </p>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-12 mb-4 pb-2">
+                    <a class="navbar-brand mb-2" href="index">
+                        <i class="bi-back"></i>
+                        <span>ATTVN</span>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h6 class="site-footer-title mb-3">Resources</h6>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="index#section_1" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="index#section_2" class="site-footer-link">Browse topics</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="index#section_3" class="site-footer-link">How it works</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="index#section_4" class="site-footer-link">FAQs</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="index#section_5" class="site-footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                    <h6 class="site-footer-title mb-3">Information</h6>
+
+                    <p class="text-white d-flex">
+
+                        <a href="mailto:attvn2023@gmail.com" class="site-footer-link">
+                            attvn2023@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+                    <p class="copyright-text mt-lg-5 mt-4">Copyright © </p>
+                </div>
+
+            </div>
+        </div>
+        <div id="dataGraph" data-geocode='{{ dataGraph|tojson }}'></div>
+    </footer>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/jquery.sticky.js"></script>
+    <script src="../static/js/click-scroll.js"></script>
+    <script src="../static/js/custom.js"></script>
+
+    <script>
+        var dataGraphElement = document.getElementById("dataGraph");
+        var dataGraph = JSON.parse(dataGraphElement.dataset.geocode);
+
+        var sortedDataArray = Object.entries(dataGraph).sort((a, b) => b[1] - a[1]);
+
+        var sortedDataGraph = Object.fromEntries(sortedDataArray);
+
+        console.log(sortedDataGraph);
+
+        const data = {
+            labels: Object.keys(sortedDataGraph),
+            datasets: [{
+                label: 'Technique',
+                data: Object.values(sortedDataGraph),
+                fill: true,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgb(255, 99, 132)',
+                pointBackgroundColor: 'rgb(255, 99, 132)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgb(255, 99, 132)'
+            }]
+        };
+
+        const config = {
+            type: 'radar',
+            data: data,
+            options: {
+                elements: {
+                    line: {
+                        borderWidth: 3
+                    }
                 },
-            };
-        
-            const ctx = document.getElementById('radarChart').getContext('2d');
-            new Chart(ctx, config);
-        </script>
-    </body>
+                scale: {
+                    radius: 0.1,
+                },
+            },
+        };
+
+        const ctx = document.getElementById('radarChart').getContext('2d');
+        new Chart(ctx, config);
+    </script>
+</body>
+
 </html>

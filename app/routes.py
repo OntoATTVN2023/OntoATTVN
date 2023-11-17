@@ -34,38 +34,11 @@ def get_cve_info(cve_id):
         cwe_id = cwe_row.find(
             "td", {"data-testid": lambda x: x and x.startswith("vuln-CWEs-link-")}).text.strip()
         if re.search(r'\d', cwe_id):
-            cwe_description = cwe_row.find_all(
+            cwe_name = cwe_row.find_all(
                 "td", {"data-testid": lambda x: x and x.startswith("vuln-CWEs-link-")})[1].text.strip()
-            cwe_dict[cwe_id] = cwe_description
+            cwe_dict[cwe_id] = cwe_name
 
     return cve_description, cwe_dict
-
-
-def get_capec_id(cwe_ids):
-    cwe_numbers = [re.search(r'\d+', cwe).group(0) for cwe in cwe_ids]
-    capec_ids = fetch_capec_ids(cwe_numbers)
-
-    if not capec_ids:
-        return set()
-
-    return capec_ids
-
-
-def fetch_capec_ids_for_cwe(url, cwe_number):
-    try:
-        capec_id_pattern = r"CAPEC-\d+"
-        content = requests.get(url).text
-        return set(re.findall(capec_id_pattern, content))
-    except Exception as e:
-        return {f"Error loading CAPEC data for CWE {cwe_number}: {e}"}
-
-
-def fetch_capec_ids(cwe_numbers):
-    capec_ids = set()
-    for cwe_number in cwe_numbers:
-        cwe_url = f"https://cwe.mitre.org/data/definitions/{cwe_number}.html"
-        capec_ids.update(fetch_capec_ids_for_cwe(cwe_url, cwe_number))
-    return capec_ids
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -76,87 +49,75 @@ def index():
 
         cve_description, cwe = get_cve_info(cve_id.upper())
         if not cve_description and not cwe:
-            return render_template('index.html', results=None, msg = f'No results found for \"{cve_id}\"', dataGraph = {})
-
-        cwe_ids = list(cwe.keys())
-        initial_capec_ids = get_capec_id(cwe_ids)
+            return render_template('index.html', results=None, msg=f'No results found for \"{cve_id}\"', dataGraph={})
+        if not cwe:
+            cwe = {'Undefined': ''}
+            return render_template('index.html', results={'Undefined': ['Undefined']}, cve_id=cve_id.upper(), cve_description=cve_description,
+                                   cwe=cwe, dataGraph={})
+        initial_cwe_ids = set(cwe.keys())
 
         list_to_filter = set([
-            "CAPEC-1", "CAPEC-2", "CAPEC-11", "CAPEC-13", "CAPEC-17", "CAPEC-19",
-            "CAPEC-21", "CAPEC-25", "CAPEC-30", "CAPEC-31", "CAPEC-35", "CAPEC-37",
-            "CAPEC-38", "CAPEC-49", "CAPEC-55", "CAPEC-57", "CAPEC-60", "CAPEC-65",
-            "CAPEC-68", "CAPEC-70", "CAPEC-94", "CAPEC-98", "CAPEC-112", "CAPEC-114",
-            "CAPEC-115", "CAPEC-122", "CAPEC-125", "CAPEC-127", "CAPEC-130",
-            "CAPEC-131", "CAPEC-132", "CAPEC-141", "CAPEC-142", "CAPEC-148",
-            "CAPEC-150", "CAPEC-158", "CAPEC-159", "CAPEC-163", "CAPEC-165",
-            "CAPEC-169", "CAPEC-177", "CAPEC-180", "CAPEC-186", "CAPEC-187",
-            "CAPEC-191", "CAPEC-196", "CAPEC-203", "CAPEC-204", "CAPEC-206",
-            "CAPEC-227", "CAPEC-233", "CAPEC-251", "CAPEC-267", "CAPEC-268",
-            "CAPEC-270", "CAPEC-292", "CAPEC-295", "CAPEC-300", "CAPEC-309",
-            "CAPEC-312", "CAPEC-313", "CAPEC-383", "CAPEC-407", "CAPEC-438",
-            "CAPEC-439", "CAPEC-440", "CAPEC-442", "CAPEC-443", "CAPEC-445",
-            "CAPEC-446", "CAPEC-448", "CAPEC-457", "CAPEC-464", "CAPEC-465",
-            "CAPEC-469", "CAPEC-471", "CAPEC-473", "CAPEC-474", "CAPEC-478",
-            "CAPEC-479", "CAPEC-480", "CAPEC-481", "CAPEC-482", "CAPEC-485",
-            "CAPEC-488", "CAPEC-489", "CAPEC-490", "CAPEC-497", "CAPEC-504",
-            "CAPEC-509", "CAPEC-511", "CAPEC-516", "CAPEC-520", "CAPEC-522",
-            "CAPEC-523", "CAPEC-528", "CAPEC-531", "CAPEC-532", "CAPEC-537",
-            "CAPEC-538", "CAPEC-539", "CAPEC-541", "CAPEC-542", "CAPEC-543",
-            "CAPEC-545", "CAPEC-550", "CAPEC-551", "CAPEC-552", "CAPEC-555",
-            "CAPEC-556", "CAPEC-558", "CAPEC-560", "CAPEC-561", "CAPEC-562",
-            "CAPEC-564", "CAPEC-565", "CAPEC-568", "CAPEC-569", "CAPEC-571",
-            "CAPEC-572", "CAPEC-573", "CAPEC-574", "CAPEC-575", "CAPEC-576",
-            "CAPEC-577", "CAPEC-578", "CAPEC-579", "CAPEC-580", "CAPEC-581",
-            "CAPEC-593", "CAPEC-600", "CAPEC-609", "CAPEC-616", "CAPEC-620",
-            "CAPEC-633", "CAPEC-634", "CAPEC-635", "CAPEC-636", "CAPEC-637",
-            "CAPEC-638", "CAPEC-639", "CAPEC-640", "CAPEC-641", "CAPEC-642",
-            "CAPEC-643", "CAPEC-644", "CAPEC-645", "CAPEC-646", "CAPEC-647",
-            "CAPEC-648", "CAPEC-649", "CAPEC-650", "CAPEC-651", "CAPEC-652",
-            "CAPEC-654", "CAPEC-655", "CAPEC-657", "CAPEC-660", "CAPEC-662",
-            "CAPEC-665", "CAPEC-666", "CAPEC-668", "CAPEC-669", "CAPEC-670",
-            "CAPEC-671", "CAPEC-672", "CAPEC-673", "CAPEC-674", "CAPEC-675",
-            "CAPEC-677", "CAPEC-678", "CAPEC-691", "CAPEC-694", "CAPEC-695",
-            "CAPEC-697", "CAPEC-698", "CAPEC-700"
+            'CWE-6', 'CWE-15', 'CWE-20', 'CWE-46', 'CWE-59', 'CWE-73', 'CWE-74', 'CWE-94', 'CWE-95', 'CWE-96', 'CWE-97', 'CWE-113',
+            'CWE-114', 'CWE-117', 'CWE-162', 'CWE-172', 'CWE-173', 'CWE-180', 'CWE-181', 'CWE-200', 'CWE-204', 'CWE-205', 'CWE-208',
+            'CWE-226', 'CWE-257', 'CWE-261', 'CWE-262', 'CWE-263', 'CWE-267', 'CWE-269', 'CWE-270', 'CWE-272', 'CWE-276', 'CWE-282',
+            'CWE-284', 'CWE-285', 'CWE-287', 'CWE-288', 'CWE-290', 'CWE-294', 'CWE-300', 'CWE-302', 'CWE-307', 'CWE-308', 'CWE-309',
+            'CWE-311', 'CWE-312', 'CWE-314', 'CWE-315', 'CWE-318', 'CWE-319', 'CWE-325', 'CWE-326', 'CWE-327', 'CWE-328', 'CWE-330',
+            'CWE-345', 'CWE-346', 'CWE-348', 'CWE-349', 'CWE-350', 'CWE-353', 'CWE-359', 'CWE-384', 'CWE-400', 'CWE-404', 'CWE-412',
+            'CWE-419', 'CWE-424', 'CWE-425', 'CWE-426', 'CWE-427', 'CWE-430', 'CWE-434', 'CWE-441', 'CWE-451', 'CWE-472', 'CWE-488',
+            'CWE-494', 'CWE-497', 'CWE-506', 'CWE-507', 'CWE-521', 'CWE-522', 'CWE-524', 'CWE-525', 'CWE-539', 'CWE-552', 'CWE-553',
+            'CWE-565', 'CWE-567', 'CWE-593', 'CWE-602', 'CWE-642', 'CWE-645', 'CWE-654', 'CWE-662', 'CWE-664', 'CWE-667', 'CWE-692',
+            'CWE-693', 'CWE-697', 'CWE-706', 'CWE-732', 'CWE-757', 'CWE-770', 'CWE-772', 'CWE-798', 'CWE-829', 'CWE-833', 'CWE-836',
+            'CWE-862', 'CWE-916', 'CWE-923', 'CWE-1021', 'CWE-1188', 'CWE-1190', 'CWE-1191', 'CWE-1193', 'CWE-1220', 'CWE-1239', 'CWE-1243',
+            'CWE-1244', 'CWE-1258', 'CWE-1264', 'CWE-1266', 'CWE-1268', 'CWE-1269', 'CWE-1270', 'CWE-1272', 'CWE-1273', 'CWE-1278', 'CWE-1280',
+            'CWE-1297', 'CWE-1299', 'CWE-1301', 'CWE-1311', 'CWE-1314', 'CWE-1315', 'CWE-1317', 'CWE-1318', 'CWE-1320', 'CWE-1321', 'CWE-1322',
+            'CWE-1323', 'CWE-1325', 'CWE-1326', 'CWE-1327', 'CWE-1330'
         ])
 
-        filtered_capec_ids = initial_capec_ids & list_to_filter
+        filtered_cwe_ids = initial_cwe_ids & list_to_filter
+        if not filtered_cwe_ids:
+            return render_template('index.html', results={'Undefined': ['Undefined']}, cve_id=cve_id.upper(), cve_description=cve_description,
+                                   cwe=cwe, dataGraph={})
 
-        if not cwe:
-            cwe = {'Undefined':''}
-        if not initial_capec_ids:
-            initial_capec_ids = ['Undefined']
-        if not filtered_capec_ids:
-            filtered_capec_ids = ['Undefined']
-            return render_template('index.html', results={'Undefined':['Undefined']}, cve_id=cve_id.upper(), cve_description=cve_description,
-                               cwe=cwe, initial_capec_ids=initial_capec_ids, filtered_capec_ids=filtered_capec_ids, dataGraph={})
         g = Graph()
-        g.parse("/home/thuanhhhe150665/Desktop/CVEATTCK-main/Ontology.owl", format="xml")
+        g.parse(
+            "ontology/Ontology.owl", format="xml")
 
-        capecs = "|".join(filtered_capec_ids)
+        if len(filtered_cwe_ids) > 1:
+            cwe_id = "$|".join(filtered_cwe_ids)+"$"
+        else:
+            cwe_id = filtered_cwe_ids.pop()+"$"
+
         sparql_query = '''
-            PREFIX my: <http://test.org/Ontology.owl#>
-            SELECT DISTINCT ?TacticID ?Tactic ?TechID ?Tech ?SubTechID ?SubTech
-            WHERE {
-            {
-                filter REGEX(?Capec, "''' + capecs + '''").
-                ?SubTechID rdf:type my:Sub_Techniques.
-                ?SubTechID my:hasName ?SubTech.
-                ?SubTechID my:mapTo ?Capec.
-                ?SubTechID my:isContained ?TechID.
-                ?TechID my:hasName ?Tech.
-                ?TechID my:isPartOf ?TacticID.
-                ?TacticID my:hasName ?Tactic.
-            }
-            union
-            {
-                filter REGEX(?Capec, "''' + capecs + '''").
-                ?TechID rdf:type my:Techniques.
-                ?TechID my:mapTo ?Capec.
-                ?TechID my:hasName ?Tech.
-                ?TechID my:isPartOf ?TacticID.
-                ?TacticID my:hasName ?Tactic.
-            }
-            }'''
+        PREFIX my: <http://test.org/Ontology.owl#>
+		SELECT DISTINCT ?TacticID ?Tactic ?TechID ?Tech ?SubTechID ?SubTech ?Capec ?CWE
+		WHERE {
+		{
+            filter REGEX(?CWE, "''' + cwe_id + '''").
+            ?CWEID rdf:type my:CWE.
+            ?CWEID my:hasName ?CWE.
+            ?CWEID my:hasCapec ?CapecID.
+            ?CapecID my:hasName ?Capec.
+            ?CapecID my:mapCapec ?SubTechID.
+            ?SubTechID my:hasName ?SubTech.
+            ?SubTechID my:isContained ?TechID.
+            ?TechID my:hasName ?Tech.
+            ?TechID my:isPartOf ?TacticID.
+            ?TacticID my:hasName ?Tactic.
+		}
+		union
+		{
+            filter REGEX(?CWE, "''' + cwe_id + '''").
+            ?CWEID rdf:type my:CWE.
+            ?CWEID my:hasName ?CWE.
+            ?CWEID my:hasCapec ?CapecID.
+            ?CapecID my:hasName ?Capec.
+            ?CapecID my:mapCapec ?TechID.
+            ?TechID rdf:type my:Techniques.
+            ?TechID my:hasName ?Tech.
+            ?TechID my:isPartOf ?TacticID.
+            ?TacticID my:hasName ?Tactic.
+		}
+		}'''
         query = prepareQuery(sparql_query)
 
         result = g.query(query)
@@ -166,21 +127,24 @@ def index():
             tactic = str(row["Tactic"])
             tech = str(row["Tech"])
             subtech = str(row["SubTech"])
-            tacticId = str(row["TacticID"]).replace("http://test.org/Ontology.owl#", "")
-            techId = str(row["TechID"]).replace("http://test.org/Ontology.owl#", "")
-            subtechId = str(row["SubTechID"]).replace("http://test.org/Ontology.owl#", "").replace("_",".")
-            
+            tacticId = str(row["TacticID"]).replace(
+                "http://test.org/Ontology.owl#", "")
+            techId = str(row["TechID"]).replace(
+                "http://test.org/Ontology.owl#", "")
+            subtechId = str(row["SubTechID"]).replace(
+                "http://test.org/Ontology.owl#", "").replace("_", ".")
+
             if subtech == 'None':
                 value = f"{techId}: {tech}"
             else:
                 value = f"{subtechId}: {tech}: {subtech}"
-            tactic=f"{tacticId}: {tactic}"
+            tactic = f"{tacticId}: {tactic}"
             result_data[tactic].append(value)
 
         result_dict = dict(result_data)
         tactics = ['Reconnaissance', 'Resource Development', 'Initial Access', 'Execution', 'Persistence', 'Privilege Escalation', 'Defense Evasion',
-                    'Credential Access', 'Discovery', 'Lateral Movement', 'Collection', 'Command and Control', 'Exfiltration', 'Impact']
-        
+                   'Credential Access', 'Discovery', 'Lateral Movement', 'Collection', 'Command and Control', 'Exfiltration', 'Impact']
+
         dataGraph = dict()
         for key, value in result_dict.items():
             dataGraph[key.split(": ")[1]] = len(value)
@@ -189,13 +153,11 @@ def index():
             if tactic not in dataGraph.keys():
                 dataGraph[tactic] = 0
 
-
         return render_template('index.html', results=result_dict, cve_id=cve_id.upper(), cve_description=cve_description,
-                               cwe=cwe, initial_capec_ids=initial_capec_ids, filtered_capec_ids=filtered_capec_ids, dataGraph=dataGraph)
+                               cwe=cwe,  dataGraph=dataGraph)
 
     else:
         return render_template('index.html', results=None, dataGraph={})
-
 
 if __name__ == '__main__':
     app.run()
