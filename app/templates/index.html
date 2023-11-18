@@ -145,6 +145,14 @@
                                 <tbody>
                                     {% for tactic, tech_list in results.items() %}
                                     <tr>
+                                        {% if tactic == "Undefined" %}
+                                        <td class="table-light" style="border-right: 3px solid #fff; border-bottom: 0;">
+                                            {{ tactic }}
+                                        </td>
+                                        <td class="table-light" style="border-right: 3px solid #fff; border-bottom: 0;">
+                                            {{ tech_list[0] }}
+                                        </td>
+                                        {% else %}
                                         {% set tacticParts = tactic.split(": ") %}
                                         {% set tacticId = tacticParts[0] %}
                                         <td class="table-light" style="border-right: 3px solid #fff; border-bottom: 0;">
@@ -162,6 +170,7 @@
                                             </a>
                                             {% endfor %}
                                         </td>
+                                        {% endif %}
                                     </tr>
                                     {% endfor %}
                                 </tbody>
@@ -375,141 +384,143 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="custom-block custom-block-overlay">
-                                            <div class="d-flex flex-column h-100">
-                                                <div class="custom-block-overlay-text d-flex">
-                                                    <div>
-                                                        <h6 class="mb-2 text-white"><b>Classify</b></h6>
+                                    <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h6 class="mb-2"><b>Classify</b></h6>
 
-                                                        <p class="text-white mb-0">Like CWE, CAPEC is arranged in a
-                                                            similar hierarchical taxonomy: attack
-                                                            patterns are ordered into categories and sub-categories,
-                                                            with each pattern being
-                                                            assigned a unique identifier and a set of descriptive
-                                                            attributes. The CAPEC
-                                                            taxonomy is organized into two main categories:
-                                                        </p>
-                                                        <ul>
-                                                            <li class="text-white">Mechanisms of Attack</li>
-                                                            <li class="text-white">Domains of Attack</li>
-                                                        </ul>
-
-                                                    </div>
-
-                                                    <span class="badge bg-finance rounded-pill ms-auto">2</span>
+                                                    <p class="mb-0">Like CWE, CAPEC is arranged in a
+                                                        similar hierarchical taxonomy: attack
+                                                        patterns are ordered into categories and sub-categories,
+                                                        with each pattern being
+                                                        assigned a unique identifier and a set of descriptive
+                                                        attributes. The CAPEC
+                                                        taxonomy is organized into two main categories:
+                                                    </p>
+                                                    <ul>
+                                                        <li>Mechanisms of Attack</li>
+                                                        <li>Domains of Attack</li>
+                                                    </ul>
                                                 </div>
 
+                                                <span class="badge bg-finance rounded-pill ms-auto">2</span>
                                             </div>
-
-                                            <div class="section-overlay"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab"
-                            tabindex="0">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                    <div class="custom-block bg-white shadow-lg">
-                                        <div class="d-flex">
-                                            <div>
-                                                <h6 class="mb-2">Definition</h6>
 
-                                                <p class="mb-0">MITRE ATT&amp;CK, stands for Adversarial Tactics,
-                                                    Techniques, and
-                                                    Common Knowledge is a globally-accessible knowledge base of
-                                                    adversary
-                                                    tactics and techniques based on real-world observations.</p>
+                            <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h6 class="mb-2">Definition</h6>
+
+                                                    <p class="mb-0">MITRE ATT&amp;CK, stands for Adversarial Tactics,
+                                                        Techniques, and
+                                                        Common Knowledge is a globally-accessible knowledge base of
+                                                        adversary
+                                                        tactics and techniques based on real-world observations.</p>
+                                                </div>
+
+                                                <span class="badge bg-music rounded-pill ms-auto">1</span>
                                             </div>
 
-                                            <span class="badge bg-music rounded-pill ms-auto">1</span>
+                                            <img src="../static/images/topics/attck1.png"
+                                                class="custom-block-image img-fluid" alt="">
                                         </div>
-
-                                        <img src="../static/images/topics/attck1.png"
-                                            class="custom-block-image img-fluid" alt="">
                                     </div>
-                                </div>
 
-                                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
-                                    <div class="custom-block bg-white shadow-lg">
-                                        <div class="d-flex">
-                                            <div>
-                                                <h6 class="mb-2">Benefit</h6>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h6 class="mb-2">Benefit</h6>
 
-                                                <p class="mb-0">The process MITRE used to create ATT&amp;CK, and the
-                                                    philosophy that was
-                                                    developed and used for curating new content, are critical aspects of
-                                                    the work
-                                                    and are very useful for other efforts that strive to create similar
-                                                    adversary
-                                                    models and information repositories.</p>
+                                                    <p class="mb-0">The process MITRE used to create ATT&amp;CK, and the
+                                                        philosophy that was
+                                                        developed and used for curating new content, are critical
+                                                        aspects of
+                                                        the work
+                                                        and are very useful for other efforts that strive to create
+                                                        similar
+                                                        adversary
+                                                        models and information repositories.</p>
+                                                </div>
+
+                                                <span class="badge bg-music rounded-pill ms-auto">2</span>
                                             </div>
 
-                                            <span class="badge bg-music rounded-pill ms-auto">2</span>
+                                            <img src="../static/images/topics/attck2.png"
+                                                class="custom-block-image img-fluid" alt="">
                                         </div>
-
-                                        <img src="../static/images/topics/attck2.png"
-                                            class="custom-block-image img-fluid" alt="">
                                     </div>
-                                </div>
 
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="custom-block bg-white shadow-lg">
-                                        <div class="d-flex">
-                                            <div>
-                                                <h6 class="mb-2">Objectives</h6>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h6 class="mb-2">Objectives</h6>
 
-                                                <p class="mb-0">The MITRE ATT&amp;CK matrix contains a set of techniques
-                                                    used by
-                                                    adversaries to accomplish a specific objective. Those objectives are
-                                                    categorized
-                                                    as &quot;tactics&quot; in the ATT&amp;CK Matrix. The objectives are
-                                                    presented linearly from
-                                                    the point of reconnaissance to the final goal of exfiltration or
-                                                    &quot;impact&quot;.</p>
+                                                    <p class="mb-0">The MITRE ATT&amp;CK matrix contains a set of
+                                                        techniques
+                                                        used by
+                                                        adversaries to accomplish a specific objective. Those objectives
+                                                        are
+                                                        categorized
+                                                        as &quot;tactics&quot; in the ATT&amp;CK Matrix. The objectives
+                                                        are
+                                                        presented linearly from
+                                                        the point of reconnaissance to the final goal of exfiltration or
+                                                        &quot;impact&quot;.</p>
+                                                </div>
+
+                                                <span class="badge bg-music rounded-pill ms-auto">3</span>
                                             </div>
 
-                                            <span class="badge bg-music rounded-pill ms-auto">3</span>
+                                            <img src="../static/images/topics/attck3.png"
+                                                class="custom-block-image img-fluid" alt="">
                                         </div>
-
-                                        <img src="../static/images/topics/attck3.png"
-                                            class="custom-block-image img-fluid" alt="">
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="tab-pane fade" id="education-tab-pane" role="tabpanel"
-                            aria-labelledby="education-tab" tabindex="0">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
-                                    <div class="custom-block bg-white shadow-lg">
-                                        <div class="d-flex">
-                                            <div>
-                                                <p class="mb-0">In the field of cyber security, ontology can be used to
-                                                    contextualize
-                                                    weaknesses and attack patterns using entity-relationship framework.
-                                                    The result
-                                                    after which can be utilised to create an intuitive knowledge pool,
-                                                    offering a
-                                                    systematic view of vulnerabilities, attacks, and other
-                                                    security-related aspects.</p>
+                            <div class="tab-pane fade" id="education-tab-pane" role="tabpanel"
+                                aria-labelledby="education-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <p class="mb-0">In the field of cyber security, ontology can be used
+                                                        to
+                                                        contextualize
+                                                        weaknesses and attack patterns using entity-relationship
+                                                        framework.
+                                                        The result
+                                                        after which can be utilised to create an intuitive knowledge
+                                                        pool,
+                                                        offering a
+                                                        systematic view of vulnerabilities, attacks, and other
+                                                        security-related aspects.</p>
+                                                </div>
+
+                                                <span class="badge bg-education rounded-pill ms-auto">1</span>
                                             </div>
 
-                                            <span class="badge bg-education rounded-pill ms-auto">1</span>
+                                            <img src="../static/images/topics/undraw_Graduation_re_gthn.png"
+                                                class="custom-block-image img-fluid" alt="">
                                         </div>
-
-                                        <img src="../static/images/topics/undraw_Graduation_re_gthn.png"
-                                            class="custom-block-image img-fluid" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             </div>
@@ -575,9 +586,10 @@
                     <div class="col-12 text-center mt-5">
                         <p class="text-white">
                             Want to learn more?
-                            <a href="https://github.com/ATTVN2023/CVEATTCK" target="_blank"
-                                class="site-footer-link">Github</a>
+                            <a href="https://github.com/ATTVN2023/CVEATTCK" target="_blank" class="site-footer-link"
+                                style="font-size: 20px">Github</a>
                         </p>
+
                     </div>
                 </div>
             </div>
@@ -674,7 +686,7 @@
 
                         <p class="text-white d-flex">
                             <span class="me-2 text-black">Email:
-                                <a href="mailto:attvn2023@gmail.com" class="site-footer-link">
+                                <a href="mailto:attvn2023@gmail.com" class="site-footer-link" style="font-size: 20px;">
                                     attvn2023@gmail.com
                                 </a>
                             </span>
@@ -722,23 +734,23 @@
 
                     <ul class="site-footer-links">
                         <li class="site-footer-link-item">
-                            <a href="index#section_1" class="site-footer-link">Home</a>
+                            <a href="#section_1" class="site-footer-link">Home</a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="index#section_2" class="site-footer-link">Browse topics</a>
+                            <a href="#section_2" class="site-footer-link">Browse topics</a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="index#section_3" class="site-footer-link">How it works</a>
+                            <a href="#section_3" class="site-footer-link">How it works</a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="index#section_4" class="site-footer-link">FAQs</a>
+                            <a href="#section_4" class="site-footer-link">FAQs</a>
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="index#section_5" class="site-footer-link">Contact</a>
+                            <a href="#section_5" class="site-footer-link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -755,7 +767,10 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
-                    <p class="copyright-text mt-lg-5 mt-4">Copyright © </p>
+                    <p class="copyright-text mt-lg-5 mt-4">Copyright © 2048 Topic Listing Center. All rights reserved.
+                        <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                        Distribution <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    </p>
                 </div>
 
             </div>
