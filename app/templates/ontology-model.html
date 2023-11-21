@@ -11,8 +11,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" type="text/css" href="static/css/webvowl.css" />
     <link rel="stylesheet" type="text/css" href="static/css/webvowl.app.css" />
-    <link rel="icon" href="static/favicon.ico" type="image/x-icon" />
-    <title>WebVOWL</title>
+    <link rel="icon" href="static/favicons.ico" type="image/x-icon" />
+    <title>ATTVN</title>
 </head>
 
 <body>
@@ -314,6 +314,7 @@
                                 </svg>
                             </i>
                             About</a></li>
+                    <li><a href="#" onclick="redirectToHomepage();">Back to Homepage</a></li>
                 </ul>
             </div>
             <div class="noselect" id="scrollRightButton"></div>
@@ -501,6 +502,13 @@
     <script>
         window.onload = webvowl.app().initialize;
     </script>
+    <script>
+        function redirectToHomepage() {
+            // Add the actual URL of your homepage
+            window.location.href = "/index";
+        }
+    </script>
+    
 </body>
 
 </html>
