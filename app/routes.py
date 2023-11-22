@@ -128,4 +128,3 @@ def index():
 def ontoModel():
     convert()
     return render_template('ontology-model.html')
-

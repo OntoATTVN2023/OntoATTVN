@@ -101,7 +101,7 @@
                             <div class="input-group input-group-lg">
                                 <span class="input-group-text bi-search" id="basic-addon1"></span>
                                 <input name="cveId" type="search" class="form-control" id="cveId"
-                                    placeholder="Input a CVE ID..." aria-label="Search">
+                                    placeholder="Enter a CVE ID..." aria-label="Search">
                                 <button type="submit" class="form-control">Search</button>
                             </div>
                         </form>
@@ -116,7 +116,7 @@
                     {% if results is iterable %}
                     <div class="col-lg-16 col-12 mx-auto mt-5">
                         <div class="custom-block bg-white shadow-lg p-4">
-                            <h3 class="mb-3"><a href="https://www.cvedetails.com/cve/{{ cve_id  }}" target="_blank">{{
+                            <h3 class="mb-3"><a href="https://www.cvedetails.com/cve/{{ cve_id  }}" target="_blank" style="font-weight: bold; color: darkblue;">{{
                                     cve_id }}</a></h3>
                             <h6 class="mb-1">Description</h6>
                             <p class="mb-3 text-black fs-6">{{ cve_description }}</p>
@@ -150,21 +150,21 @@
                                     {% for tactic, tech_list in results.items() %}
                                     <tr>
                                         {% if tactic == "Undefined" %}
-                                        <td class="table-light" style="border-right: 3px solid #fff; border-bottom: 0;">
+                                        <td class="table-light" style="border-right: 3px solid #fff;">
                                             {{ tactic }}
                                         </td>
-                                        <td class="table-light" style="border-right: 3px solid #fff; border-bottom: 0;">
+                                        <td class="table-light">
                                             {{ tech_list[0] }}
                                         </td>
                                         {% else %}
                                         {% set tacticParts = tactic.split(": ") %}
                                         {% set tacticId = tacticParts[0] %}
-                                        <td class="table-light" style="border-right: 3px solid #fff; border-bottom: 0;">
+                                        <td class="table-light" style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
                                             <a href="https://attack.mitre.org/tactics/{{ tacticId }}" target="_blank">
                                                 {{ tactic }}
                                             </a>
                                         </td>
-                                        <td class="table-light" style="border-right: 3px solid #fff; border-bottom: 0;">
+                                        <td class="table-light" style="border-bottom: 3px solid #fff;">
                                             {% for tech_item in tech_list %}
                                             {% set techParts = tech_item.split(": ") %}
                                             {% set techId = techParts[0].replace(".", "/") %}
@@ -182,9 +182,9 @@
 
                             {% if dataGraph.items()|length > 0 %}
                             <canvas id="radarChart" class="mt-5 mx-auto" style="width: 50%;"></canvas>
+                            <p class="text-center" style="font-size: small; font-weight:bold; color: firebrick;">Chart. The number of techniques corresponds to each tactic</p>
                             {% endif %}
-
-                            
+                           
                         </div>
                     </div>
                     {% endif %}
@@ -773,8 +773,8 @@
 
                 <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
                     <p class="copyright-text mt-lg-5 mt-4">Copyright © 2048 Topic Listing Center. All rights reserved.
-                        <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a>
-                        Distribution <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        <!-- <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                        Distribution <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
                     </p>
                 </div>
 
