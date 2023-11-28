@@ -6,6 +6,9 @@ from rdflib.plugins.sparql.processor import prepareQuery
 from app.owl2vowl import convert
 from app.getCVE import get_cve_info
 
+g = Graph()
+g.parse("ontology/ontology.owl", format="xml")
+
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
@@ -43,10 +46,6 @@ def index():
             return render_template('index.html', results={'Undefined': ['Undefined']}, cve_id=cve_id.upper(), cve_description=cve_description,
                                    cwe=cwe, dataGraph={})
 
-        g = Graph()
-        g.parse(
-            "ontology/Ontology.owl", format="xml")
-
         if len(filtered_cwe_ids) > 1:
             cwe_id = "$|".join(filtered_cwe_ids)+"$"
         else:
@@ -54,34 +53,18 @@ def index():
 
         sparql_query = '''
         PREFIX my: <http://test.org/Ontology.owl#>
-		SELECT DISTINCT ?TacticID ?Tactic ?TechID ?Tech ?SubTechID ?SubTech ?Capec ?CWE
+		SELECT DISTINCT ?TacticID ?Tactic ?SubTechID ?SubTech ?Capec ?CWEName
 		WHERE {
-		{
-            filter REGEX(?CWE, "''' + cwe_id + '''").
-            ?CWEID rdf:type my:CWE.
-            ?CWEID my:hasName ?CWE.
-            ?CWEID my:hasCapec ?CapecID.
+            filter REGEX(?CWEID,"''' + cwe_id + '''").
+            ?CWE rdf:type my:CWE.
+            ?CWE my:hasName ?CWEName.
+            ?CWE my:hasID ?CWEID.
+            ?CWE my:hasCAPEC ?CapecID.
             ?CapecID my:hasName ?Capec.
-            ?CapecID my:mapCapec ?SubTechID.
+            ?CapecID my:mapToCAPEC ?SubTechID.
             ?SubTechID my:hasName ?SubTech.
-            ?SubTechID my:isContained ?TechID.
-            ?TechID my:hasName ?Tech.
-            ?TechID my:isPartOf ?TacticID.
+            ?SubTechID my:accomplishedTatic ?TacticID.
             ?TacticID my:hasName ?Tactic.
-		}
-		union
-		{
-            filter REGEX(?CWE, "''' + cwe_id + '''").
-            ?CWEID rdf:type my:CWE.
-            ?CWEID my:hasName ?CWE.
-            ?CWEID my:hasCapec ?CapecID.
-            ?CapecID my:hasName ?Capec.
-            ?CapecID my:mapCapec ?TechID.
-            ?TechID rdf:type my:Techniques.
-            ?TechID my:hasName ?Tech.
-            ?TechID my:isPartOf ?TacticID.
-            ?TacticID my:hasName ?Tactic.
-		}
 		}'''
         query = prepareQuery(sparql_query)
 
@@ -90,30 +73,31 @@ def index():
 
         for row in result:
             tactic = str(row["Tactic"])
-            tech = str(row["Tech"])
+            # tech = str(row["Tech"])
             subtech = str(row["SubTech"])
-            tacticId = str(row["TacticID"]).replace(
-                "http://test.org/Ontology.owl#", "")
-            techId = str(row["TechID"]).replace(
-                "http://test.org/Ontology.owl#", "")
-            subtechId = str(row["SubTechID"]).replace(
-                "http://test.org/Ontology.owl#", "").replace("_", ".")
+            # tacticId = str(row["TacticID"]).replace(
+            #     "http://test.org/Ontology.owl#", "")
+            # techId = str(row["TechID"]).replace(
+            #     "http://test.org/Ontology.owl#", "")
+            # subtechId = str(row["SubTechID"]).replace(
+            #     "http://test.org/Ontology.owl#", "").replace("_", ".")
 
-            if subtech == 'None':
-                value = f"{techId}: {tech}"
-            else:
-                value = f"{subtechId}: {tech}: {subtech}"
-            tactic = f"{tacticId}: {tactic}"
+            # if subtech == 'None':
+            # value = f"{techId}: {tech}"
+            # else:
+            # value = f"{subtechId}: {tech}: {subtech}"
+            value = f"{subtech}"
+            # tactic = f"{tacticId}: {tactic}"
             result_data[tactic].append(value)
 
         result_dict = dict(result_data)
+
         tactics = ['Reconnaissance', 'Resource Development', 'Initial Access', 'Execution', 'Persistence', 'Privilege Escalation', 'Defense Evasion',
                    'Credential Access', 'Discovery', 'Lateral Movement', 'Collection', 'Command and Control', 'Exfiltration', 'Impact']
 
         dataGraph = dict()
         for key, value in result_dict.items():
             dataGraph[key.split(": ")[1]] = len(value)
-
         for tactic in tactics:
             if tactic not in dataGraph.keys():
                 dataGraph[tactic] = 0
@@ -128,3 +112,47 @@ def index():
 def ontoModel():
     convert()
     return render_template('ontology-model.html')
+
+@app.route('/defense', methods=['GET', 'POST'])
+def defense():
+    if request.method == 'POST':
+        tech_id = request.form['techID']
+
+        sparql_query = """
+        PREFIX attack: <http://test.org/Ontology.owl#>
+
+        SELECT DISTINCT ?TechID ?TechName ?DefenseID ?DefenseName 
+        WHERE {	
+        {
+            filter REGEX(?TechID,"T1003.002$").
+            ?Tech rdf:type attack:Technique.
+            ?Tech attack:hasID ?TechID.
+            ?Tech attack:hasName ?TechName.
+            ?Tech attack:mayDetect ?Detect.
+            ?Detect attack:hasID ?DefenseID.
+            ?Detect attack:hasName ?DefenseName.
+        }
+        }
+        """
+        query = prepareQuery(sparql_query)
+
+        results = g.query(query)
+
+        data = []
+        for row in results:
+            tech_id = row['TechID']
+            
+            tech_name = row['TechName']
+            defense_id = row['DefenseID']
+            defense_name = row['DefenseName']
+
+            data.append({
+                'TechID': str(tech_id),
+                'TechName': str(tech_name),
+                'DefenseID': str(defense_id),
+                'DefenseName': str(defense_name)
+            })
+        
+        return render_template('defense.html', results=data)
+
+    return render_template('defense.html')
