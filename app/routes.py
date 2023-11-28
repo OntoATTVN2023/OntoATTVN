@@ -7,7 +7,7 @@ from app.owl2vowl import convert
 from app.getCVE import get_cve_info
 
 g = Graph()
-g.parse("ontology/ontology.owl", format="xml")
+g.parse("ontology/Ontology.owl", format="xml")
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
@@ -53,18 +53,18 @@ def index():
 
         sparql_query = '''
         PREFIX my: <http://test.org/Ontology.owl#>
-		SELECT DISTINCT ?TacticID ?Tactic ?SubTechID ?SubTech ?Capec ?CWEName
+		SELECT DISTINCT ?TacticID ?TacticName ?TechID ?TechName
 		WHERE {
             filter REGEX(?CWEID,"''' + cwe_id + '''").
             ?CWE rdf:type my:CWE.
-            ?CWE my:hasName ?CWEName.
             ?CWE my:hasID ?CWEID.
-            ?CWE my:hasCAPEC ?CapecID.
-            ?CapecID my:hasName ?Capec.
-            ?CapecID my:mapToCAPEC ?SubTechID.
-            ?SubTechID my:hasName ?SubTech.
-            ?SubTechID my:accomplishedTatic ?TacticID.
-            ?TacticID my:hasName ?Tactic.
+            ?CWE my:hasCAPEC ?Capec.
+            ?Capec my:mapToCAPEC ?Tech.
+            ?Tech my:hasID ?TechID.
+            ?Tech my:hasName ?TechName.
+            ?Tech my:accomplishedTactic ?Tactic.
+            ?Tactic my:hasID ?TacticID.
+            ?Tactic my:hasName ?TacticName.
 		}'''
         query = prepareQuery(sparql_query)
 
@@ -72,26 +72,16 @@ def index():
         result_data = defaultdict(list)
 
         for row in result:
-            tactic = str(row["Tactic"])
-            # tech = str(row["Tech"])
-            subtech = str(row["SubTech"])
-            # tacticId = str(row["TacticID"]).replace(
-            #     "http://test.org/Ontology.owl#", "")
-            # techId = str(row["TechID"]).replace(
-            #     "http://test.org/Ontology.owl#", "")
-            # subtechId = str(row["SubTechID"]).replace(
-            #     "http://test.org/Ontology.owl#", "").replace("_", ".")
-
-            # if subtech == 'None':
-            # value = f"{techId}: {tech}"
-            # else:
-            # value = f"{subtechId}: {tech}: {subtech}"
-            value = f"{subtech}"
-            # tactic = f"{tacticId}: {tactic}"
+            tactic = str(row["TacticName"])
+            tech = str(row["TechName"])
+            tacticId = str(row["TacticID"])
+            techId = str(row["TechID"])
+            value = f"{techId}: {tech}"
+            tactic = f"{tacticId}: {tactic}"
             result_data[tactic].append(value)
-
+	
         result_dict = dict(result_data)
-
+        print(result_dict)
         tactics = ['Reconnaissance', 'Resource Development', 'Initial Access', 'Execution', 'Persistence', 'Privilege Escalation', 'Defense Evasion',
                    'Credential Access', 'Discovery', 'Lateral Movement', 'Collection', 'Command and Control', 'Exfiltration', 'Impact']
 
@@ -121,18 +111,93 @@ def defense():
         sparql_query = """
         PREFIX attack: <http://test.org/Ontology.owl#>
 
-        SELECT DISTINCT ?TechID ?TechName ?DefenseID ?DefenseName 
-        WHERE {	
-        {
-            filter REGEX(?TechID,"T1003.002$").
-            ?Tech rdf:type attack:Technique.
-            ?Tech attack:hasID ?TechID.
-            ?Tech attack:hasName ?TechName.
-            ?Tech attack:mayDetect ?Detect.
-            ?Detect attack:hasID ?DefenseID.
-            ?Detect attack:hasName ?DefenseName.
-        }
-        }
+	SELECT DISTINCT ?TechID ?TechName ?DefenseID ?DefenseName ?DefenseDescription ?Type 
+	WHERE {	
+	{
+		filter REGEX(?TechID,"T1001$").
+		?Tech rdf:type attack:Technique.
+		?Tech attack:hasID ?TechID.
+		?Tech attack:hasName ?TechName.
+		?Tech attack:mayBeDetectedBy ?Detect.
+		?Detect rdf:type attack:Detect.
+		?Detect attack:hasID ?DefenseID.
+		?Detect attack:hasDescription ?DefenseDescription.
+		?Detect attack:hasName ?DefenseName.
+		?Detect attack:hasType ?Type.
+	}union 
+	{
+		filter REGEX(?TechID,"T1001$").
+		?Tech rdf:type attack:Technique.
+		?Tech attack:hasID ?TechID.
+		?Tech attack:hasName ?TechName.
+		?Tech attack:mayBeDeceivedBy ?Deceive.
+		?Detect rdf:type attack:Deceive.
+		?Deceive attack:hasID ?DefenseID.
+		?Deceive attack:hasDescription ?DefenseDescription.
+		?Deceive attack:hasName ?DefenseName.
+		?Detect attack:hasType ?Type.
+	}union
+	{
+		filter REGEX(?TechID,"T1001$").
+		?Tech rdf:type attack:Technique.
+		?Tech attack:hasID ?TechID.
+		?Tech attack:hasName ?TechName.
+		?Tech attack:mayBeModeledBy ?Model.
+		?Detect rdf:type attack:Model.
+		?Model attack:hasID ?DefenseID.
+		?Model attack:hasDescription ?DefenseDescription.
+		?Model attack:hasName ?DefenseName.
+		?Detect attack:hasType ?Type.
+	}union
+	{
+		filter REGEX(?TechID,"T1001$").
+		?Tech rdf:type attack:Technique.
+		?Tech attack:hasID ?TechID.
+		?Tech attack:hasName ?TechName.
+		?Tech attack:mayBeHardenedBy ?Harden.
+		?Detect rdf:type attack:Harden.
+		?Harden attack:hasID ?DefenseID.
+		?Harden attack:hasDescription ?DefenseDescription.
+		?Harden attack:hasName ?DefenseName.
+		?Detect attack:hasType ?Type.
+	}union
+	{
+		filter REGEX(?TechID,"T1001$").
+		?Tech rdf:type attack:Technique.
+		?Tech attack:hasID ?TechID.
+		?Tech attack:hasName ?TechName.
+		?Tech attack:mayBeIsolatedBy ?Isolate.
+		?Detect rdf:type attack:Isolate.
+		?Isolate attack:hasID ?DefenseID.
+		?Isolate attack:hasDescription ?DefenseDescription.
+		?Isolate attack:hasName ?DefenseName.
+		?Detect attack:hasType ?Type.
+	}union
+	{
+		filter REGEX(?TechID,"T1001$").
+		?Tech rdf:type attack:Technique.
+		?Tech attack:hasID ?TechID.
+		?Tech attack:hasName ?TechName.
+		?Tech attack:mayBeEvictedBy ?Evict.
+		?Detect rdf:type attack:Evict.
+		?Evict attack:hasID ?DefenseID.
+		?Evict attack:hasDescription ?DefenseDescription.
+		?Evict attack:hasName ?DefenseName.
+		?Detect attack:hasType ?Type.	
+	}union
+	{
+		filter REGEX(?TechID,"T1001$").
+		?Tech rdf:type attack:Technique.
+		?Tech attack:hasID ?TechID.
+		?Tech attack:hasName ?TechName.
+		?Tech attack:mayBeRestoredBy ?Restore.
+		?Detect rdf:type attack:Restore.
+		?Restore attack:hasID ?DefenseID.
+		?Restore attack:hasDescription ?DefenseDescription.
+		?Restore attack:hasName ?DefenseName.
+		?Detect attack:hasType ?Type.
+	}
+	}
         """
         query = prepareQuery(sparql_query)
 
@@ -145,14 +210,17 @@ def defense():
             tech_name = row['TechName']
             defense_id = row['DefenseID']
             defense_name = row['DefenseName']
+            defense_description = row['DefenseDescription']
+            defense_type = row['Type']
 
             data.append({
                 'TechID': str(tech_id),
                 'TechName': str(tech_name),
                 'DefenseID': str(defense_id),
-                'DefenseName': str(defense_name)
+                'DefenseName': str(defense_name),
+                'DefenseDescription': str(defense_description),
+                'DefenseType': str(defense_type)
             })
-        
         return render_template('defense.html', results=data)
 
     return render_template('defense.html')
