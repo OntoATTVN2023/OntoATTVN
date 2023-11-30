@@ -172,25 +172,41 @@
                                                         <p class="mb-0">
                                                             <strong style="font-size: 25px;">Definition</strong> <br />
                                                             The deceive tactic is used to advertise, entice, and allow potential attackers access to an observed or controlled environment.
-                                                        </p>
-                                                        {% if deceive_list %}
-							    <table border="1">
+						            </p>
+						            <h6 class="mb-2">Defense Details</h6>
+						    <table class="table table-striped table-bordered table-teal">
+							    <thead class="table-light">
 								<tr>
-								    <th>Defense ID</th>
-								    <th>Defense Name</th>
-								    <th>Defense Des</th>
-								    <th>Defense Type</th>
+								    <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #2de298">Name</th>
+								    <th style="text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #2de298">Description</th>
 								</tr>
-								{% for defense in deceive_list %}
-								<tr>
-								    <td>{{ defense['DefenseID'] }}</td>
-								    <td>{{ defense['DefenseName'] }}</td>
-								    <td>{{ defense['DefenseDescription'] }}</td>
-								    <td>{{ defense['DefenseType'] }}</td>
-								</tr>
+							    </thead>
+							    <tbody>
+								{% for Type, defense_list in results.items() %}
+								    {% if Type == "Deceive" %}
+									{% for defense_item in defense_list %}
+									    {% set defenseParts = defense_item.split(": ") %}
+									    {% set defenseName = defenseParts[1].replace(" ", "") %}
+									    {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
+									    <tr>
+										<td class="table-light" style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
+										    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}" target="_blank"
+											style="display: block; margin-bottom: 5px;">
+											{{ defense }}
+										    </a>
+										</td>
+										<td class="table-light" style="border-bottom: 3px solid #fff;">
+										    {{ defenseParts[2] }}
+										</td>
+									    </tr>
+									{% endfor %}
+								    {% endif %}
 								{% endfor %}
-							    </table>
-							    {% endif %}
+							    </tbody>
+							</table>
+
                                                     </div>
                                                 </div>
                                             </div>
