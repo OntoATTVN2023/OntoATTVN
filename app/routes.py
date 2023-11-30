@@ -127,45 +127,34 @@ def defense():
 		'''
 		query = prepareQuery(sparql_query)
 		results = g.query(query)
-		data = {
-		    'Tech': [],
-		    'Deceive': [],
-		    'Detect': [],
-		    'Evict': [],
-		    'Model': [],
-		    'Harden': [],
-		    'Isolate': [],
-		    'Restore': []
-		}
+		result_data = defaultdict(list)
 		tech_detail = []
 		for row in results:
-			tech_id = row['TechID']
-			tech_name = row['TechName']
-			tech_desciption = row['TechDescription']
-			defense_id = row['DefenseID']
-			defense_name = row['DefenseName']
-			defense_description = row['DefenseDescription']
-			defense_type = str(row['Type'])
+			tech_id = str(row['TechID'])
+			tech_name = str(row['TechName'])
+			tech_desciption = str(row['TechDescription'])
 			
-			data[defense_type].append({
-				'DefenseID': str(defense_id),
-				'DefenseName': str(defense_name),
-				'DefenseDescription': str(defense_description),
-				'DefenseType': defense_type
-			    })
+			defense_id = str(row['DefenseID'])
+			defense_name = str(row['DefenseName'])
+			defense_description = str(row['DefenseDescription'])
+			defense_type = str(row['Type'])
+			value = f"{defense_id}: {defense_name}: {defense_description}"
+			result_data[defense_type].append(value)
 		tech_detail.append({
-			'TechID': str(tech_id),
-			'TechName': str(tech_name),
-			'TechDescription': str(tech_desciption)
+			'TechID': tech_id,
+			'TechName': tech_name,
+			'TechDescription': tech_desciption
 			})
-		deceive_list = data['Deceive']
-		detect_list = data['Detect']
-		evict_list = data['Evict']
-		model_list = data['Model']
-		harden_list = data['Harden']
-		isolate_list = data['Isolate']
-		restore_list = data['Restore']
-		print(tech_detail)
-		return render_template('defense.html',tech_detail=tech_detail, deceive_list=deceive_list, detect_list=detect_list, evict_list=evict_list, model_list=model_list, harden_list=harden_list, isolate_list=isolate_list, restore_list=restore_list)
+		result_dict = dict(result_data)
+		defenses = ['Deceive', 'Detect', 'Evict', 'Model', 'Harden', 'Isolate', 'Restore']
+
+		dataGraph = dict()
+		for key, value in result_dict.items():
+			dataGraph[key] = len(value)
+		for defense in defenses:
+			if defense not in dataGraph.keys():
+				dataGraph[defense] = 0
+
+		return render_template('defense.html',tech_detail=tech_detail, results=result_dict,dataGraph=dataGraph)
 
 	return render_template('defense.html')
