@@ -154,7 +154,7 @@ def defense():
 		for defense in defenses:
 			if defense not in dataGraph.keys():
 				dataGraph[defense] = 0
-
+		print(dataGraph)
 		return render_template('defense.html',tech_detail=tech_detail, results=result_dict,dataGraph=dataGraph)
 
 	return render_template('defense.html')
