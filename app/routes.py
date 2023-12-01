@@ -107,7 +107,6 @@ def defense():
 		tech_id = '^'+str(tech_id)+'$'
 		g = Graph()
 		g.parse("ontoweb/OntoWeb.owl", format="xml")
-
 		sparql_query = '''
 		PREFIX attack: <http://test.org/Ontology.owl#>
 		SELECT DISTINCT ?TechID ?TechName ?TechDescription ?DefenseID ?DefenseName ?DefenseDescription ?Type 
@@ -154,7 +153,6 @@ def defense():
 		for defense in defenses:
 			if defense not in dataGraph.keys():
 				dataGraph[defense] = 0
-		print(dataGraph)
 		return render_template('defense.html',tech_detail=tech_detail, results=result_dict,dataGraph=dataGraph)
-
-	return render_template('defense.html')
+	else:
+		return render_template('defense.html', tech_detail=[], results={},dataGraph={})
