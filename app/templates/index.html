@@ -164,8 +164,8 @@
                                         <td class="table-light" style="border-bottom: 3px solid #fff;">
                                             {% for tech_item in tech_list %}
                                             {% set techParts = tech_item.split(": ") %}
-                                            {% set techId = techParts[0].replace(".", "/") %}
-                                            <a href="https://attack.mitre.org/techniques/{{ techId }}" target="_blank"
+                                            {% set techId = techParts[0] %}
+                                            <a href="/defense?techID={{ techId }}" target="_blank"
                                                 style="display: block; margin-bottom: 5px;">
                                                 {{ tech_item }}
                                             </a>

@@ -5443,6 +5443,8 @@
 <owl:NamedIndividual rdf:about="#T1513">
   <rdf:type rdf:resource="#Technique"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T1513</hasID>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Screen Capture</hasName>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adversaries may use screen capture to collect additional information about a target device, such as applications running in the foreground, user data, credentials, or other sensitive information. Applications running in the background can capture screenshots or videos of another application running in the foreground by using the Android MediaProjectionManager (generally requires the device user to grant consent). Background applications can also use Android accessibility services to capture screen contents being displayed by a foreground application. An adversary with root access or Android Debug Bridge (adb) access could call the Android screencap or screenrecord commands.</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#T1548_001">
@@ -15873,1241 +15875,1241 @@
 
 <owl:NamedIndividual rdf:about="#D3_FA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Analysis is an analytic process to determine a file's status. For example: virus, trojan, benign, malicious, trusted, unauthorized, sensitive, etc.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dynamic Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Executing or opening a file in a synthetic 'sandbox' environment to determine if the file is a malicious program or if the file exploits another program such as a document reader.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dynamic Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_EFA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-EFA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emulated File Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_EFA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emulating instructions in a file looking for specific patterns.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emulated File Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FCOA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FCOA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Content Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FCOA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Employing a pattern matching algorithm to statically analyze the content of files.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Content Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FCR">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FCR</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Content Rules</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FCR</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Employing a pattern matching rule language to analyze the content of files.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Content Rules</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FH">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FH</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Hashing</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FH</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Employing file hash comparisons to detect known malware.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Hashing</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_ID">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-ID</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_ID</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing identifier artifacts such as IP address, domain names, or URL(I)s.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_HD">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-HD</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homoglyph Detection</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_HD</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comparing strings using a variety of techniques to determine if a deceptive or malicious string is being presented to a user.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homoglyph Detection</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_IAA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-IAA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier Activity Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_IAA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taking known malicious identifiers and determining if they are present in a system.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier Activity Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_IRA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-IRA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier Reputation Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_IRA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing the reputation of an identifier.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier Reputation Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_URA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-URA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL Reputation Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_URA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing the reputation of a URL.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL Reputation Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_UA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-UA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_UA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Determining if a URL is benign or malicious by analyzing the URL or its components.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_MA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-MA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Message Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_MA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing email or instant message content to detect unauthorized activity.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Message Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SMRA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SMRA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sender MTA Reputation Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SMRA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characterizing the reputation of mail transfer agents (MTA) to determine the security risk in emails.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sender MTA Reputation Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SRA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SRA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sender Reputation Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SRA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ascertaining sender reputation based on information associated with a message (e.g. email/instant messaging).</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sender Reputation Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_NTA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-NTA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Traffic Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_NTA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing intercepted or summarized computer network traffic to detect unauthorized activity.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Traffic Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_ANAA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-ANAA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Administrative Network Activity Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_ANAA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detection of unauthorized use of administrative network protocols by analyzing network activity against a baseline.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Administrative Network Activity Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_CA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-CA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certificate Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_CA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Actively collecting PKI certificates by connecting to the server and downloading its server certificates for analysis.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certificate Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_ACA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-ACA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active Certificate Analysis</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_ACA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Actively collecting PKI certificates by connecting to the server and downloading its server certificates for analysis.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active Certificate Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PCA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PCA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PCA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collecting host certificates from network traffic or other passive sources like a certificate transparency log and analyzing them for unauthorized activity.','Passively collecting certificates and analyzing them.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Passive Certificate Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collecting host certificates from network traffic or other passive sources like a certificate transparency log and analyzing them for unauthorized activity.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_CSPP">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-CSPP</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_CSPP</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comparing client-server request and response payloads to a baseline profile to identify outliers.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Client-server Payload Profiling</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Passively collecting certificates and analyzing them.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_CAA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-CAA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_CAA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing failed connections in a network to detect unauthorized activity.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connection Attempt Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comparing client-server request and response payloads to a baseline profile to identify outliers.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DNSTA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DNSTA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DNSTA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis of domain name metadata, including name and DNS records, to determine whether the domain is likely to resolve to an undesirable host.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNS Traffic Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing failed connections in a network to detect unauthorized activity.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FC">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FC</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FC</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifying and extracting files from network application protocols through the use of network stream reassembly software.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Carving</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis of domain name metadata, including name and DNS records, to determine whether the domain is likely to resolve to an undesirable host.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_ISVA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-ISVA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_ISVA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing inbound network session or connection attempt volume.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inbound Session Volume Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifying and extracting files from network application protocols through the use of network stream reassembly software.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_IPCTA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-IPCTA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_IPCTA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing standard inter process communication (IPC) protocols to detect deviations from normal protocol activity.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IPC Traffic Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing inbound network session or connection attempt volume.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_NTCD">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-NTCD</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_NTCD</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Establishing baseline communities of network hosts and identifying statistically divergent inter-community communication.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Traffic Community Deviation</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing standard inter process communication (IPC) protocols to detect deviations from normal protocol activity.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PHDURA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PHDURA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per Host Download- Upload Ratio Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Establishing baseline communities of network hosts and identifying statistically divergent inter-community communication.</hasDescription>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PHDURA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detecting anomalies that indicate malicious activity by comparing the amount of data downloaded versus data uploaded by a host.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per Host Download-Upload Ratio Analysis</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PMAD">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PMAD</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PMAD</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collecting network communication protocol metadata and identifying statistical outliers.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protocol Metadata Anomaly Detection</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detecting anomalies that indicate malicious activity by comparing the amount of data downloaded versus data uploaded by a host.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RPA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RPA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RPA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The detection of an internal host relaying traffic between the internal network and the external network.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relay Pattern Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collecting network communication protocol metadata and identifying statistical outliers.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RTSD">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RTSD</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RTSD</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detection of an unauthorized remote live terminal console session by examining network traffic to a network host.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remote Terminal Session Detection</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The detection of an internal host relaying traffic between the internal network and the external network.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RTA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RTA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RTA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring the activity of remote procedure calls in communication traffic to establish standard protocol operations and potential attacker activities.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RPC Traffic Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detection of an unauthorized remote live terminal console session by examining network traffic to a network host.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PM</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PM</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring platform components such as operating systems software, hardware devices, or firmware.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platform Monitoring</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring the activity of remote procedure calls in communication traffic to establish standard protocol operations and potential attacker activities.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FIM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FIM</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FIM</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detecting any suspicious changes to files in a computer system.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Integrity Monitoring</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring platform components such as operating systems software, hardware devices, or firmware.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FBA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FBA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FBA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing the behavior of embedded code in firmware and looking for anomalous behavior and suspicious activity.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firmware Behavior Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detecting any suspicious changes to files in a computer system.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FV">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FV</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FV</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryptographically verifying firmware integrity.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firmware Verification</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing the behavior of embedded code in firmware and looking for anomalous behavior and suspicious activity.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FEMC">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FEMC</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FEMC</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring code is injected into firmware for integrity monitoring of firmware and firmware data.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firmware Embedded Monitoring Code</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryptographically verifying firmware integrity.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SFV">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SFV</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SFV</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryptographically verifying installed system firmware integrity.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Firmware Verification</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring code is injected into firmware for integrity monitoring of firmware and firmware data.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_OSM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-OSM</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_OSM</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The operating system software, for D3FEND's purposes, includes the kernel and its process management functions, hardware drivers, initialization or boot logic. It also includes and other key system daemons and their configuration. The monitoring or analysis of these components for unauthorized activity constitute **Operating System Monitoring**.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating System Monitoring</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryptographically verifying installed system firmware integrity.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_EHB">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-EHB</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_EHB</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring the security status of an endpoint by sending periodic messages with health status, where absence of a response may indicate that the endpoint has been compromised.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endpoint Health Beacon</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The operating system software, for D3FEND's purposes, includes the kernel and its process management functions, hardware drivers, initialization or boot logic. It also includes and other key system daemons and their configuration. The monitoring or analysis of these components for unauthorized activity constitute Operating System Monitoring.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_IDA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-IDA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_IDA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating system level mechanisms to prevent abusive input device exploitation.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input Device Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring the security status of an endpoint by sending periodic messages with health status, where absence of a response may indicate that the endpoint has been compromised.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_MBT">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-MBT</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_MBT</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing a call stack for return addresses which point to unexpected memory locations.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Memory Boundary Tracking</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating system level mechanisms to prevent abusive input device exploitation.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SJA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SJA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SJA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis of source files, processes, destination files, or destination servers associated with a scheduled job to detect unauthorized use of job scheduling.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheduled Job Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing a call stack for return addresses which point to unexpected memory locations.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SDM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SDM</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SDM</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tracking changes to the state or configuration of critical system level processes.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Daemon Monitoring</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis of source files, processes, destination files, or destination servers associated with a scheduled job to detect unauthorized use of job scheduling.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SFA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SFA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SFA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring system files such as authentication databases, configuration files, system logs, and system executables for modification or tampering.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System File Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tracking changes to the state or configuration of critical system level processes.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SBV">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SBV</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SBV</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing changes in service binary files by comparing to a source of truth.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Service Binary Verification</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring system files such as authentication databases, configuration files, system logs, and system executables for modification or tampering.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SICA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SICA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SICA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis of any system process startup configuration.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Init Config Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing changes in service binary files by comparing to a source of truth.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_USICA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-USICA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_USICA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing modifications to user session config files such as .bashrc or .bash_profile.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Session Init Config Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis of any system process startup configuration.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Analysis consists of observing a running application process and analyzing it to watch for certain behaviors or conditions which may indicate adversary activity. Analysis can occur inside of the process or through a third-party monitoring application. Examples include monitoring system and privileged calls, monitoring process initiation chains, and memory boundary allocations.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing modifications to user session config files such as .bashrc or .bash_profile.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DQSA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DQSA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DQSA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing database queries to detect [SQL Injection]</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database Query String Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Analysis consists of observing a running application process and analyzing it to watch for certain behaviors or conditions which may indicate adversary activity. Analysis can occur inside of the process or through a third-party monitoring application. Examples include monitoring system and privileged calls, monitoring process initiation chains, and memory boundary allocations.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PCSV">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PCSV</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PCSV</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comparing the text or code memory segments to a source of truth.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Code Segment Verification</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing database queries to detect [SQL Injection]</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PSMD">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PSMD</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PSMD</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detects processes that modify, change, or replace their own code at runtime.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Self-Modification Detection</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comparing the text or code memory segments to a source of truth.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PSA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PSA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PSA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing spawn arguments or attributes of a process to detect processes that are unauthorized.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Spawn Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detects processes that modify, change, or replace their own code at runtime.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PLA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PLA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PLA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identification of suspicious processes executing on an end-point device by examining the ancestry and siblings of a process, and the associated metadata of each node on the tree, such as process execution, duration, and order relative to siblings and ancestors.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Lineage Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing spawn arguments or attributes of a process to detect processes that are unauthorized.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SSC">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SSC</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SSC</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comparing a call stack in system memory with a shadow call stack maintained by the processor to determine unauthorized shellcode activity.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shadow Stack Comparisons</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identification of suspicious processes executing on an end-point device by examining the ancestry and siblings of a process, and the associated metadata of each node on the tree, such as process execution, duration, and order relative to siblings and ancestors.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SCA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SCA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SCA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing system calls to determine whether a process is exhibiting unauthorized behavior.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Call Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comparing a call stack in system memory with a shadow call stack maintained by the processor to determine unauthorized shellcode activity.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FCA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FCA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FCA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing the properties of file create system call invocations.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Creation Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing system calls to determine whether a process is exhibiting unauthorized behavior.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_UBA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-UBA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_UBA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User behavior analytics as defined by Gartner, is a cybersecurity process about detection of insider threats, targeted attacks, and financial fraud. UBA solutions look at patterns of human behavior, and then apply algorithms and statistical analysis to detect meaningful anomalies from those patterns-anomalies that indicate potential threats.' Instead of tracking devices or security events, UBA tracks a system's users. Big data platforms are increasing UBA functionality by allowing them to analyze petabytes worth of data to detect insider threats and advanced persistent threats.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Behavior Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing the properties of file create system call invocations.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_ANET">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-ANET</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_ANET</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collecting authentication events, creating a baseline user profile, and determining whether authentication events are consistent with the baseline profile.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authentication Event Thresholding</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User behavior analytics as defined by Gartner, is a cybersecurity process about detection of insider threats, targeted attacks, and financial fraud. UBA solutions look at patterns of human behavior, and then apply algorithms and statistical analysis to detect meaningful anomalies from those patterns-anomalies that indicate potential threats.' Instead of tracking devices or security events, UBA tracks a system's users. Big data platforms are increasing UBA functionality by allowing them to analyze petabytes worth of data to detect insider threats and advanced persistent threats.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_AZET">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-AZET</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_AZET</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collecting authorization events, creating a baseline user profile, and determining whether authorization events are consistent with the baseline profile.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authorization Event Thresholding</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collecting authentication events, creating a baseline user profile, and determining whether authentication events are consistent with the baseline profile.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_CCSA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-CCSA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_CCSA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Determining which credentials may have been compromised by analyzing the user logon history of a particular system.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential Compromise Scope Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collecting authorization events, creating a baseline user profile, and determining whether authorization events are consistent with the baseline profile.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DAM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DAM</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DAM</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring the existence of or changes to Domain User Accounts.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domain Account Monitoring</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Determining which credentials may have been compromised by analyzing the user logon history of a particular system.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_JFAPA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-JFAPA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_JFAPA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detecting anomalies in user access patterns by comparing user access activity to behavioral profiles that categorize users by role such as job title, function, department.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Job Function Access Pattern Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring the existence of or changes to Domain User Accounts.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_LAM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-LAM</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_LAM</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing local user accounts to detect unauthorized activity.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local Account Monitoring</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detecting anomalies in user access patterns by comparing user access activity to behavioral profiles that categorize users by role such as job title, function, department.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RAPA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RAPA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RAPA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing the resources accessed by a user to identify unauthorized activity.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resource Access Pattern Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing local user accounts to detect unauthorized activity.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SDA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SDA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SDA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing the duration of user sessions in order to detect unauthorized activity.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Session Duration Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing the resources accessed by a user to identify unauthorized activity.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_UGLPA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-UGLPA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_UGLPA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring geolocation data of user logon attempts and comparing it to a baseline user behavior profile to identify anomalies in logon location.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Geolocation Logon Pattern Analysis</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzing the duration of user sessions in order to detect unauthorized activity.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detect</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_CHN">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-CHN</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connected Honeynet</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_CHN</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A decoy service, system, or environment, that is connected to the enterprise network, and simulates or emulates certain functionality to the network, without exposing full access to a production system.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connected Honeynet</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deceive</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DE">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DE</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decoy Environment</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DE</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Decoy Environment comprises hosts and networks for the purposes of deceiving an attacker.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decoy Environment</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deceive</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DF">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DF</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decoy File</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DF</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A file created for the purposes of deceiving an adversary.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decoy File</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deceive</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DNR">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DNR</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decoy Network Resource</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DNR</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deploying a network resource for the purposes of deceiving an adversary.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decoy Network Resource</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deceive</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DO">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DO</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decoy Object</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DO</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Decoy Object is created and deployed for the purposes of deceiving attackers.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decoy Object</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deceive</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DST">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DST</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decoy Session Token</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DST</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An authentication token created for the purposes of deceiving an adversary.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decoy Session Token</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deceive</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DUC">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DUC</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decoy User Credential</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DUC</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Credential created for the purpose of deceiving an adversary.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decoy User Credential</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deceive</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_IHN">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-IHN</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integrated Honeynet</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_IHN</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The practice of setting decoys in a production environment to entice interaction from attackers.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integrated Honeynet</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deceive</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SHN">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SHN</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standalone Honeynet</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SHN</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An environment created for the purpose of attracting attackers and eliciting their behaviors that is not connected to any production enterprise systems.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standalone Honeynet</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deceive</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_AL">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-AL</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Account Locking</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_AL</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process of temporarily disabling user accounts on a system or domain.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Account Locking</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evict</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_ANCI">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-ANCI</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authentication Cache Invalidation</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_ANCI</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removing tokens or credentials from an authentication cache to prevent further user associated account accesses.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authentication Cache Invalidation</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evict</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_CE">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-CE</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential Eviction</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_CE</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential Eviction techniques disable or remove compromised credentials from a computer network.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential Eviction</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evict</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_CR">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-CR</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential Revoking</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_CR</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deleting a set of credentials permanently to prevent them from being used to authenticate.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential Revoking</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evict</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_ER">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-ER</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email Removal</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_ER</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The email removal technique deletes email files from system storage.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email Removal</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evict</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FEV">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FEV</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Eviction</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FEV</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File eviction techniques evict files from system storage.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Eviction</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evict</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FR">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FR</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Removal</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FR</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The file removal technique deletes malicious artifacts or programs from a computer system.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Removal</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evict</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PE">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PE</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PE</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process eviction techniques terminate or remove running process.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Eviction</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process eviction techniques terminate or remove running processes.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evict</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PS">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PS</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Suspension</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PS</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suspending a running process on a computer system.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Suspension</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evict</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PT">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PT</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Termination</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PT</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terminating a running application process on a computer system.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Termination</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evict</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_ACH">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-ACH</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Application Configuration Hardening</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_ACH</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modifying an application's configuration to reduce its attack surface.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Application Configuration Hardening</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_AH">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-AH</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Application Hardening</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_AH</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Application Hardening makes an executable application more resilient to a class of exploits which either introduce new code or execute unwanted existing code. These techniques may be applied at compile-time or on an application binary.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Application Hardening</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_BAN">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-BAN</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biometric Authentication</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_BAN</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Using biological measures in order to authenticate a user.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biometric Authentication</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_BA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-BA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bootloader Authentication</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_BA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryptographically authenticating the bootloader software before system boot.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bootloader Authentication</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_CH">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-CH</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential Hardening</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_CH</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential Hardening techniques modify system or network properties in order to protect system or network/domain credentials.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential Hardening</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_CRO">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-CRO</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_CRO</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expiring an existing set of credentials and reissuing a new valid set</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential Rotation</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expiring an existing set of credentials and reissuing a new valid set.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_CTS">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-CTS</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential Transmission Scoping</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_CTS</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Limiting the transmission of a credential to a scoped set of relying parties.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential Transmission Scoping</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DENCR">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DENCR</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disk Encryption</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DENCR</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Encrypting a hard disk partition to prevent cleartext access to a file system.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disk Encryption</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DTP">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DTP</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domain Trust Policy</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DTP</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restricting inter-domain trust by modifying domain configuration.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domain Trust Policy</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FE">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FE</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Encryption</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FE</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Encrypting a file using a cryptographic key.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Encryption</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_LFP">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-LFP</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local File Permissions</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_LFP</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restricting access to a local file by configuring operating system functionality.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local File Permissions</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_MFA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-MFA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi-factor Authentication</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_MFA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Requiring proof of two or more pieces of evidence in order to authenticate a user.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi-factor Authentication</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_OTP">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-OTP</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One-time Password</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_OTP</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A one-time password is valid for only one user authentication.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One-time Password</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PH">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PH</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PH</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hardening components of a Platform with the intention of making them more difficult to exploit. Platforms includes components such as: * BIOS UEFI Subsystems * Hardware security devices such as Trusted Platform Modules * Boot process logic or code * Kernel software components</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platform Hardening</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hardening components of a Platform with the intention of making them more difficult to exploit. Platforms include components such as BIOS UEFI Subsystems, Hardware security devices such as Trusted Platform Modules, Boot process logic or code, Kernel software components.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PSEP">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PSEP</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Segment Execution Prevention</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PSEP</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preventing execution of any address in a memory region other than the code segment.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Segment Execution Prevention</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SAOR">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SAOR</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Segment Address Offset Randomization</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SAOR</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Randomizing the base (start) address of one or more segments of memory during the initialization of a process.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Segment Address Offset Randomization</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SU">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SU</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Update</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SU</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Replacing old software on a computer system component.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Update</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SFCV">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SFCV</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stack Frame Canary Validation</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SFCV</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comparing a value stored in a stack frame with a known good value in order to prevent or detect a memory segment overwrite.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stack Frame Canary Validation</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SPP">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SPP</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strong Password Policy</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SPP</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modifying system configuration to increase password strength.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strong Password Policy</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SCP">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SCP</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Configuration Permissions</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SCP</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restricting system configuration modifications to a specific user or group of users.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Configuration Permissions</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_UAP">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-UAP</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Account Permissions</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_UAP</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restricting a user account's access to resources.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Account Permissions</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harden</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DNSAL">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DNSAL</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNS Allowlisting</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DNSAL</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Permitting only approved domains and their subdomains to be resolved.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNS Allowlisting</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DNSDL">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DNSDL</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNS Denylisting</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DNSDL</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blocking DNS Network Traffic based on criteria such as IP address, domain name, or DNS query type.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNS Denylisting</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_EF">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-EF</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email Filtering</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_EF</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filtering incoming email traffic based on specific criteria.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email Filtering</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_EAL">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-EAL</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Executable Allowlisting</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_EAL</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Using a digital signature to authenticate a file before opening.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Executable Allowlisting</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_EDL">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-EDL</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Executable Denylisting</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_EDL</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blocking the execution of files on a host in accordance with defined application policy rules.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Executable Denylisting</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_EI">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-EI</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Execution Isolation</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_EI</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Execution Isolation techniques prevent application processes from accessing non-essential system resources, such as memory, devices, or files.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Execution Isolation</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_FRDDL">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-FRDDL</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward Resolution Domain Denylisting</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_FRDDL</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blocking a lookup based on the query's domain name value.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward Resolution Domain Denylisting</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_HBPI">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-HBPI</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_HBPI</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preventing one process from writing to the memory space of another process through hardware based address manager implementations.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hardware-based Process Isolation</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preventing one process from writing to the memory space of another process through hardware-based address manager implementations.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_HDDL">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-HDDL</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hierarchical Domain Denylisting</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_HDDL</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blocking the resolution of any subdomain of a specified domain name.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hierarchical Domain Denylisting</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_HDL">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-HDL</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homoglyph Denylisting</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_HDL</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blocking DNS queries that are deceptively similar to legitimate domain names.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homoglyph Denylisting</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_ITF">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-ITF</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inbound Traffic Filtering</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_ITF</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restricting network traffic originating from untrusted networks destined towards a private host or enclave.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inbound Traffic Filtering</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_IOPR">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-IOPR</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IO Port Restriction</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_IOPR</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Limiting access to computer input/output (IO) ports to restrict unauthorized devices.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IO Port Restriction</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_KBPI">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-KBPI</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kernel-based Process Isolation</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_KBPI</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Using kernel-level capabilities to isolate processes.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kernel-based Process Isolation</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_MAC">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-MAC</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mandatory Access Control</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_MAC</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Controlling access to local computer system resources with kernel-level capabilities.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mandatory Access Control</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_NI">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-NI</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Isolation</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_NI</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Isolation techniques prevent network hosts from accessing non-essential system network resources.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Isolation</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_NTF">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-NTF</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Traffic Filtering</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_NTF</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restricting network traffic originating from any location.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Traffic Filtering</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_OTF">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-OTF</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outbound Traffic Filtering</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_OTF</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restricting network traffic originating from a private host or enclave destined towards untrusted networks.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outbound Traffic Filtering</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RRID">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RRID</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reverse Resolution IP Denylisting</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RRID</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blocking a reverse lookup based on the query's IP address value.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reverse Resolution IP Denylisting</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SCF">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SCF</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SCF</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Configuring a kernel to use an allow or deny list to filter kernel api calls.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Call Filtering</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Configuring a kernel to use an allow or deny list to filter kernel API calls.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolate</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_AM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-AM</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Access Modeling</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_AM</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Access modeling identifies and records the access permissions granted to administrators, users, groups, and systems.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Access Modeling</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_ALLM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-ALLM</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_ALLM</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active logical link mapping sends and receives network traffic as a means to map the whole data link layer, where the links represent logical data flows rather than physical connection</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active Logical Link Mapping</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active logical link mapping sends and receives network traffic as a means to map the whole data link layer, where the links represent logical data flows rather than physical connections.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_APLM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-APLM</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active Physical Link Mapping</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_APLM</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active physical link mapping sends and receives network traffic as a means to map the physical layer.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active Physical Link Mapping</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_AI">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-AI</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asset Inventory</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_AI</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asset inventorying identifies and records the organization's assets and enriches each inventory item with knowledge about their vulnerabilities.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asset Inventory</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_AVE">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-AVE</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asset Vulnerability Enumeration</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_AVE</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asset vulnerability enumeration enriches inventory items with knowledge identifying their vulnerabilities.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asset Vulnerability Enumeration</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_CI">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-CI</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Configuration Inventory</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_CI</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Configuration inventory identifies and records the configuration of software and hardware and their components throughout the organization.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Configuration Inventory</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_DI">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-DI</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Inventory</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_DI</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data inventorying identifies and records the schemas, formats, volumes, and locations of data stored and used on the organization's architecture.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Inventory</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_HCI">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-HCI</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hardware Component Inventory</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_HCI</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hardware component inventorying identifies and records the hardware items in the organization's architecture.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hardware Component Inventory</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_LLM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-LLM</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logical Link Mapping</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_LLM</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logical link mapping creates a model of existing or previous node-to-node connections using network-layer data or metadata.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logical Link Mapping</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_NM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-NM</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Mapping</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_NM</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network mapping encompasses the techniques to identify and model the physical layer, network layer, and data exchange layers of the organization's network and their physical location, and determine allowed pathways through that network.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Mapping</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_NNI">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-NNI</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Node Inventory</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_NNI</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network node inventorying identifies and records all the network nodes (hosts, routers, switches, firewalls, etc.) in the organization's architecture.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Node Inventory</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_NTPM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-NTPM</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_NTPM</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network traffic policy mapping identifies and models the allowed pathways of data at the network, tranport, and/or application levels.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Traffic Policy Mapping</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network traffic policy mapping identifies and models the allowed pathways of data at the network, transport, and/or application levels.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_OAM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-OAM</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operational Activity Mapping</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_OAM</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operational activity mapping identifies activities of the organization and the organization's suborganizations, groups, roles, and individuals that carry out the activities and then establishes the dependencies of the activities on the systems and people that perform those activities.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operational Activity Mapping</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PLLM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PLLM</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PLLM</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Passive logical link mapping only listens to network traffic as a means to map the the whole data link layer, where the links represent logical data flows rather than physical connections.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Passive Logical Link Mapping</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Passive logical link mapping only listens to network traffic as a means to map the whole data link layer, where the links represent logical data flows rather than physical connections.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_PLM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-PLM</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical Link Mapping</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_PLM</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical link mapping identifies and models the link connectivity of the network devices within a physical network.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical Link Mapping</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SWI">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SWI</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Inventory</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SWI</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software inventorying identifies and records the software items in the organization's architecture.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Inventory</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SYSM">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SYSM</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Mapping</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SYSM</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System mapping encompasses the techniques to identify the organization's systems, how they are configured and decomposed into subsystems and components, how they are dependent on one another, and where they are physically located.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Mapping</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_SYSVA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-SYSVA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Vulnerability Assessment</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_SYSVA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System vulnerability assessment relates all the vulnerabilities of a system's components in the context of their configuration and internal dependencies and can also include assessing risk emerging from the system's design as a whole, not just the sum of individual component vulnerabilities.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Vulnerability Assessment</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RC">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RC</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RC</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Issue a new credential to a user which supercedes their old credential.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reissue Credential</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Issue a new credential to a user which supersedes their old credential.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore Access</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring an entity's access to resources.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore Access</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RCF">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RCF</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RCF</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring an software configuration.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore Configuration</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring a software configuration.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RD">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RD</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore Database</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RD</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring the data in a database.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore Database</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RE">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RE</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore Email</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RE</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring an email for an entity to access.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore Email</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RF">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RF</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore File</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RF</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring a file for an entity to access.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore File</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RNA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RNA</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RNA</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring a entity's access to a computer network.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore Network Access</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring an entity's access to a computer network.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RO">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RO</hasID>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RO</hasID>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring an object for an entity to access. This is the broadest class for object restoral.</hasDescription>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore Object</hasName>
-  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring an object for an entity to access. This is the broadest class for object restoration.</hasDescription>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RS">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RS</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore Software</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RS</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring software to a host.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore Software</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_RUAA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-RUAA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore User Account Access</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_RUAA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring a user account's access to resources.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore User Account Access</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore</hasType>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#D3_ULA">
   <rdf:type rdf:resource="#Defense"/>
-  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3-ULA</hasID>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unlock Account</hasName>
+  <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D3_ULA</hasID>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restoring a user account's access to resources by unlocking a locked User Account.</hasDescription>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unlock Account</hasName>
   <hasType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restore</hasType>
 </owl:NamedIndividual>
 

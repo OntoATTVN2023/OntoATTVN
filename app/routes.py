@@ -48,8 +48,9 @@ def index():
 			cwe_id = "$|".join(filtered_cwe_ids)+"$"
 		else:
 			cwe_id = filtered_cwe_ids.pop()+"$"
+			
 		g = Graph()
-		g.parse("ontology/Ontology.owl", format="xml")
+		g.parse("ontology/ontology.owl", format="xml")
 		sparql_query = '''
 		PREFIX my: <http://test.org/Ontology.owl#>
 		SELECT DISTINCT ?TacticID ?TacticName ?TechID ?TechName
@@ -100,59 +101,69 @@ def ontoModel():
 	convert()
 	return render_template('ontology-model.html')
 
-@app.route('/defense', methods=['GET', 'POST'])
+@app.route('/defense', methods=['GET'])
 def defense():
-	if request.method == 'POST':
-		tech_id = request.form['techID'].upper()
-		tech_id = '^'+str(tech_id)+'$'
-		g = Graph()
-		g.parse("ontoweb/OntoWeb.owl", format="xml")
-		sparql_query = '''
-		PREFIX attack: <http://test.org/Ontology.owl#>
-		SELECT DISTINCT ?TechID ?TechName ?TechDescription ?DefenseID ?DefenseName ?DefenseDescription ?Type 
-		WHERE {	
-		
-			filter REGEX(?TechID,"''' + tech_id + '''").
-			?Tech rdf:type attack:Technique.
-			?Tech attack:hasID ?TechID.
-			?Tech attack:hasName ?TechName.
-			?Tech attack:hasDescription ?TechDescription.
-			?Tech attack:defenseBy ?Defense.
-			?Defense attack:hasID ?DefenseID.
-			?Defense attack:hasDescription ?DefenseDescription.
-			?Defense attack:hasName ?DefenseName.
-			?Defense attack:hasType ?Type.
-		} order by ?Type
-		'''
-		query = prepareQuery(sparql_query)
-		results = g.query(query)
-		result_data = defaultdict(list)
-		tech_detail = []
-		for row in results:
-			tech_id = str(row['TechID'])
-			tech_name = str(row['TechName'])
-			tech_desciption = str(row['TechDescription'])
-			
-			defense_id = str(row['DefenseID'])
-			defense_name = str(row['DefenseName'])
-			defense_description = str(row['DefenseDescription'])
-			defense_type = str(row['Type'])
-			value = f"{defense_id}: {defense_name}: {defense_description}"
-			result_data[defense_type].append(value)
-		tech_detail.append({
-			'TechID': tech_id,
-			'TechName': tech_name,
-			'TechDescription': tech_desciption
-			})
-		result_dict = dict(result_data)
-		defenses = ['Deceive', 'Detect', 'Evict', 'Model', 'Harden', 'Isolate', 'Restore']
-
-		dataGraph = dict()
-		for key, value in result_dict.items():
-			dataGraph[key] = len(value)
-		for defense in defenses:
-			if defense not in dataGraph.keys():
-				dataGraph[defense] = 0
-		return render_template('defense.html',tech_detail=tech_detail, results=result_dict,dataGraph=dataGraph)
-	else:
+	if request.args.get('techID') is None:
 		return render_template('defense.html', tech_detail=[], results={},dataGraph={})
+	
+	techId = str(request.args.get('techID'))
+	print(techId)
+	tech_id = techId.strip().upper()
+	tech_id = '^'+str(tech_id)+'$'
+	
+	g = Graph()
+	g.parse("ontology/ontoDefense.owl", format="xml")
+	sparql_query = '''
+	PREFIX attack: <http://test.org/Ontology.owl#>
+	SELECT DISTINCT ?TechID ?TechName ?TechDescription ?DefenseID ?DefenseName ?DefenseDescription ?Type 
+	WHERE {		
+		filter REGEX(?TechID,"''' + tech_id + '''").
+		?Tech rdf:type attack:Technique.
+		?Tech attack:hasID ?TechID.
+		?Tech attack:hasName ?TechName.
+		?Tech attack:hasDescription ?TechDescription.
+		optional{
+		?Tech attack:defenseBy ?Defense.
+		?Defense attack:hasID ?DefenseID.
+		?Defense attack:hasDescription ?DefenseDescription.
+		?Defense attack:hasName ?DefenseName.
+		?Defense attack:hasType ?Type.}
+	} order by ?Type
+	'''
+	query = prepareQuery(sparql_query)
+	results = g.query(query)
+	if len(results) == 0:
+		return render_template('defense.html', tech_detail=[], results={},dataGraph={}, msg=f'No results found for \"{techId}\"')
+		
+	result_data = defaultdict(list)
+	tech_detail = []
+	for row in results:
+		tech_id = str(row['TechID'])
+		tech_name = str(row['TechName'])
+		tech_desciption = str(row['TechDescription'])			
+		defense_id = str(row['DefenseID'])
+		defense_name = str(row['DefenseName'])
+		defense_description = str(row['DefenseDescription'])
+		defense_type = str(row['Type'])
+		value = f"{defense_id}: {defense_name}: {defense_description}"
+		result_data[defense_type].append(value)
+
+	tech_detail.append({
+		'TechID': tech_id,
+		'TechName': tech_name,
+		'TechDescription': tech_desciption
+		})
+	result_dict = dict(result_data)
+
+	if result_dict.get(0) is None and len(result_dict) == 1:
+		return render_template('defense.html', tech_detail=tech_detail, results={},dataGraph={})
+
+	defenses = ['Deceive', 'Detect', 'Evict', 'Model', 'Harden', 'Isolate', 'Restore']
+
+	dataGraph = dict()
+	for key, value in result_dict.items():
+		dataGraph[key] = len(value)
+	for defense in defenses:
+		if defense not in dataGraph.keys():
+			dataGraph[defense] = 0
+	return render_template('defense.html',tech_detail=tech_detail, results=result_dict,dataGraph=dataGraph)

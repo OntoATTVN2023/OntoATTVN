@@ -1,720 +1,804 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <link rel="icon" href="static/favicons.ico" type="image/x-icon" />
-        <title>ATTVN</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="static/favicons.ico" type="image/x-icon" />
+    <title>ATTVN</title>
 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-        <link href="../static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap"
+        rel="stylesheet" />
 
-        <link href="../static/css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" />
 
-        <link href="../static/css/templatemo-topic-listing.css" rel="stylesheet" />
-    </head>
+    <link href="../static/css/bootstrap-icons.css" rel="stylesheet" />
 
-    <body id="top">
-        <main>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="index">
+    <link href="../static/css/templatemo-topic-listing.css" rel="stylesheet" />
+</head>
+
+<body id="top">
+    <main>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index">
+                    <i class="bi-back"></i>
+                    <span>ATTVN</span>
+                </a>
+
+                <div class="d-lg-none ms-auto me-4">
+                    <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="/#section_1">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="/#section_2">Browse Topics</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="/#section_3">How it works</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="/#section_4">FAQs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="/#section_5">Contact</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/ontology-model">Ontology model</a></li>
+
+                                <li><a class="dropdown-item" href="/defense">Technique Defense</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="site-header d-flex flex-column justify-content-center align-items-center">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5 col-12 mb-5">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/index">Homepage</a></li>
+
+                                <li class="breadcrumb-item active" aria-current="page">Defense</li>
+                            </ol>
+                        </nav>
+
+                        <h2 class="text-white">
+                            Search for <br />
+                            Technique Defense
+                        </h2>
+
+                        <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search" action="/defense">
+                            <div class="input-group input-group-lg">
+                                <input name="techID" type="search" class="form-control" id="techID"
+                                    placeholder="Enter a Technique ID..." aria-label="Search" />
+                                <button type="submit" class="btn btn-primary"
+                                    style="margin-bottom: 24px;">Search</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                        <div class="topics-detail-block bg-white shadow-lg">
+                            <img src="../static/images/topics/undraw_Remote_design_team_re_urdx.png"
+                                class="topics-detail-block-image img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="explore-section section-padding" id="section_2">
+            <div class="container">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">ATTVN Defense</h2>
+                </div>
+            </div>
+            {% if msg %}
+            <div class="col-lg-16 col-12 mx-auto mt-5">
+                <div class="custom-block bg-white shadow-lg p-4">
+                    <h5 class="text-danger text-center">{{ msg }}</h5>
+                </div>
+            </div>
+            {% endif %}
+            <div class="container">
+                {% if tech_detail %}
+                <h3 class="mb-3" style="font-weight: bold; color: darkblue;">{{ tech_detail[0]['TechID'] }} - {{ tech_detail[0]['TechName'] }}</h3 class="mb-3">
+                <h6 class="mb-1">Description</h6>
+                <p class="mb-3 text-black fs-6">{{ tech_detail[0]['TechDescription'] }}</p>              
+                {% endif %}
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="deceive-tab" data-bs-toggle="tab"
+                                data-bs-target="#deceive-tab-pane" type="button" role="tab"
+                                aria-controls="deceive-tab-pane" aria-selected="true">Deceive</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="detect-tab" data-bs-toggle="tab"
+                                data-bs-target="#detect-tab-pane" type="button" role="tab"
+                                aria-controls="detect-tab-pane" aria-selected="false">Detect</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="evict-tab" data-bs-toggle="tab"
+                                data-bs-target="#evict-tab-pane" type="button" role="tab" aria-controls="evict-tab-pane"
+                                aria-selected="false">Evict</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="harden-tab" data-bs-toggle="tab"
+                                data-bs-target="#harden-tab-pane" type="button" role="tab"
+                                aria-controls="harden-tab-pane" aria-selected="false">Harden</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="isolate-tab" data-bs-toggle="tab"
+                                data-bs-target="#isolate-tab-pane" type="button" role="tab"
+                                aria-controls="isolate-tab-pane" aria-selected="false">Isolate</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="model-tab" data-bs-toggle="tab"
+                                data-bs-target="#model-tab-pane" type="button" role="tab" aria-controls="model-tab-pane"
+                                aria-selected="false">Model</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="restore-tab" data-bs-toggle="tab"
+                                data-bs-target="#restore-tab-pane" type="button" role="tab"
+                                aria-controls="restore-tab-pane" aria-selected="false">Restore</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="deceive-tab-pane" role="tabpanel"
+                                aria-labelledby="deceive-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Definition</h5>
+                                                    <p class="mb-3 text-black fs-6">
+                                                        The deceive tactic is used to advertise, entice, and allow
+                                                        potential attackers access to an observed or controlled
+                                                        environment.
+                                                    </p>
+                                                    {% if 'Deceive' in results %}
+                                                    <h5 class="mb-2">Defense Details</h5>
+                                                    <table class="table table-striped table-bordered table-teal">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Name</th>
+                                                                <th style="text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            {% for Type, defense_list in results.items() %}
+                                                            {% if Type == "Deceive" %}
+                                                            {% for defense_item in defense_list %}
+                                                            {% set defenseParts = defense_item.split(": ") %}
+                                                            {% set defenseName = defenseParts[1].replace(" ", "") %}
+                                                            {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
+                                                            <tr>
+                                                                <td class="table-light"
+                                                                    style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
+                                                                    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}"
+                                                                        target="_blank"
+                                                                        style="display: block; margin-bottom: 5px;">
+                                                                        {{ defense }}
+                                                                    </a>
+                                                                </td>
+                                                                <td class="table-light"
+                                                                    style="border-bottom: 3px solid #fff;">
+                                                                    {{ defenseParts[2] }}
+                                                                </td>
+                                                            </tr>
+                                                            {% endfor %}
+                                                            {% endif %}
+                                                            {% endfor %}
+                                                        </tbody>
+                                                    </table>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="detect-tab-pane" role="tabpanel" aria-labelledby="detect-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Definition</h5>
+                                                    <p class="mb-3 text-black fs-6">
+                                                        The detect tactic is used to identify adversary access to or
+                                                        unauthorized activity on computer networks.
+                                                    </p>
+                                                    {% if 'Detect' in results %}
+                                                    <h5 class="mb-2">Defense Details</h5>
+                                                    <table class="table table-striped table-bordered table-teal">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Name</th>
+                                                                <th style="text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            {% for Type, defense_list in results.items() %}
+                                                            {% if Type == "Detect" %}
+                                                            {% for defense_item in defense_list %}
+                                                            {% set defenseParts = defense_item.split(": ") %}
+                                                            {% set defenseName = defenseParts[1].replace(" ", "") %}
+                                                            {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
+                                                            <tr>
+                                                                <td class="table-light"
+                                                                    style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
+                                                                    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}"
+                                                                        target="_blank"
+                                                                        style="display: block; margin-bottom: 5px;">
+                                                                        {{ defense }}
+                                                                    </a>
+                                                                </td>
+                                                                <td class="table-light"
+                                                                    style="border-bottom: 3px solid #fff;">
+                                                                    {{ defenseParts[2] }}
+                                                                </td>
+                                                            </tr>
+                                                            {% endfor %}
+                                                            {% endif %}
+                                                            {% endfor %}
+                                                        </tbody>
+                                                    </table>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="evict-tab-pane" role="tabpanel" aria-labelledby="evict-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Definition</h5>
+                                                    <p class="mb-3 text-black fs-6">
+                                                        The eviction tactic is used to remove an adversary from a
+                                                        computer network.
+                                                    </p>
+                                                    {% if 'Evict' in results %}
+                                                    <h5 class="mb-2">Defense Details</h5>
+                                                    <table class="table table-striped table-bordered table-teal">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Name</th>
+                                                                <th style="text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            {% for Type, defense_list in results.items() %}
+                                                            {% if Type == "Evict" %}
+                                                            {% for defense_item in defense_list %}
+                                                            {% set defenseParts = defense_item.split(": ") %}
+                                                            {% set defenseName = defenseParts[1].replace(" ", "") %}
+                                                            {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
+                                                            <tr>
+                                                                <td class="table-light"
+                                                                    style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
+                                                                    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}"
+                                                                        target="_blank"
+                                                                        style="display: block; margin-bottom: 5px;">
+                                                                        {{ defense }}
+                                                                    </a>
+                                                                </td>
+                                                                <td class="table-light"
+                                                                    style="border-bottom: 3px solid #fff;">
+                                                                    {{ defenseParts[2] }}
+                                                                </td>
+                                                            </tr>
+                                                            {% endfor %}
+                                                            {% endif %}
+                                                            {% endfor %}
+                                                        </tbody>
+                                                    </table>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="harden-tab-pane" role="tabpanel" aria-labelledby="harden-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Definition</h5>
+                                                    <p class="mb-3 text-black fs-6">
+                                                        The harden tactic is used to increase the opportunity cost of
+                                                        computer network exploitation.
+                                                        Hardening differs from Detection in that it generally is
+                                                        conducted before a system is online and operational.
+                                                    </p>
+                                                    {% if 'Harden' in results %}
+                                                    <h5 class="mb-2">Defense Details</h5>
+                                                    <table class="table table-striped table-bordered table-teal">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Name</th>
+                                                                <th style="text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            {% for Type, defense_list in results.items() %}
+                                                            {% if Type == "Harden" %}
+                                                            {% for defense_item in defense_list %}
+                                                            {% set defenseParts = defense_item.split(": ") %}
+                                                            {% set defenseName = defenseParts[1].replace(" ", "") %}
+                                                            {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
+                                                            <tr>
+                                                                <td class="table-light"
+                                                                    style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
+                                                                    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}"
+                                                                        target="_blank"
+                                                                        style="display: block; margin-bottom: 5px;">
+                                                                        {{ defense }}
+                                                                    </a>
+                                                                </td>
+                                                                <td class="table-light"
+                                                                    style="border-bottom: 3px solid #fff;">
+                                                                    {{ defenseParts[2] }}
+                                                                </td>
+                                                            </tr>
+                                                            {% endfor %}
+                                                            {% endif %}
+                                                            {% endfor %}
+                                                        </tbody>
+                                                    </table>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="isolate-tab-pane" role="tabpanel"
+                                aria-labelledby="isolate-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Definition</h5>
+                                                    <p class="mb-3 text-black fs-6">
+                                                        The isolate tactic creates logical or physical barriers in a
+                                                        system which reduces opportunities for adversaries to create
+                                                        further accesses.
+                                                    </p>
+                                                    {% if 'Isolate' in results %}
+                                                    <h5 class="mb-2">Defense Details</h5>
+                                                    <table class="table table-striped table-bordered table-teal">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Name</th>
+                                                                <th style="text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            {% for Type, defense_list in results.items() %}
+                                                            {% if Type == "Isolate" %}
+                                                            {% for defense_item in defense_list %}
+                                                            {% set defenseParts = defense_item.split(": ") %}
+                                                            {% set defenseName = defenseParts[1].replace(" ", "") %}
+                                                            {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
+                                                            <tr>
+                                                                <td class="table-light"
+                                                                    style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
+                                                                    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}"
+                                                                        target="_blank"
+                                                                        style="display: block; margin-bottom: 5px;">
+                                                                        {{ defense }}
+                                                                    </a>
+                                                                </td>
+                                                                <td class="table-light"
+                                                                    style="border-bottom: 3px solid #fff;">
+                                                                    {{ defenseParts[2] }}
+                                                                </td>
+                                                            </tr>
+                                                            {% endfor %}
+                                                            {% endif %}
+                                                            {% endfor %}
+                                                        </tbody>
+                                                    </table>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="model-tab-pane" role="tabpanel" aria-labelledby="model-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Definition</h5>
+                                                    <p class="mb-3 text-black fs-6">
+                                                        The model tactic is used to apply security engineering,
+                                                        vulnerability, threat, and risk analyses to digital systems.
+                                                        This is accomplished by creating and maintaining a common
+                                                        understanding of the systems being defended,
+                                                        the operations on those systems, actors using the systems, and
+                                                        the relationships and interactions between these elements.
+                                                    </p>
+                                                    {% if 'Model' in results %}
+                                                    <h5 class="mb-2">Defense Details</h5>
+                                                    <table class="table table-striped table-bordered table-teal">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Name</th>
+                                                                <th style="text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            {% for Type, defense_list in results.items() %}
+                                                            {% if Type == "Model" %}
+                                                            {% for defense_item in defense_list %}
+                                                            {% set defenseParts = defense_item.split(": ") %}
+                                                            {% set defenseName = defenseParts[1].replace(" ", "") %}
+                                                            {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
+                                                            <tr>
+                                                                <td class="table-light"
+                                                                    style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
+                                                                    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}"
+                                                                        target="_blank"
+                                                                        style="display: block; margin-bottom: 5px;">
+                                                                        {{ defense }}
+                                                                    </a>
+                                                                </td>
+                                                                <td class="table-light"
+                                                                    style="border-bottom: 3px solid #fff;">
+                                                                    {{ defenseParts[2] }}
+                                                                </td>
+                                                            </tr>
+                                                            {% endfor %}
+                                                            {% endif %}
+                                                            {% endfor %}
+                                                        </tbody>
+                                                    </table>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="restore-tab-pane" role="tabpanel"
+                                aria-labelledby="restore-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <div class="d-flex">
+                                                <div>
+                                                    <h5 class="mb-2">Definition</h5>
+                                                    <p class="mb-3 text-black fs-6">
+                                                        The restore tactic is used to return the system to a better
+                                                        state.
+                                                    </p>
+                                                    {% if 'Restore' in results %}
+                                                    <h5 class="mb-2">Defense Details</h5>
+                                                    <table class="table table-striped table-bordered table-teal">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Name</th>
+                                                                <th style="text-align: center; vertical-align: middle; 
+										border-bottom: 3px solid #fff; background: #b39605">Description</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            {% for Type, defense_list in results.items() %}
+                                                            {% if Type == "Restore" %}
+                                                            {% for defense_item in defense_list %}
+                                                            {% set defenseParts = defense_item.split(": ") %}
+                                                            {% set defenseName = defenseParts[1].replace(" ", "") %}
+                                                            {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
+                                                            <tr>
+                                                                <td class="table-light"
+                                                                    style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
+                                                                    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}"
+                                                                        target="_blank"
+                                                                        style="display: block; margin-bottom: 5px;">
+                                                                        {{ defense }}
+                                                                    </a>
+                                                                </td>
+                                                                <td class="table-light"
+                                                                    style="border-bottom: 3px solid #fff;">
+                                                                    {{ defenseParts[2] }}
+                                                                </td>
+                                                            </tr>
+                                                            {% endfor %}
+                                                            {% endif %}
+                                                            {% endfor %}
+                                                        </tbody>
+                                                    </table>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                {% if dataGraph.items()|length > 0 %}
+                <canvas id="barChart" class="mt-5 mx-auto" style="width: 50%;"></canvas>
+                <p class="text-center mt-2" style="font-size: small; font-weight:bold; color: firebrick;">Chart. The number of measures corresponds to each defense tactic</p>
+                {% endif %}
+            </div>
+        </section>
+
+        <section class="topics-detail-section section-padding" id="topics-detail">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-12 m-auto">
+                        <h3 class="mb-4">Introduction to ATTVN Defense</h3>
+                        <p>
+                            The ATTVN Defense is crafted to provide a structured methodology for comprehending and
+                            implementing
+                            defensive countermeasures against cyber threats. It serves as a complement to the
+                            well-established MITRE
+                            ATT&CK framework, which delineates adversarial Tactics, Techniques, and Procedures (TTPs).
+                            <br />
+                            <br />
+                            While ATT&CK maps out the adversarial tactics, techniques, and procedures (TTPs) within a
+                            framework,
+                            ATTVN Defense offers guidance on defending against those specific adversarial actions.
+                        </p>
+                        <blockquote>
+                            Understanding both the attack and defense is key to building effective cybersecurity.
+                        </blockquote>
+                        <p>
+                            The ATTVN Defense utilizes MITRE D3FEND and MITRE ATT&CK data to offer users a centralized
+                            platform
+                            for searching and learning about defense. This information enhances users' comprehension of
+                            attack
+                            techniques and effective defense strategies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section section-padding section-bg" id="section_5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center">
+                        <h2 class="mb-5">Get in touch</h2>
+                    </div>
+
+                    <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14899.038322822236!2d105.53572534999999!3d21.002272299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abc60e7d3f19%3A0x2be9d7d0b5abcbf4!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBGUFQ!5e0!3m2!1svi!2s!4v1699952015301!5m2!1svi!2s"
+                            width="100%" height="250" style="border: 0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
+                        <h4 class="mb-3">FPT University</h4>
+
+                        <p>Khu Cong Nghe Cao Hoa Lac, Km29 Dai lo Thang Long, Thach Hoa, Thach That, Ha Noi, Viet Nam
+                        </p>
+
+                        <hr />
+
+                        <p class="text-white d-flex">
+                            <span class="me-2 text-black">
+                                Email:
+                                <a href="mailto:attvn2023@gmail.com" class="site-footer-link" style="font-size: 20px;">
+                                    attvn2023@gmail.com
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 mx-auto">
+                        <h4 class="mb-3">Supervisor</h4>
+
+                        <p>Mr. Hoang Manh Duc</p>
+
+                        <hr />
+
+                        <p class="d-flex align-items-center mb-1">
+                            <span class="mb-3 text-black"><b>Team Member</b></span>
+                        </p>
+
+                        <p>
+                            Do Xuan Thien <br />
+                            Bui Van An <br />
+                            Nguyen Duc Viet <br />
+                            Pham Huy Nhat <br />
+                            Hoang Huy Thuan <br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-4 pb-2">
+                    <a class="navbar-brand mb-2" href="/index">
                         <i class="bi-back"></i>
                         <span>ATTVN</span>
                     </a>
-
-                    <div class="d-lg-none ms-auto me-4">
-                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
-                    </div>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="/#section_1">Home</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="/#section_2">Browse Topics</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="/#section_3">How it works</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="/#section_4">FAQs</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="/#section_5">Contact</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="/ontology-model">Ontology model</a></li>
-
-                                    <li><a class="dropdown-item" href="/defense">Technique Defense</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </nav>
 
-            <header class="site-header d-flex flex-column justify-content-center align-items-center">
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-lg-5 col-12 mb-5">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="/index">Homepage</a></li>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h6 class="site-footer-title mb-3">Resources</h6>
 
-                                    <li class="breadcrumb-item active" aria-current="page">Defense</li>
-                                </ol>
-                            </nav>
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="/#section_1" class="site-footer-link">Home</a>
+                        </li>
 
-                            <h2 class="text-white">
-                                Search for <br />
-                                Technique Defense
-                            </h2>
+                        <li class="site-footer-link-item">
+                            <a href="/#section_2" class="site-footer-link">Browse topics</a>
+                        </li>
 
-                            <form method="post" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search" action="/defense">
-                                <div class="input-group input-group-lg">
-                                    <input name="techID" type="search" class="form-control" id="techID" placeholder="Enter a Technique ID..." aria-label="Search" />
-                                    <button type="submit" class="btn btn-primary" style="margin-bottom: 24px;">Search</button>
-                                </div>
-                            </form>
-                        </div>
+                        <li class="site-footer-link-item">
+                            <a href="/#section_3" class="site-footer-link">How it works</a>
+                        </li>
 
-                        <div class="col-lg-5 col-12">
-                            <div class="topics-detail-block bg-white shadow-lg">
-                                <img src="../static/images/topics/undraw_Remote_design_team_re_urdx.png" class="topics-detail-block-image img-fluid" />
-                            </div>
-                        </div>
-                    </div>
+                        <li class="site-footer-link-item">
+                            <a href="/#section_4" class="site-footer-link">FAQs</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="/#section_5" class="site-footer-link">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </header>
 
-            <section class="explore-section section-padding" id="section_2">
-                <div class="container">
-                    <div class="col-12 text-center">
-                        <h2 class="mb-4">ATTVN Defense</h2>
-                    </div>
-                </div>
-                <div class="container">
-                {% if tech_detail %}
-			<p>Technique ID: {{ tech_detail[0]['TechID'] }}</p>
-			<p>Technique Name: {{ tech_detail[0]['TechName'] }}</p>
-			<p>Technique Description: {{ tech_detail[0]['TechDescription'] }}</p>
-			{% endif %}
-		</div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="deceive-tab" data-bs-toggle="tab" data-bs-target="#deceive-tab-pane" type="button" role="tab" aria-controls="deceive-tab-pane" aria-selected="true">Deceive</button>
-                            </li>
+                <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                    <h6 class="site-footer-title mb-3">Information</h6>
 
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="detect-tab" data-bs-toggle="tab" data-bs-target="#detect-tab-pane" type="button" role="tab" aria-controls="detect-tab-pane" aria-selected="false">Detect</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="evict-tab" data-bs-toggle="tab" data-bs-target="#evict-tab-pane" type="button" role="tab" aria-controls="evict-tab-pane" aria-selected="false">Evict</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="model-tab" data-bs-toggle="tab" data-bs-target="#model-tab-pane" type="button" role="tab" aria-controls="model-tab-pane" aria-selected="false">Model</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="harden-tab" data-bs-toggle="tab" data-bs-target="#harden-tab-pane" type="button" role="tab" aria-controls="harden-tab-pane" aria-selected="false">Harden</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="isolate-tab" data-bs-toggle="tab" data-bs-target="#isolate-tab-pane" type="button" role="tab" aria-controls="isolate-tab-pane" aria-selected="false">Isolate</button>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="restore-tab" data-bs-toggle="tab" data-bs-target="#restore-tab-pane" type="button" role="tab" aria-controls="restore-tab-pane" aria-selected="false">Restore</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-		<div>
-			
-		</div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="deceive-tab-pane" role="tabpanel" aria-labelledby="deceive-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <p class="mb-0">
-                                                            <strong style="font-size: 25px;">Definition</strong> <br />
-                                                            The deceive tactic is used to advertise, entice, and allow potential attackers access to an observed or controlled environment.
-						            </p>
-						            <h6 class="mb-2">Defense Details</h6>
-						    <table class="table table-striped table-bordered table-teal">
-							    <thead class="table-light">
-								<tr>
-								    <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Name</th>
-								    <th style="text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Description</th>
-								</tr>
-							    </thead>
-							    <tbody>
-								{% for Type, defense_list in results.items() %}
-								    {% if Type == "Deceive" %}
-									{% for defense_item in defense_list %}
-									    {% set defenseParts = defense_item.split(": ") %}
-									    {% set defenseName = defenseParts[1].replace(" ", "") %}
-									    {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
-									    <tr>
-										<td class="table-light" style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
-										    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}" target="_blank"
-											style="display: block; margin-bottom: 5px;">
-											{{ defense }}
-										    </a>
-										</td>
-										<td class="table-light" style="border-bottom: 3px solid #fff;">
-										    {{ defenseParts[2] }}
-										</td>
-									    </tr>
-									{% endfor %}
-								    {% endif %}
-								{% endfor %}
-							    </tbody>
-							</table>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="detect-tab-pane" role="tabpanel" aria-labelledby="detect-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <p class="mb-0">
-                                                            <strong style="font-size: 25px;">Definition</strong> <br />
-                                                            The detect tactic is used to identify adversary access to or unauthorized activity on computer networks.
-                                                        </p>
-                                                  	<h6 class="mb-2">Defense Details</h6>
-						    <table class="table table-striped table-bordered table-teal">
-							    <thead class="table-light">
-								<tr>
-								    <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Name</th>
-								    <th style="text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Description</th>
-								</tr>
-							    </thead>
-							    <tbody>
-								{% for Type, defense_list in results.items() %}
-								    {% if Type == "Detect" %}
-									{% for defense_item in defense_list %}
-									    {% set defenseParts = defense_item.split(": ") %}
-									    {% set defenseName = defenseParts[1].replace(" ", "") %}
-									    {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
-									    <tr>
-										<td class="table-light" style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
-										    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}" target="_blank"
-											style="display: block; margin-bottom: 5px;">
-											{{ defense }}
-										    </a>
-										</td>
-										<td class="table-light" style="border-bottom: 3px solid #fff;">
-										    {{ defenseParts[2] }}
-										</td>
-									    </tr>
-									{% endfor %}
-								    {% endif %}
-								{% endfor %}
-							    </tbody>
-							</table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="evict-tab-pane" role="tabpanel" aria-labelledby="evict-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <p class="mb-0">
-                                                            <strong style="font-size: 25px;">Definition</strong> <br />
-                                                            The eviction tactic is used to remove an adversary from a computer network.
-                                                        </p>
-                                                    		<h6 class="mb-2">Defense Details</h6>
-						    <table class="table table-striped table-bordered table-teal">
-							    <thead class="table-light">
-								<tr>
-								    <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Name</th>
-								    <th style="text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Description</th>
-								</tr>
-							    </thead>
-							    <tbody>
-								{% for Type, defense_list in results.items() %}
-								    {% if Type == "Evict" %}
-									{% for defense_item in defense_list %}
-									    {% set defenseParts = defense_item.split(": ") %}
-									    {% set defenseName = defenseParts[1].replace(" ", "") %}
-									    {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
-									    <tr>
-										<td class="table-light" style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
-										    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}" target="_blank"
-											style="display: block; margin-bottom: 5px;">
-											{{ defense }}
-										    </a>
-										</td>
-										<td class="table-light" style="border-bottom: 3px solid #fff;">
-										    {{ defenseParts[2] }}
-										</td>
-									    </tr>
-									{% endfor %}
-								    {% endif %}
-								{% endfor %}
-							    </tbody>
-							</table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="model-tab-pane" role="tabpanel" aria-labelledby="model-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <p class="mb-0">
-                                                            <strong style="font-size: 25px;">Definition</strong> <br />
-                                                            The model tactic is used to apply security engineering, vulnerability, threat, and risk analyses to digital systems. 
-                                                            This is accomplished by creating and maintaining a common understanding of the systems being defended, 
-                                                            the operations on those systems, actors using the systems, and the relationships and interactions between these elements.
-                                                        </p>
-                                                       		<h6 class="mb-2">Defense Details</h6>
-						    <table class="table table-striped table-bordered table-teal">
-							    <thead class="table-light">
-								<tr>
-								    <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Name</th>
-								    <th style="text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Description</th>
-								</tr>
-							    </thead>
-							    <tbody>
-								{% for Type, defense_list in results.items() %}
-								    {% if Type == "Model" %}
-									{% for defense_item in defense_list %}
-									    {% set defenseParts = defense_item.split(": ") %}
-									    {% set defenseName = defenseParts[1].replace(" ", "") %}
-									    {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
-									    <tr>
-										<td class="table-light" style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
-										    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}" target="_blank"
-											style="display: block; margin-bottom: 5px;">
-											{{ defense }}
-										    </a>
-										</td>
-										<td class="table-light" style="border-bottom: 3px solid #fff;">
-										    {{ defenseParts[2] }}
-										</td>
-									    </tr>
-									{% endfor %}
-								    {% endif %}
-								{% endfor %}
-							    </tbody>
-							</table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="harden-tab-pane" role="tabpanel" aria-labelledby="harden-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <p class="mb-0">
-                                                            <strong style="font-size: 25px;">Definition</strong> <br />
-                                                            The harden tactic is used to increase the opportunity cost of computer network exploitation. 
-                                                            Hardening differs from Detection in that it generally is conducted before a system is online and operational.
-                                                        </p>
-                                                        	<h6 class="mb-2">Defense Details</h6>
-						    <table class="table table-striped table-bordered table-teal">
-							    <thead class="table-light">
-								<tr>
-								    <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Name</th>
-								    <th style="text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Description</th>
-								</tr>
-							    </thead>
-							    <tbody>
-								{% for Type, defense_list in results.items() %}
-								    {% if Type == "Harden" %}
-									{% for defense_item in defense_list %}
-									    {% set defenseParts = defense_item.split(": ") %}
-									    {% set defenseName = defenseParts[1].replace(" ", "") %}
-									    {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
-									    <tr>
-										<td class="table-light" style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
-										    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}" target="_blank"
-											style="display: block; margin-bottom: 5px;">
-											{{ defense }}
-										    </a>
-										</td>
-										<td class="table-light" style="border-bottom: 3px solid #fff;">
-										    {{ defenseParts[2] }}
-										</td>
-									    </tr>
-									{% endfor %}
-								    {% endif %}
-								{% endfor %}
-							    </tbody>
-							</table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="isolate-tab-pane" role="tabpanel" aria-labelledby="isolate-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <p class="mb-0">
-                                                            <strong style="font-size: 25px;">Definition</strong> <br />
-                                                            The isolate tactic creates logical or physical barriers in a system which reduces opportunities for adversaries to create further accesses.
-                                                        </p>
-                                                        	<h6 class="mb-2">Defense Details</h6>
-						    <table class="table table-striped table-bordered table-teal">
-							    <thead class="table-light">
-								<tr>
-								    <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Name</th>
-								    <th style="text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Description</th>
-								</tr>
-							    </thead>
-							    <tbody>
-								{% for Type, defense_list in results.items() %}
-								    {% if Type == "Isolate" %}
-									{% for defense_item in defense_list %}
-									    {% set defenseParts = defense_item.split(": ") %}
-									    {% set defenseName = defenseParts[1].replace(" ", "") %}
-									    {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
-									    <tr>
-										<td class="table-light" style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
-										    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}" target="_blank"
-											style="display: block; margin-bottom: 5px;">
-											{{ defense }}
-										    </a>
-										</td>
-										<td class="table-light" style="border-bottom: 3px solid #fff;">
-										    {{ defenseParts[2] }}
-										</td>
-									    </tr>
-									{% endfor %}
-								    {% endif %}
-								{% endfor %}
-							    </tbody>
-							</table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="restore-tab-pane" role="tabpanel" aria-labelledby="restore-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-6 col-12 mb-4 mb-lg-3">
-                                            <div class="custom-block bg-white shadow-lg">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <p class="mb-0">
-                                                            <strong style="font-size: 25px;">Definition</strong> <br />
-                                                            The restore tactic is used to return the system to a better state.
-                                                        </p>
-                                                        	<h6 class="mb-2">Defense Details</h6>
-						    <table class="table table-striped table-bordered table-teal">
-							    <thead class="table-light">
-								<tr>
-								    <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Name</th>
-								    <th style="text-align: center; vertical-align: middle; 
-										border-bottom: 3px solid #fff; background: #b39605">Description</th>
-								</tr>
-							    </thead>
-							    <tbody>
-								{% for Type, defense_list in results.items() %}
-								    {% if Type == "Isolate" %}
-									{% for defense_item in defense_list %}
-									    {% set defenseParts = defense_item.split(": ") %}
-									    {% set defenseName = defenseParts[1].replace(" ", "") %}
-									    {% set defense = defenseParts[0] ~ ": " ~ defenseParts[1] %}
-									    <tr>
-										<td class="table-light" style="border-right: 3px solid #fff; border-bottom: 3px solid #fff;">
-										    <a href="https://d3fend.mitre.org/technique/d3f:{{ defenseName }}" target="_blank"
-											style="display: block; margin-bottom: 5px;">
-											{{ defense }}
-										    </a>
-										</td>
-										<td class="table-light" style="border-bottom: 3px solid #fff;">
-										    {{ defenseParts[2] }}
-										</td>
-									    </tr>
-									{% endfor %}
-								    {% endif %}
-								{% endfor %}
-							    </tbody>
-							</table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-            	{% if dataGraph.items()|length > 0 %}
-                            <canvas id="barChart" class="mt-5 mx-auto" style="width: 50%;"></canvas>
-                            <p class="text-center" style="font-size: small; font-weight:bold; color: firebrick;">Chart. The number of tactic in each defense</p>
-                            {% endif %}
-            	</div>
-            </section>
-            
-            <section class="topics-detail-section section-padding" id="topics-detail">
-            	
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-12 m-auto">
-                            <h3 class="mb-4">Introduction to ATTVN Defense</h3>
-                            <p>
-                                The ATTVN Defense is crafted to provide a structured methodology for comprehending and implementing 
-                                defensive countermeasures against cyber threats. It serves as a complement to the well-established MITRE
-                                ATT&CK framework, which delineates adversarial Tactics, Techniques, and Procedures (TTPs). <br />
-                                <br />
-                                While ATT&CK maps out the adversarial tactics, techniques, and procedures (TTPs) within a framework, 
-                                ATTVN Defense offers guidance on defending against those specific adversarial actions.
-                            </p>
-                            <blockquote>
-                                Understanding both the attack and defense is key to building effective cybersecurity.
-                            </blockquote>
-                            <p>
-                                The ATTVN Defense utilizes MITRE D3FEND and MITRE ATT&CK data to offer users a centralized platform 
-                                for searching and learning about defense. This information enhances users' comprehension of attack
-                                techniques and effective defense strategies.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="contact-section section-padding section-bg" id="section_5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-12 text-center">
-                            <h2 class="mb-5">Get in touch</h2>
-                        </div>
-
-                        <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14899.038322822236!2d105.53572534999999!3d21.002272299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abc60e7d3f19%3A0x2be9d7d0b5abcbf4!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBGUFQ!5e0!3m2!1svi!2s!4v1699952015301!5m2!1svi!2s"
-                                width="100%"
-                                height="250"
-                                style="border: 0;"
-                                allowfullscreen=""
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
-                            <h4 class="mb-3">FPT University</h4>
-
-                            <p>Khu Cong Nghe Cao Hoa Lac, Km29 Dai lo Thang Long, Thach Hoa, Thach That, Ha Noi, Viet Nam</p>
-
-                            <hr />
-
-                            <p class="text-white d-flex">
-                                <span class="me-2 text-black">
-                                    Email:
-                                    <a href="mailto:attvn2023@gmail.com" class="site-footer-link" style="font-size: 20px;">
-                                        attvn2023@gmail.com
-                                    </a>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mx-auto">
-                            <h4 class="mb-3">Supervisor</h4>
-
-                            <p>Mr. Hoang Manh Duc</p>
-
-                            <hr />
-
-                            <p class="d-flex align-items-center mb-1">
-                                <span class="mb-3 text-black"><b>Team Member</b></span>
-                            </p>
-
-                            <p>
-                                Do Xuan Thien <br />
-                                Bui Van An <br />
-                                Nguyen Duc Viet <br />
-                                Pham Huy Nhat <br />
-                                Hoang Huy Thuan <br />
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-12 mb-4 pb-2">
-                        <a class="navbar-brand mb-2" href="/index">
-                            <i class="bi-back"></i>
-                            <span>ATTVN</span>
+                    <p class="text-white d-flex">
+                        <a href="mailto:attvn2023@gmail.com" class="site-footer-link">
+                            attvn2023@gmail.com
                         </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <h6 class="site-footer-title mb-3">Resources</h6>
-
-                        <ul class="site-footer-links">
-                            <li class="site-footer-link-item">
-                                <a href="/#section_1" class="site-footer-link">Home</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="/#section_2" class="site-footer-link">Browse topics</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="/#section_3" class="site-footer-link">How it works</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="/#section_4" class="site-footer-link">FAQs</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="/#section_5" class="site-footer-link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
-                        <h6 class="site-footer-title mb-3">Information</h6>
-
-                        <p class="text-white d-flex">
-                            <a href="mailto:attvn2023@gmail.com" class="site-footer-link">
-                                attvn2023@gmail.com
-                            </a>
-                        </p>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
-                        <p class="copyright-text mt-lg-5 mt-4">
-                            Copyright © 2048 Topic Listing Center. All rights reserved.
-                            <!-- <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a>
-                            Distribution <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
-                        </p>
-                    </div>
+                    </p>
                 </div>
-                <div id="dataGraph" data-geocode='{{ dataGraph|tojson }}'></div>
-            </div>
-        </footer>
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="../static/js/jquery.min.js"></script>
-        <script src="../static/js/bootstrap.bundle.min.js"></script>
-        <script src="../static/js/jquery.sticky.js"></script>
-        <script src="../static/js/custom.js"></script>
-        <script>
-        	var dataGraphElement = document.getElementById("dataGraph");
-        	var dataGraph = JSON.parse(dataGraphElement.dataset.geocode);
-        	const labels = Object.keys(dataGraph);
-		const data = {
-		  labels: labels,
-		  datasets: [{
-		    label: 'Tactic',
-		    data: Object.values(dataGraph),
-		    backgroundColor: [
-		      'rgba(255, 99, 132, 0.2)',
-		      'rgba(255, 159, 64, 0.2)',
-		      'rgba(255, 205, 86, 0.2)',
-		      'rgba(75, 192, 192, 0.2)',
-		      'rgba(54, 162, 235, 0.2)',
-		      'rgba(153, 102, 255, 0.2)',
-		      'rgba(201, 203, 207, 0.2)'
-		    ],
-		    borderColor: [
-		      'rgb(255, 99, 132)',
-		      'rgb(255, 159, 64)',
-		      'rgb(255, 205, 86)',
-		      'rgb(75, 192, 192)',
-		      'rgb(54, 162, 235)',
-		      'rgb(153, 102, 255)',
-		      'rgb(201, 203, 207)'
-		    ],
-		    borderWidth: 1
-		  }]
-		};
-		const config = {
-		  type: 'bar',
-		  data: data,
-		  options: {
-		    scales: {
-		      y: {
-			beginAtZero: true
-		      }
-		    }
-		  },
-		};
-		const ctx = document.getElementById('barChart').getContext('2d');
-       		new Chart(ctx, config);
-        </script>
-        
-    </body>
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+                    <p class="copyright-text mt-lg-5 mt-4">
+                        Copyright © 2048 Topic Listing Center. All rights reserved.
+                        <!-- <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                            Distribution <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
+                    </p>
+                </div>
+            </div>
+            <div id="dataGraph" data-geocode='{{ dataGraph|tojson }}'></div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/jquery.sticky.js"></script>
+    <script src="../static/js/custom.js"></script>
+    <script>
+        var dataGraphElement = document.getElementById("dataGraph");
+        var dataGraph = JSON.parse(dataGraphElement.dataset.geocode);
+        const labels = Object.keys(dataGraph);
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Defense Tactic',
+                data: Object.values(dataGraph),
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 205, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(201, 203, 207, 0.2)'
+                ],
+                borderColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(255, 159, 64)',
+                    'rgb(255, 205, 86)',
+                    'rgb(75, 192, 192)',
+                    'rgb(54, 162, 235)',
+                    'rgb(153, 102, 255)',
+                    'rgb(201, 203, 207)'
+                ],
+                borderWidth: 1
+            }]
+        };
+        const config = {
+            type: 'bar',
+            data: data,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+        };
+        const ctx = document.getElementById('barChart').getContext('2d');
+        new Chart(ctx, config);
+    </script>
+
+</body>
+
 </html>
