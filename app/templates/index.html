@@ -131,6 +131,22 @@
                                 </li>
                                 {% endfor %}
                             </ul>
+							<h6 class="mb-2">CAPEC</h6>
+                            <ul class="mb-3 list-inline">
+								{%if capecs %}
+                                {% for capec in capecs %}
+                                <li class="text-black fs-6">
+                                    <i class="bi bi-check2-circle"></i>
+                                    {{ capec}}
+                                </li>
+                                {% endfor %}
+								{% else %}
+								<li class="text-black fs-6">
+                                    <i class="bi bi-check2-circle"></i>
+                                    Undefined
+                                </li>
+								{% endif %}
+                            </ul>
 
 
                             <h6 class="mb-2">Tactics & Techniques</h6>
@@ -595,19 +611,19 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false"
                                         aria-controls="collapseTwo">
-                                        Is the purpose of the combination between ATT&amp;CK and D3FEND?
+                                        Where is the data originated from? Are they verifiable? 
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse"
                                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        ATT&amp;CK is a framework for categorising offensive techniques deployed by threat actors. D3FEND is also a framework that complements ATT&amp;CK
-										by providing corresponding countermeasures for each attack technique. Our project aims to utilise both of them to make a detailed description
-										for each CVE vulnerability, speeding up threat modeling process.
+                                        ATTVN takes the information from trusted sources such as NIST CVE, MITRE
+										ATT&amp;CK, MITRE D3FEND, MITRE CWE, and MITRE CAPEC. 
                                     </div>
                                 </div>
-                            </div>
-
+                            </div> 
+							
+							
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"

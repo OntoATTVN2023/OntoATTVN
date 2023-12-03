@@ -24,7 +24,6 @@ def index():
 		list_to_filter = set()
 		with open('CWE.txt', 'r') as file:
 			for line in file:
-        # Thêm mỗi dòng vào set (loại bỏ ký tự xuống dòng)
 				list_to_filter.add(line.strip())
 		
 		filtered_cwe_ids = initial_cwe_ids & list_to_filter
@@ -41,12 +40,14 @@ def index():
 		g.parse("ontology/ontology.owl", format="xml")
 		sparql_query = '''
 		PREFIX my: <http://test.org/Ontology.owl#>
-		SELECT DISTINCT ?TacticID ?TacticName ?TechID ?TechName
+		SELECT DISTINCT ?TacticID ?TacticName ?TechID ?TechName ?CapecID ?CapecName
 		WHERE {
 		    filter REGEX(?CWEID,"''' + cwe_id + '''").
 		    ?CWE rdf:type my:CWE.
 		    ?CWE my:hasID ?CWEID.
 		    ?CWE my:hasCAPEC ?Capec.
+            ?Capec my:hasID ?CapecID.
+            ?Capec my:hasName ?CapecName.
 		    ?Capec my:mapToCAPEC ?Tech.
 		    ?Tech my:hasID ?TechID.
 		    ?Tech my:hasName ?TechName.
@@ -58,18 +59,21 @@ def index():
 
 		result = g.query(query)
 		result_data = defaultdict(list)
-
+		list_capec = set()
 		for row in result:
 			tactic = str(row["TacticName"])
 			tech = str(row["TechName"])
 			tacticId = str(row["TacticID"])
 			techId = str(row["TechID"])
+			capecId = str(row["CapecID"])
+			capecName = str(row["CapecName"])
 			value = f"{techId}: {tech}"
 			tactic = f"{tacticId}: {tactic}"
 			result_data[tactic].append(value)
+			list_capec.add(f'{capecId}: {capecName}')
 
 		result_dict = dict(result_data)
-        #print(result_dict)
+
 		tactics = ['Reconnaissance', 'Resource Development', 'Initial Access', 'Execution', 'Persistence', 'Privilege Escalation', 'Defense Evasion',
                    'Credential Access', 'Discovery', 'Lateral Movement', 'Collection', 'Command and Control', 'Exfiltration', 'Impact']
 
@@ -79,7 +83,7 @@ def index():
 		for tactic in tactics:
 			if tactic not in dataGraph.keys():
 				dataGraph[tactic] = 0
-		return render_template('index.html', results=result_dict, cve_id=cve_id.upper(), cve_description=cve_description,
+		return render_template('index.html', capecs=list_capec, results=result_dict, cve_id=cve_id.upper(), cve_description=cve_description,
                                cwe=cwe,  dataGraph=dataGraph)
 
 	else:

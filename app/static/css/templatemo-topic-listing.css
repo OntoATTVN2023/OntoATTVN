@@ -1001,7 +1001,7 @@ blockquote {
   line-height: normal;
 }
 .site-footer-link:hover {
-  color: var(--white-color);
+  color: var(--custom-btn-bg-color);
   font-size: var(--copyright-font-size);
   font-weight: var(--font-weight-medium);
   line-height: normal;
