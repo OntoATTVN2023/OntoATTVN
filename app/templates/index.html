@@ -138,9 +138,9 @@
                                 <thead class="table-light">
                                     <tr>
                                         <th style="border-right: 3px solid #fff; text-align: center; vertical-align: middle; 
-                                                    border-bottom: 3px solid #fff; background: #b39605">Tactic</th>
+                                                    border-bottom: 3px solid #fff; background: #3288e4">Tactic</th>
                                         <th style="text-align: center; vertical-align: middle; 
-                                                    border-bottom: 3px solid #fff; background: #b39605">Technique</th>
+                                                    border-bottom: 3px solid #fff; background: #3288e4">Technique</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -517,7 +517,7 @@
                                     <h4 class="text-white mb-3">Map to Ontology</h4>
 
                                     <p class="text-white">After choosing your CVE ID, our application will inspect and assign the vulnerability 
-									to its appropriate category within ATT&CK matrices through an analysis chain of CWE, CAPEC. </p>
+									to its appropriate category within ATT&amp;CK matrices through an analysis chain of CWE, CAPEC. </p>
 
                                     <div class="icon-holder">
                                         <i class="bi bi-gear-wide-connected"></i>
@@ -590,7 +590,23 @@
                                 </div>
                             </div>
 
-
+							<div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Is the purpose of the combination between ATT&amp;CK and D3FEND?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        ATT&amp;CK is a framework for categorising offensive techniques deployed by threat actors. D3FEND is also a framework that complements ATT&amp;CK
+										by providing corresponding countermeasures for each attack technique. Our project aims to utilise both of them to make a detailed description
+										for each CVE vulnerability, speeding up threat modeling process.
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingThree">

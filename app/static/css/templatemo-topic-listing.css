@@ -11,11 +11,11 @@ https://templatemo.com/tm-590-topic-listing
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #4a3177;
-  --secondary-color:              #b89b00;
+  --primary-color:                #000351;
+  --secondary-color:              #09747a;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #573d69;
-  --custom-btn-bg-hover-color:    #4a3177;
+  --custom-btn-bg-color:          #1779c4;
+  --custom-btn-bg-hover-color:    #08304e;
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #7fffd4;
@@ -147,7 +147,7 @@ strong {
 }
 
 .section-overlay {
-  background-image: linear-gradient(15deg, #4a3177 0%, #b89b00 100%);
+  background-image: linear-gradient(15deg, #3f2b5b 0%, #008080 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -248,7 +248,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-image: linear-gradient(15deg, #4a3177 0%, #b89b00 100%); /* Chỉnh để màu tối hơn tại đây */
+  background-image: linear-gradient(15deg, #3f2b5b 0%, #008080 100%);
   padding-top: 150px;
   padding-bottom: 80px;
 }
@@ -486,8 +486,9 @@ strong {
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
+
 .hero-section {
-  background-image: linear-gradient(15deg, #4a3177 0%, #b89b00 100%);
+  background-image: linear-gradient(15deg, #3f2b5b 0%, #008080 100%);
   position: relative;
   overflow: hidden;
   padding-top: 150px;
@@ -995,6 +996,12 @@ blockquote {
 
 .site-footer-link {
   color: var(--secondary-color);
+  font-size: var(--copyright-font-size);
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+}
+.site-footer-link:hover {
+  color: var(--white-color);
   font-size: var(--copyright-font-size);
   font-weight: var(--font-weight-medium);
   line-height: normal;
