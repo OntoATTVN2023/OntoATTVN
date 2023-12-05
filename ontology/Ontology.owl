@@ -118,6 +118,11 @@
   <rdfs:range rdf:resource="#CAPEC"/>
 </owl:ObjectProperty>
 
+<owl:ObjectProperty rdf:about="#hasCWE">
+  <rdfs:domain rdf:resource="#CVE"/>
+  <rdfs:range rdf:resource="#CWE"/>
+</owl:ObjectProperty>
+
 <owl:ObjectProperty rdf:about="#isParentOfCAPEC">
   <rdfs:domain rdf:resource="#CAPEC"/>
   <rdfs:range rdf:resource="#CAPEC"/>
@@ -201,13 +206,13 @@
 </owl:DatatypeProperty>
 
 <owl:DatatypeProperty rdf:about="#hasType">
-  <rdfs:domain rdf:resource="#Detect"/>
   <rdfs:domain rdf:resource="#Isolate"/>
   <rdfs:domain rdf:resource="#Restore"/>
-  <rdfs:domain rdf:resource="#Evict"/>
-  <rdfs:domain rdf:resource="#Harden"/>
-  <rdfs:domain rdf:resource="#Model"/>
   <rdfs:domain rdf:resource="#Deceive"/>
+  <rdfs:domain rdf:resource="#Model"/>
+  <rdfs:domain rdf:resource="#Evict"/>
+  <rdfs:domain rdf:resource="#Detect"/>
+  <rdfs:domain rdf:resource="#Harden"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
 </owl:DatatypeProperty>
 
@@ -264,6 +269,10 @@
 </owl:Class>
 
 <owl:Class rdf:about="#CWE">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#CVE">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
