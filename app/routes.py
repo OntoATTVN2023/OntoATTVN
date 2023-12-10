@@ -64,6 +64,10 @@ def index():
 				result_data[tactic].append(value)
 			list_capec.add(f'{capecId}: {capecName}')
 
+		if not list_capec:
+			return render_template('index.html', results={'Undefined': ['Undefined']}, cve_id=cve_id.upper(), cve_description=cve_description,
+                                   cwe=cwe, dataGraph={})
+		
 		result_dict = dict(result_data)
 		tactics = ['Reconnaissance', 'Resource Development', 'Initial Access', 'Execution', 'Persistence', 'Privilege Escalation', 'Defense Evasion',
                    'Credential Access', 'Discovery', 'Lateral Movement', 'Collection', 'Command and Control', 'Exfiltration', 'Impact']

@@ -17,937 +17,73 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
     "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "26",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
     "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
     "type" : "owl:Class"
   }, {
     "id" : "24",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:Class"
   }, {
     "id" : "39",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "43",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "2",
     "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "46",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "38",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "48",
+    "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
+    "id" : "49",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "41",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "13",
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://test.org/Ontology.owl#Detection",
-    "baseIri" : "http://test.org/Ontology.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Detection"
-    },
-    "individuals" : [ {
-      "iri" : "http://test.org/Ontology.owl#DS0020_005",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0020_005"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0020_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0020_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0020_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0020_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0020_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0020_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0020_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0020_004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0037_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0037_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0004_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0004_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0004_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0004_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0029_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0029_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0029_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0029_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0029_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0029_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0012_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0012_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0022_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0022_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0019_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0019_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0022_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0022_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0022_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0022_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0019_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0019_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0035_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0035_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0019_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0019_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0022_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0022_004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0035_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0035_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0006_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0006_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0022_005",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0022_005"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0006_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0006_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0010_006",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0010_006"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0010_005",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0010_005"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0010_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0010_004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0010_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0010_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0010_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0010_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0010_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0010_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0033_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0033_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0008_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0008_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0025_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0025_004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0016_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0016_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0016_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0016_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0025_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0025_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0016_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0016_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0025_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0025_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0025_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0025_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0027_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0027_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0001_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0001_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0014_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0014_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0014_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0014_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0027_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0027_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0014_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0014_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0003_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0003_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0003_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0003_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0038_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0038_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0038_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0038_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0003_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0003_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0019",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0019"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0011_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0011_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0020",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0020"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0021",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0021"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0021_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0021_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0028",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0028"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0029",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0029"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0026",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0026"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0027",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0027"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0024",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0024"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0038_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0038_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0025",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0025"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0022",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0022"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0023",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0023"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0005_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0005_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0032",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0032"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0030",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0030"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0036_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0036_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0018_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0018_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0036_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0036_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0018_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0018_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0037",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0037"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0018_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0018_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0036_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0036_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0038",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0038"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0035",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0035"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0018_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0018_004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0036",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0036"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0023_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0023_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0033",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0033"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0034",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0034"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0024_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0024_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0024_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0024_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0024_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0024_004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0017_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0017_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0024_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0024_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0007_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0007_004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0034_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0034_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0007_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0007_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0034_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0034_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0034_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0034_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0034_005",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0034_005"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0007_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0007_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0034_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0034_004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0007_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0007_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0006",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0006"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0007",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0007"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0005",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0005"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0008",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0008"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0030_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0030_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0009",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0009"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0030_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0030_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0030_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0030_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0030_005",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0030_005"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0030_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0030_004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0030_007",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0030_007"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0028_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0028_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0028_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0028_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0030_006",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0030_006"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0026_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0026_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0013_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0013_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0002_005",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0002_005"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0026_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0026_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0026_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0026_004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0002_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0002_004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0015_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0015_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0002_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0002_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0010",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0010"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0026_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0026_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0009_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0009_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0002_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0002_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0002_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0002_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0026_005",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0026_005"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0032_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0032_001"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0009_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0009_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0009_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0009_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0032_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0032_003"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0009_005",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0009_005"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0009_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0009_004"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0032_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0032_002"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0017",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0017"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0009_006",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0009_006"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0018",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0018"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0015",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0015"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0016",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0016"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0013",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0013"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0014",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0014"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0011",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0011"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#DS0012",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "DS0012"
-      }
-    } ],
-    "id" : "0"
-  }, {
     "iri" : "http://test.org/Ontology.owl#Harden",
     "baseIri" : "http://test.org/Ontology.owl",
     "instances" : 0,
@@ -1081,8 +217,8 @@
         "IRI-based" : "D3_OTP"
       }
     } ],
-    "id" : "1",
-    "superClasses" : [ "2" ]
+    "id" : "0",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://test.org/Ontology.owl#Deceive",
     "baseIri" : "http://test.org/Ontology.owl",
@@ -1145,8 +281,8 @@
         "IRI-based" : "D3_DO"
       }
     } ],
-    "id" : "11",
-    "superClasses" : [ "2" ]
+    "id" : "10",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://test.org/Ontology.owl#Tactic",
     "baseIri" : "http://test.org/Ontology.owl",
@@ -1239,7 +375,7 @@
         "IRI-based" : "TA0003"
       }
     } ],
-    "id" : "10"
+    "id" : "9"
   }, {
     "iri" : "http://test.org/Ontology.owl#Model",
     "baseIri" : "http://test.org/Ontology.owl",
@@ -1302,16 +438,16 @@
         "IRI-based" : "D3_CI"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#D3_APLM",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "D3_APLM"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#D3_DI",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "D3_DI"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#D3_APLM",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "D3_APLM"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#D3_PLLM",
@@ -1356,8 +492,8 @@
         "IRI-based" : "D3_LLM"
       }
     } ],
-    "id" : "6",
-    "superClasses" : [ "2" ]
+    "id" : "5",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://test.org/Ontology.owl#Technique",
     "baseIri" : "http://test.org/Ontology.owl",
@@ -1540,16 +676,16 @@
         "IRI-based" : "T1574_012"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1574_013",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1574_013"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1598_002",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1598_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1574_013",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1574_013"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1598_003",
@@ -1630,12 +766,6 @@
         "IRI-based" : "T1608_001"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1574_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1574_002"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1213_002",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
@@ -1646,6 +776,12 @@
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1608_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1574_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1574_002"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1591_004",
@@ -1672,12 +808,6 @@
         "IRI-based" : "T1608_003"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1591_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1591_002"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1608_004",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
@@ -1688,6 +818,12 @@
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1574_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1591_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1591_002"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1574_005",
@@ -1786,16 +922,16 @@
         "IRI-based" : "T1036_006"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1609",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1609"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1542_005",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1542_005"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1609",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1609"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1542_004",
@@ -2008,16 +1144,16 @@
         "IRI-based" : "T1614"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1613",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1613"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1110_001",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1110_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1613",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1613"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1110_004",
@@ -2152,16 +1288,16 @@
         "IRI-based" : "T1560_001"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1543_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1543_002"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1592_002",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1592_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1543_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1543_002"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1592_001",
@@ -2404,16 +1540,16 @@
         "IRI-based" : "T1491_001"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1484_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1484_001"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1197",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1197"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1484_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1484_001"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1484_002",
@@ -2422,16 +1558,16 @@
         "IRI-based" : "T1484_002"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1074",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1074"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1195",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1195"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1074",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1074"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1078",
@@ -2884,16 +2020,16 @@
         "IRI-based" : "T1007"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1006",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1006"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1127",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1127"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1006",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1006"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1489",
@@ -2908,16 +2044,16 @@
         "IRI-based" : "T1005"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1136_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1136_003"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1125",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1125"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1136_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1136_003"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1497_002",
@@ -2938,16 +2074,16 @@
         "IRI-based" : "T1071_003"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1136_001",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1136_001"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1071_004",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1071_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1136_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1136_001"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1497_001",
@@ -2968,10 +2104,10 @@
         "IRI-based" : "T1129"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1071_002",
+      "iri" : "http://test.org/Ontology.owl#T1497_003",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
-        "IRI-based" : "T1071_002"
+        "IRI-based" : "T1497_003"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1008",
@@ -2980,10 +2116,10 @@
         "IRI-based" : "T1008"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1497_003",
+      "iri" : "http://test.org/Ontology.owl#T1071_002",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
-        "IRI-based" : "T1497_003"
+        "IRI-based" : "T1071_002"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1010",
@@ -3310,16 +2446,16 @@
         "IRI-based" : "T1593"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1546_008",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1546_008"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1592",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1592"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1546_008",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1546_008"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1591",
@@ -3334,6 +2470,12 @@
         "IRI-based" : "T1590"
       }
     }, {
+      "iri" : "http://test.org/Ontology.owl#T1113",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1113"
+      }
+    }, {
       "iri" : "http://test.org/Ontology.owl#T1597",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
@@ -3346,10 +2488,10 @@
         "IRI-based" : "T1546_005"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1113",
+      "iri" : "http://test.org/Ontology.owl#T1112",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
-        "IRI-based" : "T1113"
+        "IRI-based" : "T1112"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1596",
@@ -3364,22 +2506,10 @@
         "IRI-based" : "T1546_004"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1112",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1112"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1546_007",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1546_007"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#T1111",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1111"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1595",
@@ -3388,10 +2518,10 @@
         "IRI-based" : "T1595"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1546_006",
+      "iri" : "http://test.org/Ontology.owl#T1111",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
-        "IRI-based" : "T1546_006"
+        "IRI-based" : "T1111"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1110",
@@ -3404,6 +2534,12 @@
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1594"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1546_006",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1546_006"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1546_001",
@@ -3448,16 +2584,16 @@
         "IRI-based" : "T1115"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1598",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1598"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1114",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1114"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1598",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1598"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1119",
@@ -3682,16 +2818,16 @@
         "IRI-based" : "T1218_009"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1059",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1059"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1564_011",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1564_011"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1059",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1059"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1056_001",
@@ -3772,16 +2908,16 @@
         "IRI-based" : "T1547_005"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1547_004",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1547_004"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1564_009",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1564_009"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1547_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1547_004"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1547_003",
@@ -3832,28 +2968,28 @@
         "IRI-based" : "T1114_001"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1564_002",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1564_002"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1114_002",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1114_002"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1027",
+      "iri" : "http://test.org/Ontology.owl#T1564_002",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
-        "IRI-based" : "T1027"
+        "IRI-based" : "T1564_002"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1564_001",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1564_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1027",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1027"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1547_002",
@@ -3880,16 +3016,16 @@
         "IRI-based" : "T1547_001"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1114_003",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1114_003"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1564_005",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1564_005"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1114_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1114_003"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1564_004",
@@ -4030,16 +3166,16 @@
         "IRI-based" : "T1568_001"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1649",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1649"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1528",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1528"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1649",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1649"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1648",
@@ -4090,16 +3226,16 @@
         "IRI-based" : "T1037_002"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1531",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1531"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1652",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1652"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1531",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1531"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1651",
@@ -4438,12 +3574,6 @@
         "IRI-based" : "T1216_001"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1203",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1203"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1021_008",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
@@ -4454,6 +3584,12 @@
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1566"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1203",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1203"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1565",
@@ -4768,16 +3904,16 @@
         "IRI-based" : "T1220"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1546_012",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1546_012"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1137_003",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1137_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1546_012",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1546_012"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1552_003",
@@ -5098,16 +4234,16 @@
         "IRI-based" : "T1564"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#T1200",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "T1200"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#T1563",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "T1563"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#T1200",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "T1200"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#T1562",
@@ -5122,7 +4258,7 @@
         "IRI-based" : "T1561"
       }
     } ],
-    "id" : "8"
+    "id" : "7"
   }, {
     "iri" : "http://test.org/Ontology.owl#Evict",
     "baseIri" : "http://test.org/Ontology.owl",
@@ -5191,8 +4327,16 @@
         "IRI-based" : "D3_AL"
       }
     } ],
-    "id" : "18",
-    "superClasses" : [ "2" ]
+    "id" : "21",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://test.org/Ontology.owl#CVE",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CVE"
+    },
+    "id" : "19"
   }, {
     "iri" : "http://test.org/Ontology.owl#Detect",
     "baseIri" : "http://test.org/Ontology.owl",
@@ -5603,8 +4747,875 @@
         "IRI-based" : "D3_FA"
       }
     } ],
-    "id" : "26",
-    "superClasses" : [ "2" ]
+    "id" : "29",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://test.org/Ontology.owl#DataSource",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataSource"
+    },
+    "individuals" : [ {
+      "iri" : "http://test.org/Ontology.owl#DS0020_005",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0020_005"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0020_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0020_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0020_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0020_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0020_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0020_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0020_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0020_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0037_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0037_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0004_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0004_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0004_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0004_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0029_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0029_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0029_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0029_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0029_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0029_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0012_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0012_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0019_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0019_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0022_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0022_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0022_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0022_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0019_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0019_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0035_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0035_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0022_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0022_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0019_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0019_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0035_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0035_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0022_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0022_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0006_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0006_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0022_005",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0022_005"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0006_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0006_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0010_006",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0010_006"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0010_005",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0010_005"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0010_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0010_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0010_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0010_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0010_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0010_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0010_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0010_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0008_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0008_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0033_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0033_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0016_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0016_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0025_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0025_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0016_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0016_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0025_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0025_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0025_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0025_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0016_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0016_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0025_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0025_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0027_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0027_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0001_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0001_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0014_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0014_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0014_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0014_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0027_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0027_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0014_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0014_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0003_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0003_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0003_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0003_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0038_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0038_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0003_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0003_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0038_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0038_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0019",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0019"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0011_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0011_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0020",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0020"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0021",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0021"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0021_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0021_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0028",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0028"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0029",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0029"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0026",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0026"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0027",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0027"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0024",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0024"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0025",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0025"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0038_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0038_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0022",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0022"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0023",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0023"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0005_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0005_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0032",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0032"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0030",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0030"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0036_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0036_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0036_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0036_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0018_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0018_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0018_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0018_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0037",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0037"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0036_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0036_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0038",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0038"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0018_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0018_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0018_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0018_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0035",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0035"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0036",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0036"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0023_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0023_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0033",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0033"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0034",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0034"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0024_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0024_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0024_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0024_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0017_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0017_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0024_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0024_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0024_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0024_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0007_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0007_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0034_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0034_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0007_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0007_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0034_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0034_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0034_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0034_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0034_005",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0034_005"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0007_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0007_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0034_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0034_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0007_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0007_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0006",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0006"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0007",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0007"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0005",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0005"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0008",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0008"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0030_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0030_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0009",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0009"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0030_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0030_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0030_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0030_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0030_005",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0030_005"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0030_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0030_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0028_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0028_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0030_007",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0030_007"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0028_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0028_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0030_006",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0030_006"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0026_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0026_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0013_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0013_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0026_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0026_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0002_005",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0002_005"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0026_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0026_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0002_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0002_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0015_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0015_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0010",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0010"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0026_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0026_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0002_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0002_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0002_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0002_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0009_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0009_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0026_005",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0026_005"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0002_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0002_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0009_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0009_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0032_001",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0032_001"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0009_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0009_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0009_005",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0009_005"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0032_003",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0032_003"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0032_002",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0032_002"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0009_004",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0009_004"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0017",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0017"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0009_006",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0009_006"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0018",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0018"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0015",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0015"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0016",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0016"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0013",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0013"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0014",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0014"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0011",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0011"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#DS0012",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "DS0012"
+      }
+    } ],
+    "id" : "17"
   }, {
     "iri" : "http://test.org/Ontology.owl#CAPEC",
     "baseIri" : "http://test.org/Ontology.owl",
@@ -5853,16 +5864,16 @@
         "IRI-based" : "CAPEC_616"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_615",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_615"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_1",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_1"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_615",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_615"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_2",
@@ -6177,16 +6188,16 @@
         "IRI-based" : "CAPEC_632"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_510",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_510"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_631",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_631"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_510",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_510"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_630",
@@ -6345,16 +6356,16 @@
         "IRI-based" : "CAPEC_415"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_657",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_657"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_416",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_416"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_657",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_657"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_656",
@@ -6459,16 +6470,16 @@
         "IRI-based" : "CAPEC_532"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_652",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_652"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_531",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_531"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_652",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_652"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_651",
@@ -6555,16 +6566,16 @@
         "IRI-based" : "CAPEC_646"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_524",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_524"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_645",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_645"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_524",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_524"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_523",
@@ -6699,12 +6710,6 @@
         "IRI-based" : "CAPEC_678"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_90",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_90"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_677",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
@@ -6715,6 +6720,12 @@
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_556"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_90",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_90"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_312",
@@ -6753,16 +6764,16 @@
         "IRI-based" : "CAPEC_674"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_310",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_310"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_93",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_93"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_310",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_310"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_552",
@@ -6951,16 +6962,16 @@
         "IRI-based" : "CAPEC_664"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_542",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_542"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_663",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_663"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_542",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_542"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_541",
@@ -6969,16 +6980,16 @@
         "IRI-based" : "CAPEC_541"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_300",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_300"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_662",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_662"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_300",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_300"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_661",
@@ -7023,16 +7034,16 @@
         "IRI-based" : "CAPEC_218"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_457",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_457"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_579",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_579"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_457",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_457"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_699",
@@ -7167,6 +7178,12 @@
         "IRI-based" : "CAPEC_573"
       }
     }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_73",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_73"
+      }
+    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_330",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
@@ -7177,12 +7194,6 @@
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_694"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_73",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_73"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_331",
@@ -7209,10 +7220,10 @@
         "IRI-based" : "CAPEC_572"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_75",
+      "iri" : "http://test.org/Ontology.owl#CAPEC_692",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
-        "IRI-based" : "CAPEC_75"
+        "IRI-based" : "CAPEC_692"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_571",
@@ -7221,10 +7232,10 @@
         "IRI-based" : "CAPEC_571"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_692",
+      "iri" : "http://test.org/Ontology.owl#CAPEC_75",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
-        "IRI-based" : "CAPEC_692"
+        "IRI-based" : "CAPEC_75"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_691",
@@ -7281,16 +7292,16 @@
         "IRI-based" : "CAPEC_446"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_325",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_325"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_204",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_204"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_325",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_325"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_447",
@@ -7359,12 +7370,6 @@
         "IRI-based" : "CAPEC_321"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_60",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_60"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_564",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
@@ -7375,6 +7380,12 @@
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_442"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_60",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_60"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_322",
@@ -7455,16 +7466,16 @@
         "IRI-based" : "CAPEC_681"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_64",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CAPEC_64"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_560",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CAPEC_560"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CAPEC_64",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CAPEC_64"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_680",
@@ -7593,10 +7604,10 @@
         "IRI-based" : "CAPEC_471"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_230",
+      "iri" : "http://test.org/Ontology.owl#CAPEC_472",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
-        "IRI-based" : "CAPEC_230"
+        "IRI-based" : "CAPEC_472"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_592",
@@ -7605,10 +7616,10 @@
         "IRI-based" : "CAPEC_592"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CAPEC_472",
+      "iri" : "http://test.org/Ontology.owl#CAPEC_230",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
-        "IRI-based" : "CAPEC_472"
+        "IRI-based" : "CAPEC_230"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CAPEC_107",
@@ -7863,7 +7874,7 @@
         "IRI-based" : "CAPEC_120"
       }
     } ],
-    "id" : "21"
+    "id" : "24"
   }, {
     "iri" : "http://test.org/Ontology.owl#Restore",
     "baseIri" : "http://test.org/Ontology.owl",
@@ -7938,26 +7949,26 @@
         "IRI-based" : "D3_RO"
       }
     } ],
-    "id" : "36",
-    "superClasses" : [ "2" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "24",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "39",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "43",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
     "label" : {
       "IRI-based" : "string"
     }
@@ -7968,27 +7979,27 @@
     "label" : {
       "IRI-based" : "Defense"
     },
-    "subClasses" : [ "36", "1", "15", "11", "6", "18", "26" ],
-    "id" : "2"
+    "subClasses" : [ "39", "0", "14", "10", "5", "21", "29" ],
+    "id" : "1"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "46",
+    "id" : "49",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "38",
+    "id" : "41",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "instances" : 0,
-    "union" : [ "1", "36", "15", "11", "6", "18", "26" ],
+    "union" : [ "0", "39", "14", "10", "5", "21", "29" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "48"
+    "id" : "51"
   }, {
     "iri" : "http://test.org/Ontology.owl#CWE",
     "baseIri" : "http://test.org/Ontology.owl",
@@ -8441,16 +8452,16 @@
         "IRI-based" : "CWE_163"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CWE_162",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CWE_162"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CWE_283",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CWE_283"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CWE_162",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CWE_162"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CWE_289",
@@ -8861,16 +8872,16 @@
         "IRI-based" : "CWE_691"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CWE_697",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CWE_697"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CWE_334",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CWE_334"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CWE_697",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CWE_697"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CWE_213",
@@ -9167,6 +9178,12 @@
         "IRI-based" : "CWE_316"
       }
     }, {
+      "iri" : "http://test.org/Ontology.owl#CWE_799",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CWE_799"
+      }
+    }, {
       "iri" : "http://test.org/Ontology.owl#CWE_315",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
@@ -9177,12 +9194,6 @@
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CWE_436"
-      }
-    }, {
-      "iri" : "http://test.org/Ontology.owl#CWE_799",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CWE_799"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CWE_798",
@@ -9485,16 +9496,16 @@
         "IRI-based" : "CWE_353"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CWE_239",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CWE_239"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CWE_118",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CWE_118"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CWE_239",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CWE_239"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CWE_117",
@@ -10013,16 +10024,16 @@
         "IRI-based" : "CWE_646"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CWE_525",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CWE_525"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CWE_404",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CWE_404"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CWE_525",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CWE_525"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CWE_766",
@@ -10229,16 +10240,16 @@
         "IRI-based" : "CWE_771"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CWE_778",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CWE_778"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CWE_657",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CWE_657"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CWE_778",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CWE_778"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CWE_656",
@@ -10253,16 +10264,16 @@
         "IRI-based" : "CWE_414"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#CWE_413",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "CWE_413"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#CWE_655",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "CWE_655"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#CWE_413",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "CWE_413"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#CWE_775",
@@ -10547,7 +10558,7 @@
         "IRI-based" : "CWE_757"
       }
     } ],
-    "id" : "4"
+    "id" : "3"
   }, {
     "iri" : "http://test.org/Ontology.owl#Isolate",
     "baseIri" : "http://test.org/Ontology.owl",
@@ -10610,16 +10621,16 @@
         "IRI-based" : "D3_ITF"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#D3_HDL",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "D3_HDL"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#D3_RRID",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "D3_RRID"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#D3_HDL",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "D3_HDL"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#D3_MAC",
@@ -10628,16 +10639,16 @@
         "IRI-based" : "D3_MAC"
       }
     }, {
-      "iri" : "http://test.org/Ontology.owl#D3_EAL",
-      "baseIri" : "http://test.org/Ontology.owl",
-      "labels" : {
-        "IRI-based" : "D3_EAL"
-      }
-    }, {
       "iri" : "http://test.org/Ontology.owl#D3_EF",
       "baseIri" : "http://test.org/Ontology.owl",
       "labels" : {
         "IRI-based" : "D3_EF"
+      }
+    }, {
+      "iri" : "http://test.org/Ontology.owl#D3_EAL",
+      "baseIri" : "http://test.org/Ontology.owl",
+      "labels" : {
+        "IRI-based" : "D3_EAL"
       }
     }, {
       "iri" : "http://test.org/Ontology.owl#D3_HBPI",
@@ -10670,19 +10681,19 @@
         "IRI-based" : "D3_NI"
       }
     } ],
-    "id" : "15",
-    "superClasses" : [ "2" ]
+    "id" : "14",
+    "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "45",
+    "id" : "48",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "41",
+    "id" : "44",
     "label" : {
       "IRI-based" : "string"
     }
@@ -10952,34 +10963,34 @@
         "IRI-based" : "M1013"
       }
     } ],
-    "id" : "13"
+    "id" : "12"
   } ],
   "property" : [ {
-    "id" : "3",
+    "id" : "2",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "5",
+    "id" : "4",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "7",
+    "id" : "6",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "9",
+    "id" : "8",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "12",
+    "id" : "11",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "14",
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
     "type" : "owl:objectProperty"
   }, {
     "id" : "16",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "17",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "19",
+    "id" : "18",
     "type" : "owl:objectProperty"
   }, {
     "id" : "20",
@@ -10989,25 +11000,22 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "23",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "25",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "27",
-    "type" : "owl:objectProperty"
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "28",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "29",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "30",
     "type" : "owl:objectProperty"
   }, {
     "id" : "31",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "32",
     "type" : "rdfs:SubClassOf"
@@ -11016,40 +11024,40 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "34",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "35",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "37",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "40",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "42",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "44",
+    "id" : "43",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "47",
+    "id" : "45",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "49",
-    "type" : "rdfs:SubClassOf"
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "50",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "51",
     "type" : "owl:objectProperty"
   }, {
     "id" : "52",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "53",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "54",
     "type" : "owl:objectProperty"
@@ -11058,7 +11066,7 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "56",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "57",
     "type" : "owl:objectProperty"
@@ -11067,7 +11075,7 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "59",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "60",
     "type" : "owl:objectProperty"
@@ -11076,7 +11084,7 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "62",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "63",
     "type" : "owl:objectProperty"
@@ -11095,441 +11103,457 @@
   }, {
     "id" : "68",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://test.org/Ontology.owl#isMemberOfCWE",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "4",
+    "range" : "3",
     "label" : {
       "IRI-based" : "isMemberOfCWE"
     },
-    "domain" : "4",
+    "domain" : "3",
     "attributes" : [ "object" ],
-    "id" : "3"
+    "id" : "2"
   }, {
     "iri" : "http://test.org/Ontology.owl#isSubModelOf",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "6",
+    "range" : "5",
     "label" : {
       "IRI-based" : "isSubModelOf"
     },
-    "domain" : "6",
+    "domain" : "5",
     "attributes" : [ "object" ],
-    "id" : "5"
+    "id" : "4"
   }, {
     "iri" : "http://test.org/Ontology.owl#hasDefense",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "2",
+    "range" : "1",
     "label" : {
       "IRI-based" : "hasDefense"
     },
-    "domain" : "8",
+    "domain" : "7",
     "attributes" : [ "object" ],
-    "id" : "7"
+    "id" : "6"
   }, {
     "iri" : "http://test.org/Ontology.owl#accomplishedTactic",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "10",
+    "range" : "9",
     "label" : {
       "IRI-based" : "accomplishedTactic"
     },
-    "domain" : "8",
+    "domain" : "7",
     "attributes" : [ "object" ],
-    "id" : "9"
+    "id" : "8"
   }, {
     "iri" : "http://test.org/Ontology.owl#preventedBy",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "13",
+    "range" : "12",
     "label" : {
       "IRI-based" : "preventedBy"
     },
-    "domain" : "8",
+    "domain" : "7",
     "attributes" : [ "object" ],
-    "id" : "12"
+    "id" : "11"
   }, {
     "iri" : "http://test.org/Ontology.owl#mayBeIsolatedBy",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "15",
+    "range" : "14",
     "label" : {
       "IRI-based" : "mayBeIsolatedBy"
     },
-    "domain" : "8",
+    "domain" : "7",
     "attributes" : [ "object" ],
-    "id" : "14"
+    "id" : "13"
   }, {
     "iri" : "http://test.org/Ontology.owl#isCanPrecedeCWE",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "4",
+    "range" : "3",
     "label" : {
       "IRI-based" : "isCanPrecedeCWE"
     },
-    "domain" : "4",
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://test.org/Ontology.owl#isSubDataSourceOf",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isSubDataSourceOf"
+    },
+    "domain" : "17",
     "attributes" : [ "object" ],
     "id" : "16"
   }, {
+    "iri" : "http://test.org/Ontology.owl#hasCWE",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasCWE"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
     "iri" : "http://test.org/Ontology.owl#isSubEvictOf",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "18",
+    "range" : "21",
     "label" : {
       "IRI-based" : "isSubEvictOf"
     },
-    "domain" : "18",
-    "attributes" : [ "object" ],
-    "id" : "17"
-  }, {
-    "iri" : "http://test.org/Ontology.owl#isPeerOfCWE",
-    "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "isPeerOfCWE"
-    },
-    "domain" : "4",
-    "attributes" : [ "object" ],
-    "id" : "19"
-  }, {
-    "iri" : "http://test.org/Ontology.owl#hasCAPEC",
-    "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "hasCAPEC"
-    },
-    "domain" : "4",
+    "domain" : "21",
     "attributes" : [ "object" ],
     "id" : "20"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isCanAlsoBeCWE",
+    "iri" : "http://test.org/Ontology.owl#isPeerOfCWE",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "4",
+    "range" : "3",
     "label" : {
-      "IRI-based" : "isCanAlsoBeCWE"
+      "IRI-based" : "isPeerOfCWE"
     },
-    "domain" : "4",
+    "domain" : "3",
     "attributes" : [ "object" ],
     "id" : "22"
   }, {
-    "iri" : "http://test.org/Ontology.owl#hasDetection",
+    "iri" : "http://test.org/Ontology.owl#hasCAPEC",
     "baseIri" : "http://test.org/Ontology.owl",
     "range" : "24",
     "label" : {
-      "IRI-based" : "hasDetection"
+      "IRI-based" : "hasCAPEC"
     },
-    "domain" : "8",
-    "attributes" : [ "datatype" ],
+    "domain" : "3",
+    "attributes" : [ "object" ],
     "id" : "23"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isParentOfCWE",
+    "iri" : "http://test.org/Ontology.owl#isCanAlsoBeCWE",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "4",
+    "range" : "3",
     "label" : {
-      "IRI-based" : "isParentOfCWE"
+      "IRI-based" : "isCanAlsoBeCWE"
     },
-    "domain" : "4",
+    "domain" : "3",
     "attributes" : [ "object" ],
     "id" : "25"
   }, {
+    "iri" : "http://test.org/Ontology.owl#hasDetection",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasDetection"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://test.org/Ontology.owl#isParentOfCWE",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isParentOfCWE"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
     "iri" : "http://test.org/Ontology.owl#isSubIsolateOf",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "15",
+    "range" : "14",
     "label" : {
       "IRI-based" : "isSubIsolateOf"
     },
-    "domain" : "15",
-    "attributes" : [ "object" ],
-    "id" : "27"
-  }, {
-    "range" : "2",
-    "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "28"
-  }, {
-    "range" : "2",
-    "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "29"
-  }, {
-    "iri" : "http://test.org/Ontology.owl#mayBeHardenedBy",
-    "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "mayBeHardenedBy"
-    },
-    "domain" : "8",
+    "domain" : "14",
     "attributes" : [ "object" ],
     "id" : "30"
   }, {
-    "iri" : "http://test.org/Ontology.owl#mayBeEvictedBy",
-    "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "mayBeEvictedBy"
-    },
-    "domain" : "8",
-    "attributes" : [ "object" ],
+    "range" : "1",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "31"
   }, {
-    "range" : "2",
-    "domain" : "15",
+    "range" : "1",
+    "domain" : "21",
     "attributes" : [ "object", "anonymous" ],
     "id" : "32"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isCanPrecedeCAPEC",
+    "iri" : "http://test.org/Ontology.owl#mayBeHardenedBy",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "21",
+    "range" : "0",
     "label" : {
-      "IRI-based" : "isCanPrecedeCAPEC"
+      "IRI-based" : "mayBeHardenedBy"
     },
-    "domain" : "21",
+    "domain" : "7",
     "attributes" : [ "object" ],
     "id" : "33"
   }, {
-    "range" : "2",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "http://test.org/Ontology.owl#mayBeEvictedBy",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "mayBeEvictedBy"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
     "id" : "34"
   }, {
-    "range" : "2",
-    "domain" : "11",
+    "range" : "1",
+    "domain" : "14",
     "attributes" : [ "object", "anonymous" ],
     "id" : "35"
   }, {
+    "iri" : "http://test.org/Ontology.owl#isCanPrecedeCAPEC",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "isCanPrecedeCAPEC"
+    },
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "1",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
     "iri" : "http://test.org/Ontology.owl#hasID",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "39",
+    "range" : "42",
     "label" : {
       "IRI-based" : "hasID"
     },
-    "domain" : "38",
-    "attributes" : [ "datatype" ],
-    "id" : "37"
-  }, {
-    "iri" : "http://test.org/Ontology.owl#hasMitigation",
-    "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "41",
-    "label" : {
-      "IRI-based" : "hasMitigation"
-    },
-    "domain" : "8",
+    "domain" : "41",
     "attributes" : [ "datatype" ],
     "id" : "40"
   }, {
+    "iri" : "http://test.org/Ontology.owl#hasMitigation",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasMitigation"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
     "iri" : "http://test.org/Ontology.owl#mayBeDetectedBy",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "26",
+    "range" : "29",
     "label" : {
       "IRI-based" : "mayBeDetectedBy"
     },
-    "domain" : "8",
+    "domain" : "7",
     "attributes" : [ "object" ],
-    "id" : "42"
+    "id" : "45"
   }, {
     "iri" : "http://test.org/Ontology.owl#hasDescription",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "45",
+    "range" : "48",
     "label" : {
       "IRI-based" : "hasDescription"
     },
-    "domain" : "38",
+    "domain" : "41",
     "attributes" : [ "datatype" ],
-    "id" : "44"
+    "id" : "47"
   }, {
     "iri" : "http://test.org/Ontology.owl#mapToCAPEC",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "8",
+    "range" : "7",
     "label" : {
       "IRI-based" : "mapToCAPEC"
     },
-    "domain" : "21",
+    "domain" : "24",
     "attributes" : [ "object" ],
-    "id" : "47"
-  }, {
-    "range" : "2",
-    "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "49"
-  }, {
-    "range" : "2",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "50"
+  }, {
+    "range" : "1",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
   }, {
     "iri" : "http://test.org/Ontology.owl#mayBeDeceivedBy",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "11",
+    "range" : "10",
     "label" : {
       "IRI-based" : "mayBeDeceivedBy"
     },
-    "domain" : "8",
-    "attributes" : [ "object" ],
-    "id" : "51"
-  }, {
-    "iri" : "http://test.org/Ontology.owl#mayBeModeledBy",
-    "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "mayBeModeledBy"
-    },
-    "domain" : "8",
-    "attributes" : [ "object" ],
-    "id" : "52"
-  }, {
-    "iri" : "http://test.org/Ontology.owl#hasName",
-    "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "43",
-    "label" : {
-      "IRI-based" : "hasName"
-    },
-    "domain" : "38",
-    "attributes" : [ "datatype" ],
-    "id" : "53"
-  }, {
-    "iri" : "http://test.org/Ontology.owl#isCanFollowCAPEC",
-    "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "isCanFollowCAPEC"
-    },
-    "domain" : "21",
+    "domain" : "7",
     "attributes" : [ "object" ],
     "id" : "54"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isCanFollowCWE",
+    "iri" : "http://test.org/Ontology.owl#mayBeModeledBy",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "4",
+    "range" : "5",
     "label" : {
-      "IRI-based" : "isCanFollowCWE"
+      "IRI-based" : "mayBeModeledBy"
     },
-    "domain" : "4",
+    "domain" : "7",
     "attributes" : [ "object" ],
     "id" : "55"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isPeerOfCAPEC",
-    "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "isPeerOfCAPEC"
-    },
-    "domain" : "21",
-    "attributes" : [ "object" ],
-    "id" : "56"
-  }, {
-    "iri" : "http://test.org/Ontology.owl#isChildOfCAPEC",
-    "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "isChildOfCAPEC"
-    },
-    "domain" : "21",
-    "attributes" : [ "object" ],
-    "id" : "57"
-  }, {
-    "iri" : "http://test.org/Ontology.owl#mayBeRestoredBy",
-    "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "36",
-    "label" : {
-      "IRI-based" : "mayBeRestoredBy"
-    },
-    "domain" : "8",
-    "attributes" : [ "object" ],
-    "id" : "58"
-  }, {
-    "iri" : "http://test.org/Ontology.owl#hasType",
+    "iri" : "http://test.org/Ontology.owl#hasName",
     "baseIri" : "http://test.org/Ontology.owl",
     "range" : "46",
     "label" : {
-      "IRI-based" : "hasType"
+      "IRI-based" : "hasName"
     },
-    "domain" : "48",
+    "domain" : "41",
     "attributes" : [ "datatype" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://test.org/Ontology.owl#isCanFollowCAPEC",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "isCanFollowCAPEC"
+    },
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://test.org/Ontology.owl#isCanFollowCWE",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isCanFollowCWE"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://test.org/Ontology.owl#isPeerOfCAPEC",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "isPeerOfCAPEC"
+    },
+    "domain" : "24",
+    "attributes" : [ "object" ],
     "id" : "59"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isSubDetectionOf",
+    "iri" : "http://test.org/Ontology.owl#isChildOfCAPEC",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "0",
+    "range" : "24",
     "label" : {
-      "IRI-based" : "isSubDetectionOf"
+      "IRI-based" : "isChildOfCAPEC"
     },
-    "domain" : "0",
+    "domain" : "24",
     "attributes" : [ "object" ],
     "id" : "60"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isSubDetectOf",
+    "iri" : "http://test.org/Ontology.owl#mayBeRestoredBy",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "26",
+    "range" : "39",
     "label" : {
-      "IRI-based" : "isSubDetectOf"
+      "IRI-based" : "mayBeRestoredBy"
     },
-    "domain" : "26",
+    "domain" : "7",
     "attributes" : [ "object" ],
     "id" : "61"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isChildOfCWE",
+    "iri" : "http://test.org/Ontology.owl#hasType",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "4",
+    "range" : "49",
     "label" : {
-      "IRI-based" : "isChildOfCWE"
+      "IRI-based" : "hasType"
     },
-    "domain" : "4",
-    "attributes" : [ "object" ],
+    "domain" : "51",
+    "attributes" : [ "datatype" ],
     "id" : "62"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isSubRestoreOf",
+    "iri" : "http://test.org/Ontology.owl#isSubDetectOf",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "36",
+    "range" : "29",
     "label" : {
-      "IRI-based" : "isSubRestoreOf"
+      "IRI-based" : "isSubDetectOf"
     },
-    "domain" : "36",
+    "domain" : "29",
     "attributes" : [ "object" ],
     "id" : "63"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isParentOfCAPEC",
+    "iri" : "http://test.org/Ontology.owl#isChildOfCWE",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "21",
+    "range" : "3",
     "label" : {
-      "IRI-based" : "isParentOfCAPEC"
+      "IRI-based" : "isChildOfCWE"
     },
-    "domain" : "21",
+    "domain" : "3",
     "attributes" : [ "object" ],
     "id" : "64"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isSubDeceiveOf",
+    "iri" : "http://test.org/Ontology.owl#isSubRestoreOf",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "11",
+    "range" : "39",
     "label" : {
-      "IRI-based" : "isSubDeceiveOf"
+      "IRI-based" : "isSubRestoreOf"
     },
-    "domain" : "11",
+    "domain" : "39",
     "attributes" : [ "object" ],
     "id" : "65"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isSubHardenOf",
+    "iri" : "http://test.org/Ontology.owl#isParentOfCAPEC",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "1",
+    "range" : "24",
     "label" : {
-      "IRI-based" : "isSubHardenOf"
+      "IRI-based" : "isParentOfCAPEC"
     },
-    "domain" : "1",
+    "domain" : "24",
     "attributes" : [ "object" ],
     "id" : "66"
   }, {
-    "iri" : "http://test.org/Ontology.owl#isSubTechniqueOf",
+    "iri" : "http://test.org/Ontology.owl#isSubDeceiveOf",
     "baseIri" : "http://test.org/Ontology.owl",
-    "range" : "8",
+    "range" : "10",
     "label" : {
-      "IRI-based" : "isSubTechniqueOf"
+      "IRI-based" : "isSubDeceiveOf"
     },
-    "domain" : "8",
+    "domain" : "10",
     "attributes" : [ "object" ],
     "id" : "67"
   }, {
-    "iri" : "http://test.org/Ontology.owl#identifiedBy",
+    "iri" : "http://test.org/Ontology.owl#isSubHardenOf",
     "baseIri" : "http://test.org/Ontology.owl",
     "range" : "0",
     "label" : {
-      "IRI-based" : "identifiedBy"
+      "IRI-based" : "isSubHardenOf"
     },
-    "domain" : "8",
+    "domain" : "0",
     "attributes" : [ "object" ],
     "id" : "68"
+  }, {
+    "iri" : "http://test.org/Ontology.owl#isSubTechniqueOf",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isSubTechniqueOf"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://test.org/Ontology.owl#identifiedBy",
+    "baseIri" : "http://test.org/Ontology.owl",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "identifiedBy"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "70"
   } ]
 }
