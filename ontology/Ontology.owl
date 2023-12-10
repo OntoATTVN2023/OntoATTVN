@@ -48,9 +48,9 @@
   <rdfs:range rdf:resource="#Restore"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#isSubDetectionOf">
-  <rdfs:domain rdf:resource="#Detection"/>
-  <rdfs:range rdf:resource="#Detection"/>
+<owl:ObjectProperty rdf:about="#isSubDataSourceOf">
+  <rdfs:domain rdf:resource="#DataSource"/>
+  <rdfs:range rdf:resource="#DataSource"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#accomplishedTactic">
@@ -65,7 +65,7 @@
 
 <owl:ObjectProperty rdf:about="#identifiedBy">
   <rdfs:domain rdf:resource="#Technique"/>
-  <rdfs:range rdf:resource="#Detection"/>
+  <rdfs:range rdf:resource="#DataSource"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#hasDefense">
@@ -206,13 +206,13 @@
 </owl:DatatypeProperty>
 
 <owl:DatatypeProperty rdf:about="#hasType">
-  <rdfs:domain rdf:resource="#Isolate"/>
-  <rdfs:domain rdf:resource="#Restore"/>
-  <rdfs:domain rdf:resource="#Deceive"/>
-  <rdfs:domain rdf:resource="#Model"/>
   <rdfs:domain rdf:resource="#Evict"/>
-  <rdfs:domain rdf:resource="#Detect"/>
   <rdfs:domain rdf:resource="#Harden"/>
+  <rdfs:domain rdf:resource="#Isolate"/>
+  <rdfs:domain rdf:resource="#Deceive"/>
+  <rdfs:domain rdf:resource="#Detect"/>
+  <rdfs:domain rdf:resource="#Model"/>
+  <rdfs:domain rdf:resource="#Restore"/>
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
 </owl:DatatypeProperty>
 
@@ -260,7 +260,7 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
-<owl:Class rdf:about="#Detection">
+<owl:Class rdf:about="#DataSource">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
@@ -16108,1107 +16108,1107 @@
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0026">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0026</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active Directory</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A database and set of services that allows administrators to manage permissions, access to network resources, and stored data objects (user, group, application, or devices)</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0026_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0026"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0026"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0026.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active Directory Credential Request</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A user requested active directory credentials, such as a ticket or token</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0026_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0026"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0026"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0026.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active Directory Object Access</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opening of an active directory object, typically to collect/read its value</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0026_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0026"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0026"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0026.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active Directory Object Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a new active directory object</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0026_004">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0026"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0026"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0026.004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active Directory Object Deletion</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removal of an active directory object</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0026_005">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0026"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0026"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0026.005</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active Directory Object Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to an active directory object</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0015">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0015</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Application Log</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Events collected by third-party services such as mail servers, web applications, or other appliances (not by the native OS or platform)</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0015_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0015"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0015"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0015.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Application Log Content</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logging, messaging, and other artifacts provided by third-party services</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0037">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0037</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certificate</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A digital document, which highlights information such as the owner's identity, used to instill trust in public keys used while encrypting network communications</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0037_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0037"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0037"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0037.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Certificate Registration</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Queried or logged information highlighting current and expired digital certificates</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0025">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0025</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Service</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infrastructure, platforms, or software that are hosted on-premise or by third-party providers, made available to users through network connections and/or APIs</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0025_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0025"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0025"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0025.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Service Disable</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deactivation or stoppage of a cloud service</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0025_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0025"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0025"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0025.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Service Enumeration</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An extracted list of cloud services</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0025_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0025"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0025"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0025.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Service Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a cloud service and activity around it such as name, type, or purpose/function</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0025_004">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0025"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0025"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0025.004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Service Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to a cloud service, including its settings and/or data</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0010">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0010</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Storage</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data object storage infrastructure hosted on-premise or by third-party providers, made available to users through network connections and/or APIs</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0010_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0010"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0010"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0010.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Storage Access</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opening of a cloud storage infrastructure, typically to collect/read its value</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0010_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0010"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0010"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0010.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Storage Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of new cloud storage infrastructure</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0010_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0010"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0010"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0010.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Storage Deletion</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removal of cloud storage infrastructure</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0010_004">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0010"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0010"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0010.004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Storage Enumeration</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An extracted list of cloud storage infrastructure</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0010_005">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0010"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0010"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0010.005</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Storage Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about cloud storage infrastructure and activity around it such as name, size, or owner</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0010_006">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0010"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0010"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0010.006</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Storage Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to cloud storage infrastructure, including its settings and/or data</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0017">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0017</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Command</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A directive given to a computer program, acting as an interpreter of some kind, in order to perform a specific task</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0017_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0017"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0017"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0017.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Command Execution</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution of a line of text, potentially with arguments, created from program code</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0032">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0032</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Container</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A standard unit of virtualized software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0032_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0032"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0032"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0032.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Container Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a new container</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0032_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0032"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0032"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0032.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Container Enumeration</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An extracted list of containers</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0032_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0032"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0032"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0032.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Container Start</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activation or invocation of a container</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0038">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0038</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domain Name</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information obtained (commonly through registration or activity logs) regarding one or more IP addresses registered with human readable names</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0038_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0038"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0038"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0038.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active DNS</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Queried domain name system (DNS) registry data highlighting current domain to IP address resolutions</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0038_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0038"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0038"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0038.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domain Registration</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about domain name assignments and other domain metadata</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0038_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0038"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0038"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0038.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Passive DNS</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logged domain name system (DNS) data highlighting timelines of domain to IP address resolutions</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0016">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0016</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drive</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A non-volatile data storage device (hard drive, floppy disk, USB flash drive) with at least one formatted partition, typically mounted to the file system and/or assigned a drive letter</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0016_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0016"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0016"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0016.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drive Access</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opening of a data storage device with an assigned drive letter or mount point</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0016_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0016"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0016"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0016.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drive Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a drive letter or mount point to a data storage device</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0016_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0016"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0016"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0016.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drive Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to a drive letter or mount point of a data storage device</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0027">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0027</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Driver</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A computer program that operates or controls a particular type of device that is attached to a computer. Provides a software interface to hardware devices, enabling operating systems and other computer programs to access hardware functions without needing to know precise details about the hardware being used</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0027_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0027"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0027"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0027.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Driver Load</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attaching a driver to either user or kernel-mode of a system</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0027_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0027"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0027"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0027.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Driver Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a driver and activity around it such as driver issues reporting or integrity (page hash, code) checking</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0022">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0022</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A computer resource object, managed by the I/O system, for storing data (such as images, text, videos, computer programs, or any wide variety of other media)</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0022_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0022"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0022"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0022.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Access</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opening a file, which makes the file contents available to the requestor</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0022_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0022"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0022"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0022.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a new file</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0022_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0022"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0022"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0022.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Deletion</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removal of a file</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0022_004">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0022"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0022"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0022.004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a file, which may include information such as name, the content</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0022_005">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0022"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0022"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0022.005</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to a file, or its access permissions and attributes, typically to alter the contents of the targeted file</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0018">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0018</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firewall</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A network security system, running locally on an endpoint or remotely as a service (ex: cloud environment), that monitors and controls incoming/outgoing network traffic based on predefined rules</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0018_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0018"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0018"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0018.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firewall Disable</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deactivation or stoppage of a cloud service</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0018_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0018"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0018"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0018.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firewall Enumeration</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An extracted list of available firewalls and/or their associated settings/rules</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0018_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0018"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0018"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0018.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firewall Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a firewall and activity around it such as name, policy, or status</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0018_004">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0018"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0018"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0018.004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firewall Rule Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to a firewall rule, typically to allow/block specific network traffic</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0001">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firmware</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer software that provides low-level control for the hardware and device(s) of a host, such as BIOS or UEFI/EFI</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0001_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0001"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0001"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0001.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firmware Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to firmware, including its settings and/or data, such as MBR (Master Boot Record) and VBR (Volume Boot Record)</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0036">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0036</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Group</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection of multiple user accounts that share the same access rights to the computer and/or network resources and have common security rights</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0036_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0036"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0036"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0036.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Group Enumeration</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An extracted list of available groups and/or their associated settings</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0036_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0036"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0036"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0036.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Group Enumeration</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An extracted list of available groups and/or their associated settings</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0036_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0036"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0036"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0036.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Group Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to a group, such as membership, name, or permissions</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0007">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0007</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single file used to deploy a virtual machine/bootable disk into an on-premise or third-party cloud environment</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0007_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0007"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0007"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0007.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a virtual machine image</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0007_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0007"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0007"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0007.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image Deletion</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removal of a virtual machine image</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0007_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0007"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0007"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0007.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a virtual machine image such as name, resource group, state, or type</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0007_004">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0007"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0007"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0007.004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to a virtual machine image, including setting and/or control data</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0030">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0030</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instance</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A virtual server environment which runs workloads, hosted on-premise or by third-party cloud providers</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0030_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0030"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0030"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0030.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instance Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a new instance</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0030_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0030"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0030"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0030.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instance Deletion</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removal of an instance</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0030_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0030"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0030"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0030.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instance Enumeration</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An extracted list of instances within a cloud environment</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0030_004">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0030"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0030"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0030.004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instance Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about an instance and activity around it such as name, type, or status</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0030_005">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0030"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0030"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0030.005</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instance Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to an instance, including its settings and/or control data</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0030_006">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0030"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0030"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0030.006</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instance Start</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activation or invocation of an instance</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0030_007">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0030"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0030"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0030.007</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instance Stop</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deactivation or stoppage of an instance</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0035">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0035</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internet Scan</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information obtained (commonly via active network traffic probes or web crawling) regarding various types of resources and servers connected to the public Internet</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0035_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0035"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0035"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0035.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Response Content</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logged network traffic in response to a scan showing both protocol header and body values</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0035_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0035"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0035"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0035.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Response Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about an Internet-facing resource gathered from a scan, such as running services or ports</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0008">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0008</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kernel</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A computer program, at the core of a computer OS, that resides in memory and facilitates interactions between hardware and software components</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0008_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0008"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0008"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0008.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kernel Module Load</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An object file that contains code to extend the running kernel of an OS, typically used to add support for new hardware (as device drivers) and/or filesystems, or for adding system calls</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0028">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0028</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logon Session</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logon occurring on a system or resource (local, domain, or cloud) to which a user/device is gaining access after successful authentication and authorization</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0028_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0028"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0028"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0028.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logon Session Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a successful new user logon following an authentication attempt</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0028_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0028"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0028"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0028.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logon Session Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a logon session, such as username, logon type, access tokens (security context, user SIDs, logon identifiers, and logon SID), and any activity associated within it</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0023">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0023</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Named Pipe</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanisms that allow inter-process communication locally or over the network. A named pipe is usually found as a file and processes attach to it</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0023_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0023"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0023"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0023.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Named Pipe Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a named pipe on a system, including pipe name and creating process</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0004">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malware</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information obtained (via shared or submitted samples) regarding malicious software (droppers, backdoors, etc.) used by adversaries</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0004_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0004"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0004"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0004.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malware Content</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Code, strings, and other signatures that compromise a malicious payload</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0004_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0004"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0004"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0004.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malware Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a malicious payload, such as compilation times, file hashes, as well as watermarks or other identifiable configuration information</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0011">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0011</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Module</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Executable files consisting of one or more shared classes and interfaces, such as portable executable (PE) format binaries/dynamic link libraries (DLL), executable and linkable format (ELF) binaries/shared libraries, and Mach-O format binaries/shared libraries</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0011_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0011"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0011"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0011.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Module Load</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attaching a module into the memory of a process/program, typically to access shared resources/features provided by the module</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0033">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0033</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Share</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A storage resource (typically a folder or drive) made available from one host to others using network protocols, such as Server Message Block (SMB) or Network File System (NFS)</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0033_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0033"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0033"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0033.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Share Access</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opening a network share, which makes the contents available to the requestor</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0029">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0029</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Traffic</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data transmitted across a network (ex: Web, DNS, Mail, File, etc.), that is either summarized (ex: Netflow) and/or captured as raw data in an analyzable format</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0029_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0029"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0029"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0029.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Connection Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a network connection, such as capturing socket information with a source/destination IP and port(s)</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0029_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0029"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0029"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0029.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Traffic Content</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logged network traffic data showing both protocol header and body values</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0029_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0029"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0029"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0029.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Traffic Flow</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Summarized network packet data, with metrics, such as protocol headers and volume</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0021">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0021</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Persona</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A malicious online profile representing a user commonly used by adversaries to social engineer or otherwise target victims</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0021_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0021"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0021"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0021.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social Media</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Established, compromised, or otherwise acquired social media personas</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0014">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0014</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pod</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single unit of shared resources within a cluster, comprised of one or more containers</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0014_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0014"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0014"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0014.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pod Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a new pod</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0014_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0014"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0014"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0014.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pod Enumeration</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An extracted list of pods within a cluster</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0014_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0014"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0014"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0014.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pod Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to a pod, including its settings and/or control data</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0009">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0009</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instances of computer programs that are being executed by at least one thread. Processes have memory space for process executables, loaded modules (DLLs or shared libraries), and allocated memory regions containing everything from user input to application-specific data structures</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0009_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0009"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0009"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0009.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OS API Execution</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating system function/method calls executed by a process</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0009_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0009"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0009"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0009.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Access</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opening of a process by another process, typically to read memory of the target process</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0009_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0009"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0009"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0009.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The initial construction of an executable managed by the OS, that may involve one or more tasks or threads.</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0009_004">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0009"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0009"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0009.004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a running process, which may include information such as environment variables, image name, user/owner, etc.</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0009_005">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0009"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0009"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0009.005</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to a process, or its contents, typically to write and/or execute code in the memory of the target process</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0009_006">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0009"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0009"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0009.006</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process Termination</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exit of a running process</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0003">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheduled Job</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automated tasks that can be executed at a specific time or on a recurring schedule running in the background</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0003_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0003"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0003"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0003.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheduled Job Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a new scheduled job</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0003_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0003"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0003"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0003.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheduled Job Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a scheduled job, which may include information such as name, timing, command(s), etc.</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0003_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0003"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0003"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0003.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheduled Job Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to a scheduled job, such as modifications to the execution launch</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0012">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0012</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Script</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A file or stream containing a list of commands, allowing them to be launched in sequence</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0012_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0012"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0012"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0012.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Script Execution</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The execution of a text file that contains code via the interpreter</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0013">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0013</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensor Health</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information from host telemetry providing insights about system status, errors, or other notable functional activity</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0013_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0013"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0013"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0013.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Host Status</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logging, messaging, and other artifacts highlighting the health of host sensors</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0019">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0019</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Service</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A computer process that is configured to execute continuously in the background and perform system tasks, in some cases before any user has logged in</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0019_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0019"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0019"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0019.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Service Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a new service/daemon</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0019_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0019"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0019"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0019.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Service Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a service/daemon, which may include information such as name, service executable, start type, etc.</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0019_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0019"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0019"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0019.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ervice Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to a service/daemon, such as changes to name, description, and/or start type</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0020">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0020</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snapshot</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A point-in-time copy of cloud volumes (files, settings, etc.) that can be created and/or deployed in cloud environments</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0020_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0020"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0020"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0020.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snapshot Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a new snapshot</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0020_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0020"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0020"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0020.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snapshot Deletion</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removal of a snapshot</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0020_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0020"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0020"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0020.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snapshot Enumeration</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An extracted list of snapshops within a cloud environment</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0020_004">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0020"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0020"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0020.004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snapshot Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a snapshot, which may include information such as ID, type, and status</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0020_005">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0020"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0020"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0020.005</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snapshot Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to a snapshop, such as metadata and control data</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0002">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Account</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A profile representing a user, device, service, or application used to authenticate and access resources</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0002_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0002"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0002"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0002.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Account Authentication</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attempt by a user to gain access to a network or computing resource, often by providing credentials</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0002_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0002"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0002"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0002.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Account Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a new account</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0002_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0002"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0002"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0002.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Account Deletion</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removal of an account</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0002_004">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0002"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0002"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0002.004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Account Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about an account, which may include a username, user ID, environmental data, etc.</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0002_005">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0002"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0002"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0002.005</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Account Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to an account, such as permissions and/or membership in specific groups</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0034">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0034</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Block object storage hosted on-premise or by third-party providers, typically made available to resources as virtualized hard drives</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0034_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0034"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0034"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0034.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a cloud volume</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0034_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0034"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0034"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0034.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume Deletion</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removal of a a cloud volume</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0034_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0034"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0034"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0034.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume Enumeration</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An extracted list of available volumes within a cloud environment</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0034_004">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0034"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0034"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0034.004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a cloud volume and activity around it, such as id, type, state, and size</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0034_005">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0034"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0034"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0034.005</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume Metadata</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual data about a cloud volume and activity around it, such as id, type, state, and size</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0006">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0006</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Credential</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Credential material, such as session cookies or tokens, used to authenticate to web applications and services</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0006_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0006"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0006"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0006.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Credential Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of new web credential material</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0006_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0006"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0006"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0006.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Credential Usage</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attempt by a user to gain access to a network or computing resource by providing web credentials</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0024">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0024</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Windows Registry</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Windows OS hierarchical database that stores much of the information and settings for software programs, hardware devices, user preferences, and operating-system configurations</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0024_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0024"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0024"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0024.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Windows Registry Key Access</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opening a Registry Key, typically to read the associated value</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0024_002">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0024"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0024"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0024.002</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Windows Registry Key Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a new Registry Key</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0024_003">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0024"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0024"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0024.003</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Windows Registry Key Deletion</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removal of a Registry Key</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0024_004">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0024"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0024"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0024.004</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Windows Registry Key Modification</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes made to a Registry Key and/or Key value</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0005">
-  <rdf:type rdf:resource="#Detection"/>
+  <rdf:type rdf:resource="#DataSource"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0005</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WMI</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The infrastructure for management data and operations that enables local and remote management of Windows personal computers and servers</hasDescription>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#DS0005_001">
-  <rdf:type rdf:resource="#Detection"/>
-  <isSubDetectionOf rdf:resource="#DS0005"/>
+  <rdf:type rdf:resource="#DataSource"/>
+  <isSubDataSourceOf rdf:resource="#DS0005"/>
   <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DS0005.001</hasID>
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WMI Creation</hasName>
   <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial construction of a WMI object, such as a filter, consumer, subscription, binding, or provider</hasDescription>
