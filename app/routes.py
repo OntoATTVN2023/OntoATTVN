@@ -91,7 +91,7 @@ def defense():
 		return render_template('defense.html', tech_detail=[], results={},dataGraph={})
 	
 	techId = str(request.args.get('techID'))
-	print(techId)
+
 	tech_id = techId.strip().upper()
 	tech_id = '^'+str(tech_id)+'$'
 	
