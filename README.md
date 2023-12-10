@@ -20,16 +20,19 @@ To run OntoATTVN, you need the following system requirements:
 
 2. **Create a virtual environment (recommended)**
 
+   ```bash    
    python -m venv venv
    Activate the virtual environment: + On Windows: venv\Scripts\activate
                                      + On Linux: source venv/bin/activate
 
 3. **Install the required libraries**
-
+   
+   ```bash 
    pip install -r requirements.txt
 
 4. **Run the application**
 
+   ```bash 
    flask run
 
 
