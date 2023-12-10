@@ -15,8 +15,8 @@ To run OntoATTVN, you need the following system requirements:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/OntoATTVN2023/CVEATTCK
-   cd CVEATTCK
+   git clone https://github.com/OntoATTVN2023/OntoATTVN
+   cd OntoATTVN
 
 2. **Create a virtual environment (recommended)**
 
