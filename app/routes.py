@@ -39,7 +39,7 @@ def index():
 		    ?CWE attack:hasCAPEC ?Capec.
             ?Capec attack:hasID ?CapecID.
             ?Capec attack:hasName ?CapecName.
-		    ?Capec attack:mapToCAPEC ?Tech.
+		    ?Capec attack:mapToTechnique ?Tech.
 		    ?Tech attack:hasID ?TechID.
 		    ?Tech attack:hasName ?TechName.
 		    ?Tech attack:accomplishedTactic ?Tactic.
