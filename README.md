@@ -1,6 +1,6 @@
 # OntoATTVN
 
-OntoATTVN is a web application built with the Flask framework in Python, designed to help showing the link between a CVE vulnerability and the corresponding techniques, tactics and strategies that threat actors use, following the MITRE ATT&CK framework.
+OntoATTVN is a web application built with the Flask framework in Python, designed to help showing the link between a CVE vulnerability and the corresponding techniques, tactics, and strategies that threat actors use, following the MITRE ATT&CK framework.
 
 ## System Requirements
 
