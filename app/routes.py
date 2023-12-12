@@ -45,7 +45,8 @@ def index():
 		    ?Tech attack:accomplishedTactic ?Tactic.
 		    ?Tactic attack:hasID ?TacticID.
 		    ?Tactic attack:hasName ?TacticName.
-		}'''
+        } order by ?Tactic
+        '''
 		query = prepareQuery(sparql_query)
 
 		result = g.query(query)
@@ -78,7 +79,7 @@ def index():
 		for tactic in tactics:
 			if tactic not in dataGraph.keys():
 				dataGraph[tactic] = 0
-		return render_template('index.html', capecs=list_capec, results=result_dict, cve_id=cve_id.upper(), cve_description=cve_description,
+		return render_template('index.html', capecs=sorted(list_capec), results=result_dict, cve_id=cve_id.upper(), cve_description=cve_description,
                                cwe=cwe,  dataGraph=dataGraph)
 
 	else:
